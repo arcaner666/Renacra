@@ -1,0 +1,25 @@
+### h1-h6 ######################################################################
+
+Bir sayfadaki başlıkları belirtmek ve içerikte bir hiyerarşi oluşturmak için 
+kullanılır. 
+
+h1'den h6'ya doğru küçülerek gider. 
+
+Her sayfada birden fazla başlık bulunabilir.
+
+Yazı boyutunu ayarlamak için kullanılmamalıdır. Bunun için CSS'deki font-size 
+kullanılmalıdır.
+
+Eğer tek bir başlık kullanılacaksa bu her zaman h1 olmalıdır. İki tane 
+kullanılacaksa h1 ve h2 olmalıdır. Yani gidipte direk h3 kullanmamalıyız.
+
+Her sayfada yalnızca bir tane h1 kullanılmalıdır ve bu başlık da sayfanın
+amacını düzgün bir biçimde anlatmalıdır.
+
+<h1> Burası h1 başlıktır. </h1>
+<h2> Burası h2 başlıktır. </h2>
+<h3> Burası h3 başlıktır. </h3>
+<h4> Burası h4 başlıktır. </h4>
+<h5> Burası h5 başlıktır. </h5>
+<h6> Burası h6 başlıktır. </h6>
+################################################################################

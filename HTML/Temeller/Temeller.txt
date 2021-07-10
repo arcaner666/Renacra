@@ -1,14 +1,14 @@
-### TANIM ######################################################################
+### TEMELLER ###################################################################
 
 HTML'in açılımı "Hyper Text Markup Language"dir. Türkçesi hiper metin 
 işaretleme dilidir. Metin üzerinde işaretlemeler yaparak metnin özelliklerini 
-değiştirir.
+değiştirir. Statiktir. Herhangi bir şekilde çalışmaz. Bir programlama dili değildir. Web sayfalarının temelini oluşturur.
 
 HTML, CERN tarafından geliştirilen SGML(Standart Generalized Markup
 Language)'den yoğun olarak etkilenmiştir. İlk kullanım amacı bilimsel
 araştırma dökümanlarını etiketlemek için olup, günümüzdeki gibi interaktif
 web siteleri hazırlamak için düşünülmemişti. Tim Bernards Lee 1994 yılında
-W3C (World Wide Web Consortium’u kurdu. W3C HTML’in özelliklerini belirler
+W3C (World Wide Web Consortium’u kurdu. W3C, HTML’in özelliklerini belirler
 ve daha iyi bir web geliştirme için çalışır.
 
 HTML'in genel yapısı şu şekildedir:
@@ -24,23 +24,29 @@ HTML'in genel yapısı şu şekildedir:
 HTML üç farklı yapıdan oluşur: 
  - Tags (Etiketler)
  - Attributes (Özellikler)
- - Elements (Elementler)
+ - Elements (Elemanlar)
 
 --- Etiketler (Tags) -----------------------------------------------------------
 
-Etiketler küçüktür işaretiyle başlar.Büyüktür işaretiyle sona erer.İçine
-yazılan metne yeni özellikler kazandırır.
+Etiketler HTML'in temel yapıtaşıdır. Küçüktür işaretiyle başlar. Büyüktür 
+işaretiyle sona erer. İçine yazılan metne yeni özellikler kazandırır.
+
 <tag>, <html>, <body> gibi...
 
-Açılıp kapanan etiketler içeriği kaplamalıdır.Slash işareti etiketin önüne
-yazarak tag kapatılır.
+Açılıp kapanan etiketler içeriği kaplamalıdır. Kapanış etiketinde / işareti 
+etiketin önüne yazarak tag kapatılır.
+
 <p> Buraya paragraf yazılır. </p>
 
 Bazı taglar tek satırlık olduğu için açıp kapatılmaz.
+
 <hr>, <br> gibi...
 
 Eğer bir web sayfasının başında <!DOCTYPE html> varsa bu sayfanın HTML5 ile
 kodlandığını gösterir.
+
+Etiketlerin içerisinde yazılar bulunabileceği gibi başka etiketler de 
+bulunabilir.
 --------------------------------------------------------------------------------
 
 --- Attributes (Özellikler) ----------------------------------------------------
@@ -48,12 +54,13 @@ kodlandığını gösterir.
 Etiketlere çeşitli özellikler tanımlamamızı sağlar. Her zaman açılış
 etiketinde tanımlanırlar. Çift tırnak kullanmak zorunlu değildir ama tavsiye
 edilir.
+
 <article attribute="value"></article>
 --------------------------------------------------------------------------------
 
---- Elementler (Elements) ------------------------------------------------------
+--- Elemanlar (Elements) ------------------------------------------------------
 
-Element bir satırdaki içerik ve onu kaplayan etiketin tümüne denir. Örneğin;
-<p>İçerik</p> (Bunun tümüne element denir.)
+Eleman bir satırdaki içerik ve onu kaplayan etiketin tümüne denir. Örneğin;
+<p>İçerik</p> (Bunun tümüne eleman denir.)
 --------------------------------------------------------------------------------
 ################################################################################

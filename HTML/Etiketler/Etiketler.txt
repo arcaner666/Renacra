@@ -1,0 +1,22 @@
+### ETİKETLER (TAGS) ###########################################################
+
+Etiketler HTML'in temel yapıtaşıdır. Küçüktür işaretiyle başlar. Büyüktür 
+işaretiyle sona erer. İçine yazılan metne yeni özellikler kazandırır.
+
+<tag>, <html>, <body> gibi...
+
+Açılıp kapanan etiketler içeriği kaplamalıdır. Kapanış etiketinde / işareti 
+etiketin önüne yazarak tag kapatılır.
+
+<p> Buraya paragraf yazılır. </p>
+
+Bazı taglar tek satırlık olduğu için açıp kapatılmaz.
+
+<hr>, <br> gibi...
+
+Eğer bir web sayfasının başında <!DOCTYPE html> varsa bu sayfanın HTML5 ile
+kodlandığını gösterir.
+
+Etiketlerin içerisinde yazılar bulunabileceği gibi başka etiketler de 
+bulunabilir.
+################################################################################
