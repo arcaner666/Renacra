@@ -1,0 +1,59 @@
+### TANIM ######################################################################
+
+HTML'in açılımı "Hyper Text Markup Language"dir. Türkçesi hiper metin 
+işaretleme dilidir. Metin üzerinde işaretlemeler yaparak metnin özelliklerini 
+değiştirir.
+
+HTML, CERN tarafından geliştirilen SGML(Standart Generalized Markup
+Language)'den yoğun olarak etkilenmiştir. İlk kullanım amacı bilimsel
+araştırma dökümanlarını etiketlemek için olup, günümüzdeki gibi interaktif
+web siteleri hazırlamak için düşünülmemişti. Tim Bernards Lee 1994 yılında
+W3C (World Wide Web Consortium’u kurdu. W3C HTML’in özelliklerini belirler
+ve daha iyi bir web geliştirme için çalışır.
+
+HTML'in genel yapısı şu şekildedir:
+<html>
+   <head>
+      <title>Burası sadece tarayıcı çubuğunda görünür.</title>
+   </head>  
+   <body>
+      <p>Burası içeriğin yazıldığı yerdir.</p>
+   </body>
+</html>
+
+HTML üç farklı yapıdan oluşur: 
+ - Tags (Etiketler)
+ - Attributes (Özellikler)
+ - Elements (Elementler)
+
+--- Etiketler (Tags) -----------------------------------------------------------
+
+Etiketler küçüktür işaretiyle başlar.Büyüktür işaretiyle sona erer.İçine
+yazılan metne yeni özellikler kazandırır.
+<tag>, <html>, <body> gibi...
+
+Açılıp kapanan etiketler içeriği kaplamalıdır.Slash işareti etiketin önüne
+yazarak tag kapatılır.
+<p> Buraya paragraf yazılır. </p>
+
+Bazı taglar tek satırlık olduğu için açıp kapatılmaz.
+<hr>, <br> gibi...
+
+Eğer bir web sayfasının başında <!DOCTYPE html> varsa bu sayfanın HTML5 ile
+kodlandığını gösterir.
+--------------------------------------------------------------------------------
+
+--- Attributes (Özellikler) ----------------------------------------------------
+
+Etiketlere çeşitli özellikler tanımlamamızı sağlar. Her zaman açılış
+etiketinde tanımlanırlar. Çift tırnak kullanmak zorunlu değildir ama tavsiye
+edilir.
+<article attribute="value"></article>
+--------------------------------------------------------------------------------
+
+--- Elementler (Elements) ------------------------------------------------------
+
+Element bir satırdaki içerik ve onu kaplayan etiketin tümüne denir. Örneğin;
+<p>İçerik</p> (Bunun tümüne element denir.)
+--------------------------------------------------------------------------------
+################################################################################
