@@ -1,0 +1,33 @@
+### p ##########################################################################
+
+paragraph tag
+
+--- Tanım ----------------------------------------------------------------------
+Bir paragrafı temsil eden elementtir.
+
+Yazıyı paragraflara ayırmak için kullanılır.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+<p>Burası ilk paragraftır.
+  Burası ilk paragraftır.
+  Burası ilk paragraftır.
+  Burası ilk paragraftır.</p>
+<p>Burası ikinci paragraftır.
+  Burası ikinci paragraftır.
+  Burası ikinci paragraftır.
+  Burası ikinci paragraftır.</p>
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+Paragraflar blok düzeyindeki öğelerdir.
+
+Paragraflar içerisinde yalnızca yazılar veya satır içi etiketleri bulunmalıdır.
+p etiketi içerisinde h1 ya da div gibi blok düzeyindeki etiketler olmamalıdır.
+
+Varsayılan olarak tarayıcılar paragrafları birbirinden bir satır boşluk ile 
+ayırırlar.
+
+align özelliğinin p etiketinde kullanılması tavsiye edilmiyor.
+--------------------------------------------------------------------------------
+################################################################################

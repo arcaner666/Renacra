@@ -1,0 +1,37 @@
+### div ########################################################################
+
+division tag
+
+--- Tanım ----------------------------------------------------------------------
+İçerik için genel bir kapsayıcıdır. 
+
+CSS ile herhangi bir şekilde stili değiştirilmemişse içerikte herhangi bir 
+değişiklik yapmaz. 
+
+Saf bir konteynır olarak div hiçbir şeyi değiştirmez. 
+
+Bunun yerine içeriğin belirli bölümlerini class ve id özellikleriyle 
+işaretlemeyi, bu işaretli alanları CSS ile şekilllendirmeyi ya da Javascript
+ile üzerinde çeşitli işlemler yapılmasını sağlar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+<div>
+    <p>Burası içerik.</p>
+</div>
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+Tarayıcılar genellikle div bloğundan önce ve sonra bir satır boşluk bırakırlar.
+
+Bir div'i eğer sadece tek bir kez kullanacaksak id ile, birden fazla kez 
+kullanacaksak class ile isimlendiririz.
+
+div elemanı sadece article, nav gibi amaca uygun bir etiket bulunmadığı
+durumlarda kullanılmalıdır.
+
+align özelliğinin kullanılması tavsiye edilmiyor. Bunun 
+yerine div'leri sayfada konumlandırmak için CSS Grid veya CSS Flexbox  
+kullanılmalı.
+--------------------------------------------------------------------------------
+################################################################################
