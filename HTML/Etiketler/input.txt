@@ -1,0 +1,47 @@
+### <input> ####################################################################
+
+input
+
+--- Tanım ----------------------------------------------------------------------
+Platforma ve cihaza bağlı olarak kullanıcıdan bilgi almaya yarayan Web tabanlı 
+formlar için çok çeşitli kontrollerdir.
+
+input etiketi yapılabilecek kombinasyonlar, çoklu işlevleri sebebiyle HTML'deki
+en karmaşık etiketlerden biridir.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+<label for="name">Ad (4 ila 8 karakter):</label>
+<input type="text" id="name" name="name" required minlength="4" maxlength="8"
+size="10">
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+--- <input type="button"> ------------------------------------------------------
+Basit, tıklanabilir butondur.
+
+click olayını bir fonksiyon yardımıyla kontrol ederek istenilen işlemler
+yaptırılabilir.
+
+input butonları da HTML'de halen geçerli ve kullanımdadır. Fakat artık butonlar 
+için daha zengin özelliklere sahip olan button etiketi öneriliyor.
+
+input'a value özelliği de ekleyerek butonun üzerinde ne yazacağını belirleriz.
+
+<input type="button" value="Click Me">
+
+Eğer value değeri atamazsak butonun içi boş kalacaktır.
+
+Bu buton input'u varsayılan olarak herhangi bir işlem yapmaz. Bir işlem 
+yaptırmak için Javascript kullanılmalıdır.
+
+input'a accesskey özelliği de ekleyerek bu buton için bir klavye kısayolu da
+ekleyebiliriz. Bu kısayol tarayıcının ilgili tuş kombinasyonu + accesskey ile
+tetiklenir.
+
+input'a ekleyeceğimiz disabled özelliği input'u kapatır.
+--------------------------------------------------------------------------------
+################################################################################
