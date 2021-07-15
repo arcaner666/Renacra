@@ -1,16 +1,22 @@
-### <textarea></textarea> ######################################################
+### <select></select> ##########################################################
 
-text area
+select
 
 --- Tanım ----------------------------------------------------------------------
-Çok satırlık düz yazı girmemizi sağlayan etikettir.
+Üzerine tıklandığında kullanıcıya bir seçenekler menüsü açar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
-<label for="story">Tell us your story:</label>
-<textarea id="story" name="story" rows="5" cols="33">
-It was a dark and stormy night...
-</textarea>
+<label for="pet-select">Choose a pet:</label>
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------

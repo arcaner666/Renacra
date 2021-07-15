@@ -1,5 +1,6 @@
-### TEMELLER ###################################################################
+### TEMELLER (BASICS) ##########################################################
 
+--- Tanım ----------------------------------------------------------------------
 HTML'in açılımı "Hyper Text Markup Language"dir. Türkçesi hiper metin 
 işaretleme dilidir. Metin üzerinde işaretlemeler yaparak metnin özelliklerini 
 değiştirir. Statiktir. Herhangi bir şekilde çalışmaz. Bir programlama dili değildir. Web sayfalarının temelini oluşturur.
@@ -10,8 +11,9 @@ araştırma dökümanlarını etiketlemek için olup, günümüzdeki gibi intera
 web siteleri hazırlamak için düşünülmemişti. Tim Bernards Lee 1994 yılında
 W3C (World Wide Web Consortium’u kurdu. W3C, HTML’in özelliklerini belirler
 ve daha iyi bir web geliştirme için çalışır.
+--------------------------------------------------------------------------------
 
-HTML'in genel yapısı şu şekildedir:
+--- HTML'in Genel Yapısı -------------------------------------------------------
 <html>
    <head>
       <title>Burası sadece tarayıcı çubuğunda görünür.</title>
@@ -20,11 +22,13 @@ HTML'in genel yapısı şu şekildedir:
       <p>Burası içeriğin yazıldığı yerdir.</p>
    </body>
 </html>
+--------------------------------------------------------------------------------
 
-HTML üç farklı yapıdan oluşur: 
+--- HTML'i Oluşturan Öğeler ----------------------------------------------------
  - Tags (Etiketler)
  - Attributes (Özellikler)
  - Elements (Elemanlar)
+--------------------------------------------------------------------------------
 
 --- Etiketler (Tags) -----------------------------------------------------------
 

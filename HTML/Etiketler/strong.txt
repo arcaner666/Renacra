@@ -1,16 +1,19 @@
-### <textarea></textarea> ######################################################
+### <strong></strong> ##########################################################
 
-text area
+strong
 
 --- Tanım ----------------------------------------------------------------------
-Çok satırlık düz yazı girmemizi sağlayan etikettir.
+İçerisine yazılan yazının önemli olduğunu ya da bir uyarı olduğunu belirten 
+satıriçi bir etikettir.
+
+Tarayıcılar genellikle strong etiketi içerisine yazılan yazıyı normalden daha
+kalın yazar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
-<label for="story">Tell us your story:</label>
-<textarea id="story" name="story" rows="5" cols="33">
-It was a dark and stormy night...
-</textarea>
+<p>... the most important rule, the rule you can never forget, no matter how 
+much he cries, no matter how much he begs: <strong>never feed him after 
+midnight</strong>.</p>
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------

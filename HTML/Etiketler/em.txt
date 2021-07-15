@@ -1,16 +1,21 @@
-### <textarea></textarea> ######################################################
+### <em></em> ##################################################################
 
-text area
+emphasized text
 
 --- Tanım ----------------------------------------------------------------------
-Çok satırlık düz yazı girmemizi sağlayan etikettir.
+Bir yazıyı vurgulamak için kullanılan satıriçi etikettir.
+
+Genellikle cümle içerisindeki ünlemleri vurgulamak için kullanılır.
+
+Tarayıcılar genellikle bu etiket içerisine yazılan yazıyı italik yazar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
-<label for="story">Tell us your story:</label>
-<textarea id="story" name="story" rows="5" cols="33">
-It was a dark and stormy night...
-</textarea>
+<p>Get out of bed <em>now</em>!</p>
+
+<p>We <em>had</em> to do something about it.</p>
+
+<p>This is <em>not</em> a drill!</p>
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
