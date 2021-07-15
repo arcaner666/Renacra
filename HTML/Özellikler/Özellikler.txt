@@ -8,6 +8,10 @@ Etiketlere çeşitli işlevler kazandırmak için kullanılır.
 Her zaman açılış etiketinde tanımlanırlar. 
 
 Çift tırnak kullanmak zorunlu değildir ama tavsiye edilir.
+
+Eğer bir özelliğin değerini yanlış yazarsak ya da özelliğe değer olarak 
+girilemeyecek bir şey yazarsak HTML bunu görmezden gelir ve varsayılan değeri 
+çalıştırır. 
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
