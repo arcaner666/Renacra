@@ -1,0 +1,20 @@
+### İSİMLENDİRME VE SEMANTİK (NAMINGS AND SEMANTICS) ###########################
+
+--- Tanım ----------------------------------------------------------------------
+Bilgisayar bilimlerinde isimlendirme konusu her zaman zor bir problem olmuştur.
+
+İsimlendirme işine ciddi kafa yormalı ve önemsemeliyiz.
+
+Eğer isimlendirdiğimiz bir şeyin anlamı ya da işlevi daha sonra değiştiyse
+hemen ismi de değiştirmeliyiz.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+Genel olarak class'ları isimlendirirken bir class'ı görünüşüne göre değil
+yaptığı işleve göre isimlendirmeliyiz.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

@@ -33,6 +33,11 @@ CSS:
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+id yerine mümkün olduğunca class kullanmamız tavsiye ediliyor.
 
+Boşluk ile aynı class özelliği içerisine birden fazla class eklenebilir. 
+
+Tarayıcılar boşlukla ayrılan her bir ifadeyi ayrı bir class olarak kabul 
+ederler. 
 --------------------------------------------------------------------------------
 ################################################################################
