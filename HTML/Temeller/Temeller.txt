@@ -13,17 +13,6 @@ W3C (World Wide Web Consortium’u kurdu. W3C, HTML’in özelliklerini belirler
 ve daha iyi bir web geliştirme için çalışır.
 --------------------------------------------------------------------------------
 
---- HTML'in Genel Yapısı -------------------------------------------------------
-<html>
-   <head>
-      <title>Burası sadece tarayıcı çubuğunda görünür.</title>
-   </head>  
-   <body>
-      <p>Burası içeriğin yazıldığı yerdir.</p>
-   </body>
-</html>
---------------------------------------------------------------------------------
-
 --- HTML'i Oluşturan Öğeler ----------------------------------------------------
  - Tags (Etiketler)
  - Attributes (Özellikler)
@@ -46,9 +35,6 @@ Bazı taglar tek satırlık olduğu için açıp kapatılmaz.
 
 <hr>, <br> gibi...
 
-Eğer bir web sayfasının başında <!DOCTYPE html> varsa bu sayfanın HTML5 ile
-kodlandığını gösterir.
-
 Etiketlerin içerisinde yazılar bulunabileceği gibi başka etiketler de 
 bulunabilir.
 --------------------------------------------------------------------------------
@@ -66,5 +52,39 @@ edilir.
 
 Eleman bir satırdaki içerik ve onu kaplayan etiketin tümüne denir. Örneğin;
 <p>İçerik</p> (Bunun tümüne eleman denir.)
+--------------------------------------------------------------------------------
+
+--- HTML'in Genel Yapısı -------------------------------------------------------
+<!DOCTYPE html>
+<html lang="tr">
+   <head>
+      <title>Burası sadece tarayıcı çubuğunda görünür.</title>
+   </head>  
+   <body>
+      <p>Burası içeriğin yazıldığı yerdir.</p>
+   </body>
+</html>
+
+<!DOCTYPE html> satırı tarayıcıya bu HTML dökümanının HTML5 ile kodlandığını
+belirtir. Her zaman HTML dökümanının ilk satırında yazılmak zorundadır.
+Üzerinde boşluk bile olamaz.
+
+Ardından gelen html etiketi ise tüm içeriği kaplayan genel bir kapsayıcıdır.
+
+html etiketi içerisindeki lang özelliği ise tarayıcıya bu dökümanın içeriğinin
+hangi dilde yazıldığını belirtir.
+
+Tüm HTML dökümanlarında bir head ve bir body kısmı bulunur.
+
+head satırı ise kullanıcıların görmesine gerek olmayan konfigürasyon, CSS linki 
+ve daha çok sayfa ile ilgili bilgilerin (metadata) yazıldığı yerdir. header ile
+head farklı şeylerdir. head içerisine yazılan şeyleri genelde kullanıcılar
+göremez. Bu kısım daha çok tarayıcılar içindir. 
+
+head içerisindeki title ise sayfanın arama motorunda site URL'inin hemen
+üstünde görünen kısmıdır. title aynı zamanda tarayıcı çubuğunda da görünür.
+
+body kısmı ise kullanıcılara sunacağımız içeriği oluşturan şeyleri yazdığımız 
+kısımdır.
 --------------------------------------------------------------------------------
 ################################################################################

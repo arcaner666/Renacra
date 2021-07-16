@@ -1,0 +1,28 @@
+### <script></script> ##########################################################
+
+script
+
+--- Tanım ----------------------------------------------------------------------
+HTML kodlarımıza Javascript ile erişmemizi ve sayfamıza çeşitli işlevler
+kazandırmamızı sağlar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+script etiketi genelde body etiketinin en altına yazılır.
+
+<body>
+    <h1>Başlık</h1>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
+    voluptatem earum sequi a excepturi quas, ex
+            quidem amet eveniet nulla vero quasi dignissimos dolor nemo 
+            blanditiis impedit praesentium accusamus
+            itaque!</span></p>
+
+    <script src="index.js"></script>
+</body>
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

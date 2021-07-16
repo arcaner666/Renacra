@@ -14,9 +14,6 @@ Bazı taglar tek satırlık olduğu için açıp kapatılmaz.
 
 <hr>, <br> gibi...
 
-Eğer bir web sayfasının başında <!DOCTYPE html> varsa bu sayfanın HTML5 ile
-kodlandığını gösterir.
-
 Etiketlerin içerisinde yazılar bulunabileceği gibi başka etiketler de 
 bulunabilir.
 ################################################################################

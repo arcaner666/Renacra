@@ -1,0 +1,152 @@
+### TEMELLER (BASICS) ##########################################################
+
+--- Tanım ----------------------------------------------------------------------
+CSS'in açılımı Cascading Style Sheets'dir. 
+
+CSS, HTML elementlerinin ekranda nasıl görüntüleneceğini düzenler.
+
+Aynı anda birden fazla Web sayfasının yerleşimini kontrol edebilir.
+--------------------------------------------------------------------------------
+
+--- CSS'in Genel Yapısı --------------------------------------------------------
+h1 {
+    font-size: 24px;
+	font-family: Helvetica;
+	color: blue;
+}
+
+h1 kısmına seçici (selector) denir.
+
+font-size kısmına özellik (property) denir.
+
+24px kısmına değer (value) denir.
+
+font-size: 24px; kısmına ise kural (declaration, rule) denir.
+--------------------------------------------------------------------------------
+
+--- CSS'in Kullanım Şekilleri --------------------------------------------------
+CSS'in üç farklı kullanım çeşidi vardır:
+ - Inline (Satır içi) CSS
+ - Internal (Dahili) CSS
+ - External (Harici) CSS
+--------------------------------------------------------------------------------
+
+--- Inline (Satır içi) CSS -----------------------------------------------------
+Bu kullanım şeklinde stiller her bir HTML etiketine ayrı ayrı yazılır. 
+
+Bu kullanım türü pek tavsiye edilmez çünkü büyük web sitelerinde ufak bir
+değişiklik yapmak gerektiğinde her bir etikette değişikliği tekrarlamak çok
+zaman kaybettirir. 
+
+Örneğin;
+
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper" style="background-color:cyan; width:100px;">
+        <header style="background-color:cyan; width:250px;">Anasayfa</header>
+        <nav style="background-color:cyan; width:300px;">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div id="icerik" style="background-color:red; width:auto;">
+            Burası İçerik
+        </div>
+        <footer style="background-color:white; width:auto;">
+            Burası footer
+        </footer>
+    </div>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+--- Internal (Dahili) CSS ------------------------------------------------------
+Bu kullanım şeklinde stiller HTML dosyasında head kısmının içine style tagıyla
+yazılır. 
+
+Inline CSS yöntemine göre daha iyi olsa da her alt sayfa için değişiklikleri
+tekrarlamak gerekir. Bu da çok zaman kaybettirir. 
+
+Örneğin;
+
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        #wrapper{
+            margin: auto;
+            background-color: aquamarine;
+            width: 500px;
+            height: 500px;
+        }
+        header{
+            background-color: cyan;
+        }
+        nav{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>Anasayfa</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div id="icerik">
+            Burası İçerik
+        </div>
+        <footer>
+            Burası footer
+        </footer>
+    </div>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+--- External (Harici) CSS ------------------------------------------------------
+HTML kodu harici bir CSS dosyasından kontrol edilir. En hızlı ve iyi
+yöntemdir.
+--------------------------------------------------------------------------------
+
+--- Stillerin Miras Bırakılması (Inheritance of Styles) ------------------------
+<h1>Hey, <em>look</em> at the monkey</h1>
+
+Burada h1 değerine atadığımız tüm stiller içindeki etiketlerin tümüne
+aktarılır. Yani h1'in stilleri em için de geçerli olur.
+
+Fakat illaki her özellik aktarılacak diye birşey yoktur. Örneğin bir listeye
+çerçeve vermek istersek liste içindeki elemanlara çerçeve vermez.
+
+ul {
+    border: 1px;
+}
+
+Burada sadece listenin etrafına çerçeve verir.
+--------------------------------------------------------------------------------
+
+--- reset.css ------------------------------------------------------------------
+Reset CSS tüm tarayıcıların varsayılan değerlerini sıfırlamaya yarar. 
+
+Örneğin; Firefox site kenar boşluğu için 5px verdiğini düşünelim. Safari ise 
+10px veriyor olsun. Reset CSS bu değerleri sıfırlıyor. Her iki tarayıcı da
+siteyi aynı şekilde görmüş oluyor.
+--------------------------------------------------------------------------------
+
+--- normalize.css --------------------------------------------------------------
+Normalize CSS tüm özellikleri sıfırlamak yerine bunlara bir değer atar. 
+
+Reset CSS’de tüm değerlerin sıfırlanması sıkıntı çıkarabiliyordu. Bunun
+üzerine Normalize CSS çıkarıldı. 
+
+Örneğin; Normalize CSS site kenar boşluğuna 5px atıyor. Bu sayede her tarayıcı 
+kenar boşluğunu 5px olarak gösteriyordu.
+--------------------------------------------------------------------------------
+################################################################################

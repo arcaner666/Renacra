@@ -1,0 +1,31 @@
+### <link></link> ##############################################################
+
+link
+
+--- Tanım ----------------------------------------------------------------------
+HTML dökümanı ile bir dış kaynak arasında ilişki kurulmasını sağlar.
+
+Genelde CSS'ler HTML'e bu etiket ile bağlanır.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Başlık</h1>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
+    voluptatem earum sequi a excepturi quas, ex quidem amet eveniet nulla vero 
+    quasi dignissimos dolor nemo blanditiis impedit praesentium accusamus 
+    itaque!</span></p>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

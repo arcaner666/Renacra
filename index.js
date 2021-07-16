@@ -1,8 +1,8 @@
-var input = document.querySelector('input');
-var paragraph = document.querySelector('p');
+// var input = document.querySelector('input');
+// var paragraph = document.querySelector('p');
 
-input.addEventListener('click', buttonClicked);
+// input.addEventListener('click', buttonClicked);
 
-function buttonClicked() {
-    paragraph.textContent = "The machine started.";
-}
+// function buttonClicked() {
+//     paragraph.textContent = "The machine started.";
+// }

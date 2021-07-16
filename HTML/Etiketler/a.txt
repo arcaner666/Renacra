@@ -57,8 +57,6 @@ Konsolda POST 405 ERROR!!!
 
 --- rel ------------------------------------------------------------------------
 HTML sayfası ile href içerisine yazılan URL arasındaki ilişkiyi belirtir.
-
-<link rel="stylesheet" type="text/css" href="theme.css">
 --------------------------------------------------------------------------------
 
 --- target ---------------------------------------------------------------------
@@ -87,7 +85,5 @@ yoksa _self gibi çalışır.
 İlgili URL'in hangi medya tipinde ya da içerik tipinde olduğunu belirtir.
 
 Genelde audio/ogg veya image/png gibi içeriğin türünü belirtir.
-
-<link rel="stylesheet" type="text/css" href="theme.css">
 --------------------------------------------------------------------------------
 ################################################################################

@@ -1,0 +1,32 @@
+### <style></style> ############################################################
+
+style
+
+--- Tanım ----------------------------------------------------------------------
+Bir HTML sayfasının görünümünü değiştirmek amacıyla yazdığımız CSS kodlarını
+yazdığımız etikettir.
+
+Genelde kullanılması pek tavsiye edilmez. En doğru yöntem CSS dökümanının 
+HTML'den tamamen ayrı bir dökümana yazılması ve HTML'e link etiketiyle 
+bağlanmasıdır.
+
+style etiketi CSS'i HTML içerisinde ayrı bir bölüme yazmamızı sağlarken style
+özelliği de istediğimiz bir etikete satıriçi CSS yazmamızı sağlar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+<style type="text/css">
+p {
+  color: #26b72b;
+}
+</style>
+<p>This text will be green. Inline styles take precedence over CSS included 
+externally.</p>
+<p style="color: blue">The <code>style</code> attribute can override it, though.
+</p>
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################
