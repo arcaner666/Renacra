@@ -149,4 +149,55 @@ Reset CSS’de tüm değerlerin sıfırlanması sıkıntı çıkarabiliyordu. Bu
 Örneğin; Normalize CSS site kenar boşluğuna 5px atıyor. Bu sayede her tarayıcı 
 kenar boşluğunu 5px olarak gösteriyordu.
 --------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+HTML kodlarına CSS yazarken çoğunlukla class özelliğini kullanmalıyız. Eğer
+HTML'de gerçekten bir etiketin tüm yazıldığı yerlerde hep aynı stili
+kullanacaksak o zaman etiketlerin adına CSS yazmalıyız. Örneğin; bir sayfadaki 
+linklerin tümünün mavi ve altı çizili olmasını istiyorsak o zaman a etiketine 
+CSS yazarız. Diğer tüm durumlarda class'lardan faydalanmalıyız.
+
+Miras alma olayını mümkün olduğunca az kullanmalıyız. CSS'i gayet basit ve 
+anlaşılır bir şekilde yazmalıyız. Kompleks yapılardan ve iç içe aktarılan 
+kurallardan kesinlikle uzak durmalıyız. Bu ileride başımızı çok ağrıtabilir ve
+saatlerce tek bir hatayla uğraşmamıza sebep olabilir.
+
+HTML'deki id'leri ve !important özelliğini kesinlikle kullanmamalıyız. Bu iki
+özellik bir etiketin sahip olduğu tüm class özelliğinin üzerine yazar. Çünkü
+iyi bir geliştirici bir stilin nereden geldiğini bulabilmelidir. Sürekli nerden
+geldiğini bilmediğimiz stil özelliklerini bu şekilde zorlayarak yapmak kodların
+gereğinden fazla karışmasına farklı noktalarda aynı yere stil ekleyen kodlar
+olmasına sebep olur.
+
+float ile nesneleri sayfada konumlandırmak artık eski bir yöntemdir. Mecbur 
+olmadıkça kullanmamalıyız. Fakat çok eski bir CSS özelliği olduğu için birçok 
+yerde karşımıza çıkabilir. Bu sebeple ne yaptığını bilmeliyiz.
+
+box-sizing: border-box özelliğini sitede bulunan tüm etiketleri seçen *
+içerisinde kullanarak yaptığımız her Web sitesine eklemek işimizi oldukça 
+kolaylaştıran bir şeydir. Bu sayede herhangi bir etikete width ve height 
+verdiğimizde bu değerler etiket içindeki içerik + padding + border'ı kapsar. 
+Aksi takdirde width ve height'a verdiğimiz değerler yalnızca etiket içindeki 
+içeriğin boyutunu kapsar. Ve bunu yapmadığımızda örneğin width ve height'ı 
+100px olan bir div'imiz olduğunu düşünelim. Sadece içeriğin boyutu 100px'e eşit 
+olacaktır. Eğer buna bir padding eklediğimizde içerik + padding'e, bir border 
+eklediğimizde içerik + padding + border'a eşit olacaktır.
+
+CSS yazarken miras almayı sadece aynı işlevi yapan fakat aralarında çok ufak 
+farklar bulunan şeyleri yazarken kullanmalıyız. Örneğin; üç farklı renkte 
+butonumuz olduğunu düşünelim. Bu üç butonu birbirinden ayıran tek şey renkleri 
+ise bu üç butonun içerisine aynı CSS özelliklerini tekrar tekrar yazmak yerine 
+tek bir tanesine tüm özellikleri yazarız. Diğerlerine ise sadece rengi yazarız. 
+Butonu kullanmak istediğimiz yerde de önce temel class'ı yazarız. Ardından 
+rengi belirten class'ı yazarız. Bu sayede kendimizi tekrar etmekten kurtarmış 
+oluruz. Mirası alan class'ların içerisine miras aldığı class'ı belirten bir 
+yorum da yazarsak mükemmel olur.
+
+CSS'de bir şeyleri denemek istiyorsak ya da varolan bir yapının bir özelliğini 
+değiştirmek istiyorsak hemen editöre yazmak zorunda değiliz. Chrome Developer 
+Tools'da Öğeyi İncele özelliğiyle hızlıca istediğimiz CSS özelliklerini 
+ekleyebilir. Öğenin görünümünü geçici olarak değiştirebiliriz. Aynı zamanda 
+buranın yardımıyla bir CSS özelliğinin neden çalışmadığını veya bir özelliğin 
+nereden miras alındığını inceleyebiliriz.
+--------------------------------------------------------------------------------
 ################################################################################
