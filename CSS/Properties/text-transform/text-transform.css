@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+.default-font-size {
+    font-size: 20px;
+}
+
+.example1 {
+    /* Özellik (Property) */
+    text-transform: lowercase;
+}
+
+.example2 {
+    /* Özellik (Property) */
+    text-transform: uppercase;
+}
+
+.example3 {
+    /* Özellik (Property) */
+    text-transform: capitalize;
+}
+
+.example4 {
+    /* Özellik (Property) */
+    text-transform: none;
+}
+
+.example5 {
+    /* Özellik (Property) */
+    text-transform: inherit;
+}
+
+.example6 {
+    /* Özellik (Property) */
+    text-transform: capitalize;
+}
+
+.example7 {
+    /* Özellik (Property) */
+    text-transform: capitalize;
+}

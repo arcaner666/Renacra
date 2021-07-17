@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./text-transform.css">
+    <title>CSS Örnekleri</title>
+</head>
+
+<body class="default-font-size">
+    <h1>text-transform</h1>
+    <hr>
+    <p>Yazıdaki harfleri tamamını veya yalnızca kelimelerin baş harflerini büyük/küçük yapar.</p>
+    <hr>
+    <p>text-transform: lowercase; => <span class="example1">TÜM YAZIYI KÜÇÜK YAPAR.
+        </span></p>
+    <p>text-transform: uppercase; => <span class="example2">tüm yazıyı büyük yapar.
+        </span></p>
+    <p>text-transform: capitalize; => <span class="example3">sadece kelimelerin baş harflerini büyük yapar.
+        </span></p>
+    <p>text-transform: none; => <span class="example4">kelimeler nasıl girilmişse öyle bırakır.
+        </span></p>
+    <p>text-transform: inherit; => <span class="example5">Parent'ından miras alır.
+        </span></p>
+    <hr>
+    <p>capitalize bir sayıdan sonra gelen ilk harfi büyük yapmaz. Bunun amacı tarihleri yazarken bozulmayı önlemektir.
+    </p>
+    <p>text-transform: capitalize; => <span class="example6">This text includes a date: February 4th, 2015.
+        </span></p>
+    <hr>
+    <p>capitalize sadece kelimelerin ilk harflerini büyük yapar. Zaten büyük veya küçük olan diğer harflere dokunmaz. Bu
+        sayede kısaltmalar gibi şeyleri rahatça yazabiliriz.
+    </p>
+    <p>text-transform: capitalize; => <span class="example7">This text includes an acronym: CSS.
+        </span></p>
+</body>
+
+</html>
