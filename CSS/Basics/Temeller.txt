@@ -6,6 +6,10 @@ CSS'in açılımı Cascading Style Sheets'dir.
 CSS, HTML elementlerinin ekranda nasıl görüntüleneceğini düzenler.
 
 Aynı anda birden fazla Web sayfasının yerleşimini kontrol edebilir.
+
+Aynı HTML gibi CSS'de çalıştırılabilen bir şey değildir. Bir programlama dili 
+değildir. Daha çok sayfanın nasıl görüneceğini belirleyen bir kurallar 
+bütünüdür.
 --------------------------------------------------------------------------------
 
 --- CSS'in Genel Yapısı --------------------------------------------------------

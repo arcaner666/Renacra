@@ -1,0 +1,83 @@
+body {
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+.description {
+    font-size: larger;
+}
+
+.example1 {
+    /* Özellik (Property) */
+    font-size: x-small;
+}
+
+.example2 {
+    /* Özellik (Property) */
+    font-size: xx-small;
+}
+
+.example3 {
+    /* Özellik (Property) */
+    font-size: small;
+}
+
+.example4 {
+    /* Özellik (Property) */
+    font-size: medium;
+}
+
+.example5 {
+    /* Özellik (Property) */
+    font-size: large;
+}
+
+.example6 {
+    /* Özellik (Property) */
+    font-size: x-large;
+}
+
+.example7 {
+    /* Özellik (Property) */
+    font-size: xx-large;
+}
+
+.example8 {
+    /* Özellik (Property) */
+    font-size: small;
+}
+
+.example9 {
+    /* Özellik (Property) */
+    font-size: larger;
+}
+
+.example10 {
+    /* Özellik (Property) */
+    font-size: medium;
+}
+
+.example11 {
+    /* Özellik (Property) */
+    font-size: smaller;
+}
+
+.example12 {
+    /* Özellik (Property) */
+    font-size: 24px;
+}
+
+.example13 {
+    /* Özellik (Property) */
+    font-size: 130%;
+}
+
+.example14 {
+    /* Özellik (Property) */
+    font-size: 24px;
+}
+
+.example15 {
+    /* Özellik (Property) */
+    font-size: 2em;
+}
