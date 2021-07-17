@@ -1,15 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: ghostwhite;
     text-align: center;
 }
 
 .description {
-    font-size: larger;
+    font-size: 20px;
 }
 
 .example {
-    font-size: large;
-
     /* Özellik (Property) */
     
 }

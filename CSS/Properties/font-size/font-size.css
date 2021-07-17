@@ -1,20 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: ghostwhite;
     text-align: center;
 }
 
-.description {
-    font-size: larger;
+html {
+    font-size: 20px;
+}
+
+.default-font-size {
+    font-size: 20px;
 }
 
 .example1 {
     /* Özellik (Property) */
-    font-size: x-small;
+    font-size: xx-small;
 }
 
 .example2 {
     /* Özellik (Property) */
-    font-size: xx-small;
+    font-size: x-small;
 }
 
 .example3 {
@@ -43,41 +51,95 @@ body {
 }
 
 .example8 {
+    border: solid 3px;
+    margin: auto;
+    padding: 3px;
+    width: 30%;
+
     /* Özellik (Property) */
     font-size: small;
 }
 
 .example9 {
+    border: solid 3px;
+
     /* Özellik (Property) */
     font-size: larger;
 }
 
 .example10 {
+    border: solid 3px;
+    margin: auto;
+    padding: 3px;
+    width: 30%;
+
     /* Özellik (Property) */
     font-size: medium;
 }
 
 .example11 {
+    border: solid 3px;
+
     /* Özellik (Property) */
     font-size: smaller;
 }
 
 .example12 {
+    border: solid 3px;
+    margin: auto;
+    padding: 3px;
+    width: 30%;
+
     /* Özellik (Property) */
     font-size: 24px;
 }
 
 .example13 {
+    border: solid 3px;
+
     /* Özellik (Property) */
     font-size: 130%;
 }
 
 .example14 {
+    border: solid 3px;
+    margin: auto;
+    padding: 3px;
+    width: 70%;
+
     /* Özellik (Property) */
-    font-size: 24px;
+    font-size: 12px;
 }
 
 .example15 {
+    border: solid 3px;
+    padding: 3px;
+
     /* Özellik (Property) */
     font-size: 2em;
+}
+
+.example16 {
+    border: solid 3px;
+    padding: 3px;
+
+    /* Özellik (Property) */
+    font-size: 2em;
+}
+
+.example17 {
+    border: solid 3px;
+    margin: auto;
+    padding: 3px;
+    width: 50%;
+
+    /* Özellik (Property) */
+    font-size: 48px;
+}
+
+.example18 {
+    border: solid 3px;
+
+    /* Özellik (Property) */
+    font-size: 1rem;
 }

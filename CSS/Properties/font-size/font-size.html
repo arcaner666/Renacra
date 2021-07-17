@@ -9,33 +9,68 @@
     <title>CSS Örnekleri</title>
 </head>
 
-<body>
+<body class="default-font-size">
     <h1>font-size</h1>
     <hr>
-    <p class="description">Yazının boyutunu ya da yüksekliğini belirler. Sadece uygulandığı fontu etkilemekle kalmaz em,
+    <p>Yazının boyutunu ya da yüksekliğini belirler. Sadece uygulandığı fontu etkilemekle kalmaz em,
         rem ve ex uzunluk birimlerinin hesaplanmasını da sağlar.</p>
     <hr>
-    <p class="description">Değer olarak kelime (absolute keywords) alabilir.</p>
-    <p class="example1">font-size: x-small;</p>
-    <p class="example2">font-size: xx-small;</p>
+    <p>Değer olarak kelime (absolute keywords) alabilir.</p>
+    <p class="example1">font-size: xx-small;</p>
+    <p class="example2">font-size: x-small;</p>
     <p class="example3">font-size: small;</p>
     <p class="example4">font-size: medium;</p>
     <p class="example5">font-size: large;</p>
     <p class="example6">font-size: x-large;</p>
     <p class="example7">font-size: xx-large;</p>
     <hr>
-    <p class="description">Eğer parent'ın font-size'ı small ise child'ın font-size'ını larger yaparsak child'ın
-        font-size'ı medium olarak hesaplanır. Tam tersi de yapılabilir.</p>
-    <p class="example8">Parent => font-size: small; <span class="example9">Child => font-size: larger;</span></p>
-    <p class="example10">Parent => font-size: medium; <span class="example11">Child => font-size: smaller;</span></p>
+    <p>Eğer parent'ın yazı boyutu small ise child'ın yazı boyutunu larger yapmamız durumunda
+        child'ın son yazı boyutu medium olarak hesaplanır. Yani child'ın yazı boyutu parent'ınkine göre hesaplanır. Tam
+        tersi de yapılabilir.</p>
+    <div class="example8">
+        <p>Parent => font-size: small;</p>
+        <div class="example9">
+            <p>Child => font-size: larger; => medium</p>
+        </div>
+    </div>
+    <div class="example10">
+        <p>Parent => font-size: medium;</p>
+        <div class="example11">
+            <p>Child => font-size: smaller; => small</p>
+        </div>
+    </div>
     <hr>
-    <p class="description">Yüzde değer vererek child'ın font-size'ı parent'ın font-size'ına göre oranlanabilir.</p>
-    <p class="example12">Parent => font-size: 24px; <span class="example13">Child => font-size: 130%;</span></p>
+    <p>Yüzde değer vererek child'ın yazı boyutu parent'ın yazı boyutuna göre oranlanabilir.</p>
+    <div class="example12">
+        <p>Parent => font-size: 24px;</p>
+        <div class="example13">
+            <p>Child => font-size: 130%; => 32px</p>
+        </div>
+    </div>
     <hr>
-    <p class="description">em değeri child'ların yazı boyutunun parent'ın yazı boyutuna göre göreceli olarak değişmesini
-        sağlar. Bu durum child'ların yazı boyutunun her zaman parent'a bağlı olmasını sağlar. em kullanmanın birçok
-        avantajı vardır.</p>
-    <p class="example14">Parent => font-size: 24px; <span class="example15">Child => font-size: 2em;</span></p>
+    <p>em değeri child'ların yazı boyutunun parent'ın yazı boyutuna göre göreceli olarak değişmesini
+        sağlar. Bu durum her child'ın yazı boyutunun her zaman parent'ına bağlı olarak değişmesini sağlar. em
+        kullanmanın birçok avantajı vardır.</p>
+    <div class="example14">
+        <p>Parent => font-size: 12px;</p>
+        <div class="example15">
+            <p>Child => font-size: 2em; => 2em = 24px</p>
+            <div class="example16">
+                <p>Child'ın Child'ı => font-size: 2em; => 2em = 48px</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p>rem değerini alan bir eleman kendisine bütün parent'ları tarafından uygulanan tüm font-size
+        kurallarını görmezden gelerek kök (root) elemanın yazı boyutuna göre göreceli olarak değişir. Bu kök eleman da
+        genelikle html etiketidir.</p>
+    <p>Root Parent (html) => font-size: 20px;</p>
+    <div class="example17">
+        <p>Parent (etkilemeyen) => font-size: 48px;</p>
+        <div class="example18">
+            <p>Child => font-size: 1rem; => 1em = 20px</p>
+        </div>
+    </div>
 </body>
 
 </html>
