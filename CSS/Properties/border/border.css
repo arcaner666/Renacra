@@ -11,7 +11,154 @@ body {
     font-size: 20px;
 }
 
-.example {
+.example1 {
+    height: 30%;
+    margin: auto;
+    width: 30%;
+
     /* Özellik (Property) */
-    
+    border: 3px solid red;
+}
+
+.example2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.example3 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: thin solid red;
+}
+
+.example4 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: medium solid red;
+}
+
+.example5 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: thick solid red;
+}
+
+.example6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.example7 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px none red;
+}
+
+.example8 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px solid red;
+}
+
+.example9 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px hidden red;
+}
+
+.example10 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px dashed red;
+}
+
+.example11 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px dotted red;
+}
+
+.example12 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px double red;
+}
+
+.example13 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px groove red;
+}
+
+.example14 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px ridge red;
+}
+
+.example15 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px inset red;
+}
+
+.example16 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px outset red;
+}
+
+.example17 {
+    display: flex;
+    flex-direction: column;
+}
+
+.example18 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px solid red;
+}
+
+.example19 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px solid blue;
+}
+
+.example20 {
+    align-self: center;
+    width: 30%;
+
+    /* Özellik (Property) */
+    border: 10px solid green;
 }
