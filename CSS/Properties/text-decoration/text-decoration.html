@@ -9,35 +9,38 @@
     <title>CSS Örnekleri</title>
 </head>
 
-<body class="default-font-size">
-    <h1>text-decoration</h1>
-    <hr>
-    <p>Yazının altına, üstüne veya üzerine istenilen özelliklerde çizgi çekmeye yarar.</p>
-    <hr>
-    <p>Sadece çizgi türü belirtilirse 1px'lik çizgi çeker. text-decoration: none; varolan ya da miras alınan
-        çizgiyi de kaldırır. Aynı anda birden fazla çizgi tipi eklenebilir.</p>
-    <p class="example1">text-decoration: none;</p>
-    <p class="example2">text-decoration: underline;</p>
-    <p class="example3">text-decoration: line-through;</p>
-    <p class="example4">text-decoration: overline;</p>
-    <p class="example5">text-decoration: underline line-through overline;</p>
-    <hr>
-    <p>text-decoration parent'tan child'a miras kalır.</p>
-    <div class="example6">
-        <p>Hiçbir text-decoration eklenmemiş p</p>
+<body>
+    <div class="container">
+        <h1>text-decoration</h1>
+        <hr>
+        <p>Yazının altına, üstüne veya üzerine istenilen özelliklerde çizgi çekmeye yarar.</p>
+        <hr>
+        <p>Sadece çizgi türü belirtilirse 1px'lik çizgi çeker. text-decoration: none; varolan ya da miras alınan
+            çizgiyi de kaldırır. Aynı anda birden fazla çizgi tipi eklenebilir.</p>
+        <p class="example1">text-decoration: none;</p>
+        <p class="example2">text-decoration: underline;</p>
+        <p class="example3">text-decoration: line-through;</p>
+        <p class="example4">text-decoration: overline;</p>
+        <p class="example5">text-decoration: underline line-through overline;</p>
+        <hr>
+        <p>text-decoration parent'tan child'a miras kalır.</p>
+        <div class="example6">
+            <p>Hiçbir text-decoration eklenmemiş p</p>
+        </div>
+        <hr>
+        <p>Çizgi rengi varsayılan olarak yazının rengini de miras alır.</p>
+        <div class="example7">
+            <p>color: red;</p>
+            <p class="example8">text-decoration: underline;</p>
+        </div>
+        <hr>
+        <p>text-decoration-style, text-decoration-line ve text-decoration-color; text-decoration kuralı altında kısaca
+            tanımlanabilir.</p>
+        <p class="example9">text-decoration-style: wavy; + text-decoration-line: underline; + text-decoration-color:
+            blue;
+        </p>
+        <p class="example10">text-decoration: wavy underline blue;</p>
     </div>
-    <hr>
-    <p>Çizgi rengi varsayılan olarak yazının rengini de miras alır.</p>
-    <div class="example7">
-        <p>color: red;</p>
-        <p class="example8">text-decoration: underline;</p>
-    </div>
-    <hr>
-    <p>text-decoration-style, text-decoration-line ve text-decoration-color; text-decoration kuralı altında kısaca
-        tanımlanabilir.</p>
-    <p class="example9">text-decoration-style: wavy; + text-decoration-line: underline; + text-decoration-color: blue;
-    </p>
-    <p class="example10">text-decoration: wavy underline blue;</p>
 </body>
 
 </html>
