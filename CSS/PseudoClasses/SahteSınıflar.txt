@@ -1,0 +1,64 @@
+### SAHTE SINIFLAR (PSEUDO-CLASSES) ############################################
+
+--- Tanım ----------------------------------------------------------------------
+Bazen bir etiketin CSS özelliklerinin belirli bir olaya (event) göre 
+değişmesini isteyebiliriz.
+
+Böyle bir durumda sahte sınıflardan faydalanırız.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+HTML:
+<div class="hover-example">İmleci üstüme getir.</div>
+
+CSS:
+.hover-example {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    color: white;
+}
+
+.hover-example:hover {
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+}
+
+Burada eğer imleci ilgili div'in üstüne getirince hover-example:hover sınıfı
+aynı yeni bir sınıf gibi çalışır ve aktifleşir.
+
+:hover gibi birçok farklı olay vardır.
+
+İstersek CSS özelliklerini bu şekilde sahte sınıflar yerine Javascript ile de
+kontrol edebiliriz.
+--------------------------------------------------------------------------------
+
+--- :first-child, :last-child, :nth-child(formül) ------------------------------
+:firstchild sahte sınıfı kendi ana sınıfına sahip olan etiketin sadece ilk 
+elemanına ilgili CSS özelliklerini uygular.
+
+HTML:
+<ol>
+  <li class="first-child-example">First</li>
+  <li class="first-child-example">Second</li>
+  <li class="first-child-example">Third</li>
+</ol>
+
+CSS:
+.first-child-example {
+color: crimson;
+}
+.first-child-example:first-child {
+color: limegreen;
+}
+
+:lastchild sahte sınıfı ise kendi ana sınıfına sahip olan etiketin sadece son 
+elemanına ilgili CSS özelliklerini uygular.
+
+:nthchild(formül) sahte sınıfı ise kendi ana sınıfına sahip olan etiketin
+nthchild yanında yazılan formüle uygun olan elemanlara ilgili CSS özelliklerini 
+uygular. Örneğin yanındaki formülde 2n+1 yazıyorsa sıralaması tek sayı olan 
+elemanlara CSS'i uygular.
+--------------------------------------------------------------------------------
+################################################################################

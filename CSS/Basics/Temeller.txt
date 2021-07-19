@@ -120,11 +120,11 @@ HTML kodu harici bir CSS dosyasından kontrol edilir. En hızlı ve iyi
 yöntemdir.
 --------------------------------------------------------------------------------
 
---- Stillerin Miras Bırakılması (Inheritance of Styles) ------------------------
-<h1>Hey, <em>look</em> at the monkey</h1>
+--- Stillerin Miras Bırakılması ------------------------------------------------
+<div><h1><h1><h1>Hey, <em>look</em> at the monkey</h1></h1></h1></div>
 
-Burada h1 değerine atadığımız tüm stiller içindeki etiketlerin tümüne
-aktarılır. Yani h1'in stilleri em için de geçerli olur.
+Burada div'e atadığımız tüm stiller içindeki etiketlerin tümüne aktarılır. Yani 
+div'in stilleri içindeki tüm h1'ler ve em için de geçerli olur.
 
 Fakat illaki her özellik aktarılacak diye birşey yoktur. Örneğin bir listeye
 çerçeve vermek istersek liste içindeki elemanlara çerçeve vermez.
@@ -134,6 +134,21 @@ ul {
 }
 
 Burada sadece listenin etrafına çerçeve verir.
+
+Miras alma olayını mümkün olduğunca az kullanmalıyız. CSS'i gayet basit ve 
+anlaşılır bir şekilde yazmalıyız. Kompleks yapılardan ve iç içe aktarılan 
+kurallardan kesinlikle uzak durmalıyız. Bu ileride başımızı çok ağrıtabilir ve
+saatlerce tek bir hatayla uğraşmamıza sebep olabilir.
+
+CSS yazarken miras almayı sadece aynı işlevi yapan fakat aralarında çok ufak 
+farklar bulunan şeyleri yazarken kullanmalıyız. Örneğin; üç farklı renkte 
+butonumuz olduğunu düşünelim. Bu üç butonu birbirinden ayıran tek şey renkleri 
+ise bu üç butonun içerisine aynı CSS özelliklerini tekrar tekrar yazmak yerine 
+tek bir tanesine tüm özellikleri yazarız. Diğerlerine ise sadece rengi yazarız. 
+Butonu kullanmak istediğimiz yerde de önce temel class'ı yazarız. Ardından 
+rengi belirten class'ı yazarız. Bu sayede kendimizi tekrar etmekten kurtarmış 
+oluruz. Mirası alan class'ların içerisine miras aldığı class'ı belirten bir 
+yorum da yazarsak mükemmel olur.
 --------------------------------------------------------------------------------
 
 --- reset.css ------------------------------------------------------------------
@@ -155,23 +170,17 @@ kenar boşluğunu 5px olarak gösteriyordu.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+Yazı tipleri her sistemde farklılık gösterebilir. Eğer biz kullanıcının 
+bilgisayarında olmayan bir font kullanırsak bu durum sıkıntılar çıkarabilir. 
+Ayrıca siteye ekleyeceğimiz her bir font sayfamızın dosya boyutunu bir kaç 
+megabayt arttırır. Böyle bir şeyin olmasını istemeyiz. Bu sebeple herkeste olan 
+fontları kullanmaya dikkat etmeliyiz.
+
 HTML kodlarına CSS yazarken çoğunlukla class özelliğini kullanmalıyız. Eğer
 HTML'de gerçekten bir etiketin tüm yazıldığı yerlerde hep aynı stili
 kullanacaksak o zaman etiketlerin adına CSS yazmalıyız. Örneğin; bir sayfadaki 
 linklerin tümünün mavi ve altı çizili olmasını istiyorsak o zaman a etiketine 
 CSS yazarız. Diğer tüm durumlarda class'lardan faydalanmalıyız.
-
-Miras alma olayını mümkün olduğunca az kullanmalıyız. CSS'i gayet basit ve 
-anlaşılır bir şekilde yazmalıyız. Kompleks yapılardan ve iç içe aktarılan 
-kurallardan kesinlikle uzak durmalıyız. Bu ileride başımızı çok ağrıtabilir ve
-saatlerce tek bir hatayla uğraşmamıza sebep olabilir.
-
-HTML'deki id'leri ve !important özelliğini kesinlikle kullanmamalıyız. Bu iki
-özellik bir etiketin sahip olduğu tüm class özelliğinin üzerine yazar. Çünkü
-iyi bir geliştirici bir stilin nereden geldiğini bulabilmelidir. Sürekli nerden
-geldiğini bilmediğimiz stil özelliklerini bu şekilde zorlayarak yapmak kodların
-gereğinden fazla karışmasına farklı noktalarda aynı yere stil ekleyen kodlar
-olmasına sebep olur.
 
 float ile nesneleri sayfada konumlandırmak artık eski bir yöntemdir. Mecbur 
 olmadıkça kullanmamalıyız. Fakat çok eski bir CSS özelliği olduğu için birçok 
@@ -187,16 +196,6 @@ div'imiz olduğunu düşünelim. Sadece içeriğin boyutu 100px'e eşit olacakt�
 Eğer buna 2px'lik bir padding eklediğimizde içerik(100px) + padding(2px)'e, 
 3px'lik bir border eklediğimizde içerik(100px) + padding(2px) + border(3px)'e 
 eşit olacaktır. Bu da bizi içinden çıkılmaz bir matematik hesabına götürür.
-
-CSS yazarken miras almayı sadece aynı işlevi yapan fakat aralarında çok ufak 
-farklar bulunan şeyleri yazarken kullanmalıyız. Örneğin; üç farklı renkte 
-butonumuz olduğunu düşünelim. Bu üç butonu birbirinden ayıran tek şey renkleri 
-ise bu üç butonun içerisine aynı CSS özelliklerini tekrar tekrar yazmak yerine 
-tek bir tanesine tüm özellikleri yazarız. Diğerlerine ise sadece rengi yazarız. 
-Butonu kullanmak istediğimiz yerde de önce temel class'ı yazarız. Ardından 
-rengi belirten class'ı yazarız. Bu sayede kendimizi tekrar etmekten kurtarmış 
-oluruz. Mirası alan class'ların içerisine miras aldığı class'ı belirten bir 
-yorum da yazarsak mükemmel olur.
 
 CSS'de bir şeyleri denemek istiyorsak ya da varolan bir yapının bir özelliğini 
 değiştirmek istiyorsak hemen editöre yazmak zorunda değiliz. Chrome Developer 
