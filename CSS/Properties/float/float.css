@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: ghostwhite;
+    font-size: 20px;
+    text-align: center;
+}
+
+.warning {
+    color: red;
+}
+
+.example1 {
+    /* Özellik (Property) */
+    float: none;
+}
+
+.example2 {
+    /* Özellik (Property) */
+    float: left;
+}
+
+.example3 {
+    /* Özellik (Property) */
+    float: right;
+}

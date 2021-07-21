@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./width.css">
+    <title>CSS Örnekleri</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>width</h1>
+        <hr>
+        <p>İçeriğin genişliğini belirler.</p>
+        <hr>
+        <p>Değer olarak sadece uzunluk birimleri kabul eder.</p>
+        <div class="example1">
+            <p class="example2">width: 800px;</p>
+            <p class="example3">width: 20em;</p>
+            <p class="example4">width: 80ch;</p>
+            <p class="example5">width: 40cm;</p>
+            <p class="example6">width: 50vh;</p>
+            <p class="example7">width: 40rem;</p>
+            <p class="example8">width: 100%;</p>
+        </div>
+        <hr>
+        <p>Eğer kapsayıcı bloğun genişliği ayarlanmamışsa kapsayıcı blok tüm ekranı kaplar.</p>
+        <div class="example9">
+            <div class="example10">
+                <p>Child => width: 400px;</p>
+                <p>Eğer blok içinde bir içerik
+                    varsa
+                    içerik sol taraftan başlayarak kendi genişliği
+                    kadar genişlik kaplar.</p>
+            </div>
+        </div>
+        <hr>
+        <p>Eğer bloğun içerik kısmı ayarlanan genişlikten daha fazla alana ihtiyaç duyuyorsa içeriğin davranışını
+            overflow özelliği belirler.</p>
+        <div class="example11">
+            <div class="example12">
+                <p>Parent => width: 800px;</p>
+                <p>Child => width: 800px;</p>
+                <p>Parent ve child'ın genişliği eşit.</p>
+            </div>
+        </div>
+        <div class="example13">
+            <div class="example14">
+                <p>Parent => width: 800px;</p>
+                <p>Child => width: 900px;</p>
+                <p>overflow ayarlanmadığı için child'ın genişliği sağa doğru 100px taştı.</p>
+            </div>
+        </div>
+        <div class="example15">
+            <div class="example16">
+                <p>Parent => width: 800px; overflow: hidden;</p>
+                <p>Child => width: 900px;</p>
+            </div>
+        </div>
+        <div class="example17">
+            <div class="example18">
+                <p>Parent => width: 800px; overflow: scroll;</p>
+                <p>Child => width: 1000px;</p>
+            </div>
+        </div>
+        <div class="example19">
+            <div class="example20">
+                <p>Parent => width: 800px; overflow: auto;</p>
+                <p>Child => width: 1000px;</p>
+            </div>
+        </div>
+        <hr>
+        <p>Eğer bir child'ın genişliğine auto değeri girilirse genişlik, özellikle belirtilmediği sürece child'ın
+            içeriğinin genişliğine eşit olacaktır.</p>
+        <div class="example21">
+            <div class="example22">
+                <p>Parent => width: 800px;</p>
+                <p>Child => width: auto;</p>
+            </div>
+        </div>
+        <hr>
+        <p>Eğer parent'ın genişliğine ölçülebilir bir genişlik, child'ın genişliğine ise yüzde bir değer verilirse
+            child'ın genişliği parent'ınkine göre oranlanır.</p>
+        <div class="example23">
+            <div class="example24">
+                <p>Parent => width: 800px;</p>
+                <p>Child => width: 95%;</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

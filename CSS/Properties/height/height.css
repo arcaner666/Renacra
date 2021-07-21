@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: ghostwhite;
+    font-size: 20px;
+    text-align: center;
+}
+
+.example1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.example2 {
+    background-color: chocolate;
+
+    /* Özellik (Property) */
+    height: 80px;
+}
+
+.example3 {
+    background-color: cyan;
+
+    /* Özellik (Property) */
+    height: 2em;
+}
+
+.example4 {
+    background-color: lightgreen;
+
+    /* Özellik (Property) */
+    height: 8ch;
+}
+
+.example5 {
+    background-color: mediumaquamarine;
+
+    /* Özellik (Property) */
+    height: 4cm;
+}
+
+.example6 {
+    background-color: moccasin;
+
+    /* Özellik (Property) */
+    height: 5vh;
+}
+
+.example7 {
+    background-color: yellow;
+
+    /* Özellik (Property) */
+    height: 4rem;
+}
+
+.example8 {
+    background-color: plum;
+
+    /* Özellik (Property) */
+    height: 100%;
+}
+
+.example9 {
+    background-color: tomato; 
+}
+
+.example10 {
+    background-color: skyblue;
+
+    /* Özellik (Property) */
+    height: 200px;
+}
+
+.example11 {
+    background-color: tomato;
+
+    /* Özellik (Property) */
+    height: 200px;
+}
+
+.example12 {
+    background-color: skyblue;
+    
+    /* Özellik (Property) */
+    height: 200px;
+}
+
+.example13 {
+    background-color: tomato;
+    margin-bottom: 4em;
+
+    /* Özellik (Property) */
+    height: 200px;
+}
+
+.example14 {
+    background-color: skyblue;
+    
+    /* Özellik (Property) */
+    height: 250px;
+}
+
+.example15 {
+    background-color: tomato;
+    margin-bottom: 1em;
+
+    /* Özellik (Property) */
+    height: 200px;
+    overflow: hidden;
+}
+
+.example16 {
+    background-color: skyblue;
+    
+    /* Özellik (Property) */
+    height: 250px;
+}
+
+.example17 {
+    background-color: tomato;
+
+    /* Özellik (Property) */
+    height: 200px;
+    overflow: scroll;
+}
+
+.example18 {
+    background-color: skyblue;
+    
+    /* Özellik (Property) */
+    height: 250px;
+}
+
+.example19 {
+    background-color: tomato;
+
+    /* Özellik (Property) */
+    height: 200px;
+    overflow: auto;
+}
+
+.example20 {
+    background-color: skyblue;
+    
+    /* Özellik (Property) */
+    height: 250px;
+}
+
+.example21 {
+    background-color: tomato;
+
+    /* Özellik (Property) */
+    height: 150px;
+}
+
+.example22 {
+    background-color: skyblue;
+    
+    /* Özellik (Property) */
+    height: auto;
+}
+
+.example23 {
+    background-color: tomato;
+
+    /* Özellik (Property) */
+    height: 150px;
+}
+
+.example24 {
+    background-color: skyblue;
+    
+    /* Özellik (Property) */
+    height: 95%;
+}
