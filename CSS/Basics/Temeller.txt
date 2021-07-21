@@ -182,21 +182,6 @@ kullanacaksak o zaman etiketlerin adına CSS yazmalıyız. Örneğin; bir sayfad
 linklerin tümünün mavi ve altı çizili olmasını istiyorsak o zaman a etiketine 
 CSS yazarız. Diğer tüm durumlarda class'lardan faydalanmalıyız.
 
-float ile nesneleri sayfada konumlandırmak artık eski bir yöntemdir. Mecbur 
-olmadıkça kullanmamalıyız. Fakat çok eski bir CSS özelliği olduğu için birçok 
-yerde karşımıza çıkabilir. Bu sebeple ne yaptığını bilmeliyiz.
-
-box-sizing: border-box özelliğini sitede bulunan tüm etiketleri seçen *
-içerisinde kullanarak yaptığımız her Web sitesine eklemek işimizi oldukça 
-kolaylaştıran bir şeydir. Bu sayede herhangi bir etikete width ve height 
-verdiğimizde bu değerler etiket içindeki içerik + padding + border'ı kapsar. 
-Aksi takdirde width ve height'a verdiğimiz değerler yalnızca etiket içindeki 
-içeriğin boyutunu kapsar. Bunu yapmadığımızda width ve height'ı 100px olan bir
-div'imiz olduğunu düşünelim. Sadece içeriğin boyutu 100px'e eşit olacaktır. 
-Eğer buna 2px'lik bir padding eklediğimizde içerik(100px) + padding(2px)'e, 
-3px'lik bir border eklediğimizde içerik(100px) + padding(2px) + border(3px)'e 
-eşit olacaktır. Bu da bizi içinden çıkılmaz bir matematik hesabına götürür.
-
 CSS'de bir şeyleri denemek istiyorsak ya da varolan bir yapının bir özelliğini 
 değiştirmek istiyorsak hemen editöre yazmak zorunda değiliz. Chrome Developer 
 Tools'da Öğeyi İncele özelliğiyle hızlıca istediğimiz CSS özelliklerini 

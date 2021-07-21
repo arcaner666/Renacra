@@ -4,16 +4,32 @@
 
 .container {
     background-color: ghostwhite;
-    display: flex;
-    flex-direction: column;
     font-size: 20px;
 }
 
 .content {
-    align-self: center;
-    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .header {
     text-align: center;
+}
+
+.link {
+    color: rgb(0, 18, 119);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(0, 38, 255);
+    text-decoration: 3px solid underline;
+}
+
+.spacer {
+    background-color: darkgray;
+    height: 10px;
+    width: 100%;
 }
