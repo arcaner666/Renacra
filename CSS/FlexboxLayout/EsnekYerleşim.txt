@@ -68,7 +68,7 @@ width: 100px;
 
 --- flex-direction -------------------------------------------------------------
 Flexbox içerisindeki elemanların hangi yöne doğru sıralanacağını; diğer bir
-değişle içeriğin hangi yöne doğru akacağını belirler.
+değişle içeriğin hangi yöne doğru akacağını belirler. Kapsayıcı bloğa eklenir.
 
 flex-direction: row;            => Varsayılan yöndür. Soldan sağa doğru çalışır.
 
@@ -81,7 +81,7 @@ flex-direction: column-reverse; => Aşağıdan yukarıya doğru çalışır.
 
 --- justify-content ------------------------------------------------------------
 Flexbox içerisindeki elemanların ana yönde (flex-direction) nasıl
-konumlanacağını belirler.
+konumlanacağını belirler. Kapsayıcı bloğa eklenir.
 
 justify-content: flex-start;    => Varsayılan konumlandırmadır. Tüm elemanlar 
 ana yönün başlangıcında boyutları ölçüsünde aralarında boşluk olmayacak şekilde
@@ -106,6 +106,42 @@ justify-content: space-evenly;  => Tüm elemanlar aralarında eşit boşluk olac
 şekilde sıralanır. İlk elemanla ana yönün başlangıcı arasında veya son elemanla 
 ana yönün sonu arasında da diğer elemanlar arasındaki kadar boşluk olur. Yani 
 tüm boşluklar eşit olur.
+--------------------------------------------------------------------------------
+
+--- align-items ----------------------------------------------------------------
+Flexbox içerisindeki elemanların çapraz yönde (flex-direction) nasıl
+konumlanacağını belirler. Kapsayıcı bloğa eklenir.
+
+align-items: flex-start; => Tüm elemanlar çapraz yönün başlangıcında boyutları
+ölçüsünde sıralanır.
+
+align-items: flex-end;   => Tüm elemanlar çapraz yönün sonunda boyutları
+ölçüsünde sıralanır.
+
+align-items: center;     => Tüm elemanlar çapraz yönün ortasında boyutları
+ölçüsünde sıralanır.
+
+align-items: baseline;   => Tüm elemanların içeriklerine (örneğin; elemanların 
+içindeki bir yazının alt çizgisi) göre hizalanır.
+
+align-items: stretch;    => Varsayılan konumlandırmadır. Tüm elemanlar çapraz 
+yönün başlangıcına ve sonuna doğru genişleyerek ekranı kaplar.
+--------------------------------------------------------------------------------
+
+--- justify-self ---------------------------------------------------------------
+Flexbox içerisindeki elemanlardan bu özelliğin eklendiği elemanın ana yönde
+(flex-direction) nasıl konumlanacağını belirler. Elemanlara eklenir.
+--------------------------------------------------------------------------------
+
+--- align-self -----------------------------------------------------------------
+Flexbox içerisindeki elemanlardan bu özelliğin eklendiği elemanın çapraz yönde
+(flex-direction) nasıl konumlanacağını belirler. Elemanlara eklenir.
+--------------------------------------------------------------------------------
+
+--- order ----------------------------------------------------------------------
+Flexbox içerisindeki elemanlardan bu özelliğin eklendiği elemanın ana yönde
+hangi sırada konumlanacağını belirler. Elemanlara eklenir. order: 7; şeklinde 
+sayısal değerler alır. Yüksek değer ana yöne göre önce sıralanır.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
