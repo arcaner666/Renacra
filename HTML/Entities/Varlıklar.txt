@@ -1,0 +1,144 @@
+### VARLIKLAR (ENTITIES) #######################################################
+
+--- Tanım ----------------------------------------------------------------------
+HTML kodu yazarken sık kullandığımız < > / gibi bazı karakterler vardır. 
+
+Eğer biz bu karakterleri web sayfamızda kullanmak istersek varlıklardan
+faydalanırız.
+
+Bu karakterleri yazdırmanın iki yolu vardır;
+
+&entity_name;         | Varlık Adı: "<" işareti için &lt; 
+&#entity_number;      | Varlık Numarası: "<" işareti için &#60;
+
+Varlık adları hatırlamak bakımından kullanışlı olsa da her tarayıcı
+desteklemeyebilir. 
+
+En sağlıklısı varlık numaralarını yazmaktır.
+
+Varlık numaraları ASCII karakter numaralarını baz alır.
+
+Varlıklar numarası (0-31) arası olan karakterler ekrana yazdırılamazlar.
+
+Varlık numaraları 32'den başlar. 
+
+Sayılar 48'den, büyük harfler 65'den, küçük harfler ise 97'den başlar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+	boşluk               &nbsp;            &#32;
+!   ünlem                                  &#33;
+"   alıntı işareti       &quot;            &#34;
+#   diyez                                  &#35;
+$   dolar                &dollar;          &#36;
+%   yüzde                                  &#37;
+&   ampersand            &amp;             &#38;
+'   kesme işareti        &apos;            &#39;
+(   sol parantez                           &#40;
+)   sağ parantez                           &#41;
+*   yıldız                                 &#42;
++   artı                                   &#43;
+,   virgül                                 &#44;
+-   eksi                                   &#45;
+.   nokta                                  &#46;
+/   taksim                                 &#47;
+0                                     &#48;
+1                                     &#49;
+2                                     &#50;
+3                                     &#51;
+4                                     &#52;
+5                                     &#53;
+6                                     &#54;
+7                                     &#55;
+8                                     &#56;
+9                                     &#57;
+:   iki nokta                              &#58;
+;   noktalı virgül                         &#59;
+<   küçüktür            &lt;               &#60;
+=   eşittir                                &#61;
+>   büyüktür            &gt;               &#62;
+?   soru işareti                           &#63;
+@   süslü a                                &#64;
+A	Uppercase A                       &#65;
+B   Uppercase B                       &#66;
+C   Uppercase C                       &#67;
+D   Uppercase D                       &#68;
+E   Uppercase E                       &#69;
+F   Uppercase F                       &#70;
+G   Uppercase G                       &#71;
+H   Uppercase H                       &#72;
+I   Uppercase I                       &#73;
+J   Uppercase J                       &#74;
+K   Uppercase K                       &#75;
+L   Uppercase L                       &#76;
+M   Uppercase M                       &#77;
+N   Uppercase N                       &#78;
+O   Uppercase O                       &#79;
+P   Uppercase P                       &#80;
+Q   Uppercase Q                       &#81;
+R   Uppercase R                       &#82;
+S   Uppercase S                       &#83;
+T   Uppercase T                       &#84;
+U   Uppercase U                       &#85;
+V   Uppercase V                       &#86;
+W   Uppercase W                       &#87;
+X   Uppercase X                       &#88;
+Y   Uppercase Y                       &#89;
+Z   Uppercase Z                       &#90;
+[   Sol Köşeli Parantez                    &#91;
+\   Ter Taksim                             &#92;
+]   Sağ Köşeli Parantez                    &#93;
+^   Üs İşareti                             &#94;
+_   Alt Tire                               &#95;
+`   Grave accent                           &#96;
+a   Lowercase a                       &#97;
+b   Lowercase b                       &#98;
+c   Lowercase c                       &#99;
+d   Lowercase d                       &#100;
+e   Lowercase e                       &#101;
+f   Lowercase f                       &#102;
+g   Lowercase g                       &#103;
+h   Lowercase h                       &#104;
+i   Lowercase i                       &#105;
+j   Lowercase j                       &#106;
+k   Lowercase k                       &#107;
+l   Lowercase l                       &#108;
+m   Lowercase m                       &#109;
+n   Lowercase n                       &#110;
+o   Lowercase o                       &#111;
+p   Lowercase p                       &#112;
+q   Lowercase q                       &#113;
+r   Lowercase r                       &#114;
+s   Lowercase s                       &#115;
+t   Lowercase t                       &#116;
+u   Lowercase u                       &#117;
+v   Lowercase v                       &#118;
+w   Lowercase w                       &#119;
+x   Lowercase x                       &#120;
+y   Lowercase y                       &#121;
+z   Lowercase z                       &#122;
+{   sol küme parantezi                      &#123;
+|   dikey çizgi                             &#124;
+}   sağ küme parantesi                      &#125;
+~   yaklaşık işareti                        &#126;
+¢	cent                 &cent;             &#162;
+£	pound                &pound;            &#163;
+¥	yen                  &yen;              &#165;
+©	copyright            &copy;             &#169;
+®	registered trademark &reg;              &#174;
+€	euro                 &euro;             &#8254;
+™   trademark            &trade;            &#8482;
+←   leftwards arrow      &larr;             &#8592;
+↑   upwards arrow        &uarr;             &#8593;
+→   rightwards arrow     &rarr;             &#8594;
+↓   downwards arrow      &darr;             &#8595;
+♠   black spade suit     &spades;           &#9824;
+♣   black club suit      &clubs;            &#9827;
+♥   black heart suit     &hearts;           &#9829;
+♦   black diamond suit   &diams;            &#9830;
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

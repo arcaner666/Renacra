@@ -19,6 +19,12 @@ ile üzerinde çeşitli işlemler yapılmasını sağlar.
 <div>
     <p>Burası içerik.</p>
 </div>
+
+HTML'de bir bloğu sadece tek sefer kullanmak istersek id ile birden fazla kez
+kullanmak istediğimizde class ile isimlendiririz.
+
+<div id="bolum1"></div>
+<div class="bolum1"></div>
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
