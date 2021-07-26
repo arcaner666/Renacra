@@ -1,6 +1,6 @@
 ### <a></a> ####################################################################
 
-anchor tag
+anchor
 
 --- Tanım ----------------------------------------------------------------------
 a etiketi Web sayfalarına, dosyalara, e-posta adreslerine ve aynı sayfanın

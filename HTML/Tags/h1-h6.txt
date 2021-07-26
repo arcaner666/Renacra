@@ -1,6 +1,6 @@
 ### <h1></h1> (h1-h6) ##########################################################
 
-header tag
+header
 
 --- Tanım ----------------------------------------------------------------------
 Bir sayfadaki başlıkları belirtmek ve içerikte bir hiyerarşi oluşturmak için 

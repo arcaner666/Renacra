@@ -1,0 +1,123 @@
+### EMMET ######################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Hızlı HTML5 kodu yazmamıza yarayan bir eklentidir. 
+
+Visual Studio Code'da dahili olarak bulunur.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+.wrapper>header+#content>ul>li*2^^footer kodunu yazıp Enter veya Tab'a
+basarsak;
+
+<div class="wrapper">
+	<header></header>
+	<div id="content">
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<footer></footer>
+</div>
+
+Yukarıdaki gördüğümüz gibi Emmet bizim yerimize kodları hızlıca oluşturuyor.
+Yazdığımız kodun detaylıca nasıl çalıştığını inceleyelim.
+
+.wrapper>header+#content>ul>li*2^^footer
+
+".wrapper" Burada "." bir class oluştumak istediğimizi belirtir. Noktadan
+sonra ise oluşturmak istediğimiz classın adını yazıyoruz. Burada "wrapper"
+yazdık mesela.
+
+".wrapper" ifadesinden sonra gelen ">" ise daha sonra yazacaklarımızın bu blok
+içerisinde oluşturulacağını belirtir.
+
+"header+#content" Burada önce "header" oluşturulur. Sonra "+" ile
+bundan sonra yazılanların "header" ile aynı seviyede oluşturulacağını
+belirtir. "#content" ise id'si "content" olan yeni bir blok oluşturur.
+
+"ul>li*2" Burada ise "content" içerisinde bir sırasız liste oluşturulup
+içerisine iki adet liste elemanı atanır.
+
+"^^footer" Burada ise "^" ifadesi içerisinde bulunduğumuz bloktan bir üst bloğa
+çıkmamızı sağlar. İki kere kullanmak iki blok yukarıya çıkarır. "header" ve 
+"content" ile aynı seviyede "footer" oluşturulur.
+
+Eğer bu yazım şekli karışık geliyorsa "()" yardımıyla da yazılabilir:
+.wrapper>header+(#content>ul>li*2)+footer
+<div class="wrapper">
+	<header></header>
+	<div id="content">
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<footer></footer>
+</div>
+--------------------------------------------------------------------------------
+
+--- lorem ipsum İle Rastgele Yazı Atama ----------------------------------------
+HTML'de "lorem ipsum" adında bir özellik vardır. 
+
+Emmet'te ve Visual Studio Code'da bulunur. Rastgele yazı yazmaya yarar.
+
+ul>li>lorem5
+<ul>
+	<li>Lorem ipsum dolor sit amet.</li>
+</ul>
+"lorem5" beş kelimelik rastgele bir yazı yazar.
+
+ul>li>lorem5*3
+<ul>
+	<li>
+		<div>Lorem ipsum dolor sit amet.</div>
+		<div>Temporibus quae eum ut voluptatibus.</div>
+		<div>Eius illum aspernatur cum rem.</div>
+	</li>
+</ul>
+Beş kelimelik, blok içinde, üç satır rastgele yazı yazar.
+--------------------------------------------------------------------------------
+
+--- Liste İçerisine Eleman Atama -----------------------------------------------
+ul>li.item$$*5{yazı}
+<ul>
+	<li class="item01">yazı</li>
+	<li class="item02">yazı</li>
+	<li class="item03">yazı</li>
+	<li class="item04">yazı</li>
+	<li class="item05">yazı</li>
+</ul>
+
+Eğer sırasız bir listenin içerisideki her elemana item atamak istiyorsak önce
+"*" arkasından istediğimiz eleman sayısını yazarız.
+
+Eğer liste elemanlarına bir itemi birden fazla haneli olarak ardışık
+numaralandırılmış bir şekilde atamak istiyorsak basamak sayısı kadar dolar($)
+işareti kullanırız.
+
+Eğer liste elemanlarımızın içeriğine bir yazı yazmak istersek "{}" kullanırız.
+
+a{Anasayfa}
+<a href="">Anasayfa</a>
+
+ul>li.Eleman$@10*5{icerik$}
+<ul>
+	<li class="Eleman10">icerik1</li>
+	<li class="Eleman11">icerik2</li>
+	<li class="Eleman12">icerik3</li>
+	<li class="Eleman13">icerik4</li>
+	<li class="Eleman14">icerik5</li>
+</ul>
+
+"@10" numaralandırmaya 10'dan başlanmasını sağlar.
+--------------------------------------------------------------------------------
+
+--- Etiket İçerisine Özellik (Attribute) Atama ---------------------------------
+a[href="index.html"]{Anasayfa}
+<a href="index.html">Anasayfa</a>
+
+"[]" işareti ise attribute atamamızı sağlar.
+--------------------------------------------------------------------------------
+################################################################################

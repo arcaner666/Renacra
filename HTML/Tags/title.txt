@@ -1,24 +1,22 @@
-### <span></span> ##############################################################
+### <title></title>#############################################################
 
-span
+title
 
 --- Tanım ----------------------------------------------------------------------
-içerisine kısa yazılar yazılan satıriçi konteynırdır.
+Bu kısım tarayıcının sekme çubuğunda görünen addır. 
 
-Tek başına bir şey ifade etmez ya da bir şeyi değiştirmez.
+Her bir web sayfasının alt sayfalarının herbirinde farklı olmalıdır. 
 
-Genelde elemanlara stil eklemek için kullanılır.
+Title bilgisi arama motoru optimizasyonunda son derece önemlidir. 
+
+Google arama sonuçlarında görünür.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
-<p>Akdeniz'de üretilen <span class="ingredient">zeytin yağı</span>da en az
-Ege'ninki kadar ünlüdür.</p>
+
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
-Sadece daha uygun bir etiket yoksa kullanılmalıdır.
 
-Kullanım amacı olarak div'e benzer fakat div blok düzeyindeki bir eleman iken 
-span satıriçi bir elemandır. 
 --------------------------------------------------------------------------------
 ################################################################################

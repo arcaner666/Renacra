@@ -1,6 +1,8 @@
 ### ESNEK YERLEŞİM (FLEXBOX LAYOUT) ############################################
 
 Detaylı bilgi için => https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Alıştırma yapmak için => https://mastery.games/post/flexboxzombies2/
+Alıştırma yapmak için => https://flexboxfroggy.com/#tr
 
 --- Tanım ----------------------------------------------------------------------
 Bir sayfanın öğelerini ekrana olabildiğince düzgün yerleştirmek için kullanılan 

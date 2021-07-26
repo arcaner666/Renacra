@@ -1,24 +1,16 @@
-### <span></span> ##############################################################
+### <hr> #######################################################################
 
-span
+horizontal rule
 
 --- Tanım ----------------------------------------------------------------------
-içerisine kısa yazılar yazılan satıriçi konteynırdır.
-
-Tek başına bir şey ifade etmez ya da bir şeyi değiştirmez.
-
-Genelde elemanlara stil eklemek için kullanılır.
+Sayfaya yatay bir çizgi çizer.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
-<p>Akdeniz'de üretilen <span class="ingredient">zeytin yağı</span>da en az
-Ege'ninki kadar ünlüdür.</p>
+
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
-Sadece daha uygun bir etiket yoksa kullanılmalıdır.
 
-Kullanım amacı olarak div'e benzer fakat div blok düzeyindeki bir eleman iken 
-span satıriçi bir elemandır. 
 --------------------------------------------------------------------------------
 ################################################################################
