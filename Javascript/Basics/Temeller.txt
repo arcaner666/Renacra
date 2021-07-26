@@ -1,0 +1,72 @@
+### TEMELLER (BASICS) ##########################################################
+
+--- Tanım ----------------------------------------------------------------------
+Javascript dinamik tipli, bir betik dilidir. 
+
+İnternetteki web sitelerinin %97'sini oluşturur.
+
+Websitelerinin içeriğini davranışsal olarak düzenlemeye yarar. 
+
+Javascript'te bir değişkenin tipi içerisine atanan bilgiye göre belirlenerek
+işleme alınır. 
+
+Javascript büyük-küçük harfe duyarlı bir dildir.
+
+Bu yüzden adlandırmalara çok dikkat edilmelidir.
+
+Javascript kodu HTML attribute'larını, tag'larını ve CSS özelliklerini
+değiştirebilir.
+--------------------------------------------------------------------------------
+
+--- Javascript'in Kullanım Şekilleri -------------------------------------------
+HTML5 kodları okumaya yukarıdan başlar. 
+
+Javascript kodları iki şekilde yazılabilir:
+
+1) Javascript kodları belgenin alt kısmına <script></script> tagı içerisine
+yazılır.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>İlk Javascript Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="wrapper">
+           <header>Burası Header</header>
+           <div class="content">Burası İçerik Alanı</div>
+           <footer>
+           </footer>
+       </div>
+       <script>
+           console.log("VS Code Merhaba");
+       </script>
+</body>
+</html>
+
+2) Aynı CSS dosyalarında olduğu gibi ayrı bir dosyaya Javascript kodlarımızı
+yazıp HTML5 belgemizin içerisinden bu dosyaya link verebiliriz.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>İlk Javascript Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div class="wrapper">
+           <header>Burası Header</header>
+           <div class="content">Burası İçerik Alanı</div>
+           <footer>
+           </footer>
+       </div>
+	   <script src="main.js"></script>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

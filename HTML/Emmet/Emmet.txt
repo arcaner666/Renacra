@@ -22,6 +22,7 @@ basarsak;
 </div>
 
 Yukarıdaki gördüğümüz gibi Emmet bizim yerimize kodları hızlıca oluşturuyor.
+
 Yazdığımız kodun detaylıca nasıl çalıştığını inceleyelim.
 
 .wrapper>header+#content>ul>li*2^^footer
