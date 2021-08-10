@@ -1,0 +1,35 @@
+### T-SQL TEMELLERİ ############################################################
+
+* BTK Akademi, Uygulamalarla SQL Öğreniyorum kursu, Ömer ÇOLAKOĞLU
+
+--- Tanım ----------------------------------------------------------------------
+Structured Query Language kısaca SQL, veri tabanlarındaki verileri
+sorgulamamızı, bu verileri işleyip yönetmemizi sağlayan bir sorgulama dilidir.
+--------------------------------------------------------------------------------
+
+--- Veri Tabanı ----------------------------------------------------------------
+Temel anlamda içerisinde belli bir formatta sorgulanabilir bir şekilde veri 
+barındıran yazılımlardır.
+
+Verileri listeler halinde tutan her yapı aslında kendi çapında bir veri 
+tabanıdır.
+
+Bir veri tabanı oluşturan yapılar;
+
+- Tablolar
+- Sütunlar
+- Satırlar
+- Indexler 
+--------------------------------------------------------------------------------
+
+--- Veri Tabanı Sunucu  --------------------------------------------------------
+Bir yazılımdır.
+
+Network üzerinde bir porttan sistemi dinler ve gelen komutlara göre istenilen 
+veriyi gönderir.
+
+SQL Server, MySQL, PostgreSQL, Oracle gibi sistemler veri tabanı sunucusudur.
+
+Access, Excel gibi yapılar ise bir sunucu olmayıp yalnızca veri tabanıdırlar.
+--------------------------------------------------------------------------------
+################################################################################

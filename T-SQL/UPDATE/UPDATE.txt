@@ -1,0 +1,31 @@
+### UPDATE #####################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Bir tablodaki kaydın bir ya da daha fazla alanını günceller, değiştirir.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+UPDATE TABLOADI
+SET SUTUN1=DEGER1,SUTUN2=DEGER2,...
+WHERE ŞARTLAR
+
+CUSTOMERS adlı tablomuzdaki NATION sütunu altındaki tüm satırlara TR ifadesi
+girmek istediğimizi varsayalım;
+
+UPDATE CUSTOMERS
+SET NATION='TR'
+
+Burada eğer UPDATE komutu kullanırken WHERE ile herhangi bir şart belirtmezsek 
+ilgili tablonun tüm satırlarına yeni değerler SET ile atanır.
+
+CUSTOMERS tablosundaki AGE alanını müşterilerin doğum tarihini tutan BIRTHDATE 
+alanından hesaplatarak güncellemek için;
+
+UPDATE CUSTOMERS
+SET AGE=DATEDIFF(YEAR,BIRTHDATE,GETDATE())
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

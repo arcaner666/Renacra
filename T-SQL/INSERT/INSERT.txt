@@ -1,0 +1,37 @@
+### INSERT #####################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Tabloya yeni kayıt ekler.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+INSERT INTO TABLOADI
+(SÜTUNADI1,SÜTUNADI2,SÜTUNADI3,...)
+VALUES
+(DEĞER1,DEĞER2,DEĞER3,...)
+
+Burada sütun1'e değer1, sütun2'ye değer2 atanır. 
+
+Yukarıdaki kodu gerçek bir tabloya uyarladığımızda;
+
+INSERT INTO CUSTOMERS
+(ID, CUSTOMERNAME, CITY, BIRTHDATE, DISTRICT, GENDER)
+VALUES
+(5, 'MEHMET ÖZAL', 'ANTALYA', '1989-11-23', 'MURATPAŞA', 'E')
+SQL dilinde string ve date türü veriler iki tek tırnak işareti içerisine
+yazılır.
+
+Eğer ID alanını otomatik artan olarak belirtmişsek bu alana sayı girmeye
+çalışınca hata ile karşılaşırız. Bu durumda o alana değer girmeyiz ve sistem
+o alanı kendisi doldurur.
+
+INSERT INTO CUSTOMERS
+(CUSTOMERNAME, CITY, BIRTHDATE, DISTRICT, GENDER)
+VALUES
+('MEHMET ÖZAL', 'ANTALYA', '1989-11-23', 'MURATPAŞA', 'E')
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

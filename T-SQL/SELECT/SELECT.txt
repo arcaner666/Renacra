@@ -1,0 +1,38 @@
+### SELECT #####################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Veri tabanından bilgi çekmemizi sağlar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+Eğer bir tablonun yalnızca belirli sütunlarını belirli bir şarta göre alacaksak;
+SELECT
+[SÜTUNADI1], [SÜTUNADI2], [SÜTUNADI3],...
+FROM TABLOADI
+WHERE ŞARTLAR
+
+Eğer bir tablonun tüm sütunlarını belirli bir şarta göre alacaksak;
+SELECT
+*
+FROM TABLOADI
+WHERE ŞARTLAR
+
+Eğer bir tablonun yalnızca belirli sütunlarını alacaksak;
+SELECT
+[SÜTUNADI1], [SÜTUNADI2], [SÜTUNADI3],...
+FROM TABLOADI
+
+Eğer bir tablonun tüm sütunlarını alacaksak;
+SELECT
+*
+FROM TABLOADI
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+Sütun adlarını [] içine yazmamızın sebebi eğer sütun adı boşluk karakteri
+içeriyorsa SQL bunu iki farklı sütun olarak kabul eder. Bu da bize sıkıntı
+çıkarır. Sütun adını [] içine yazmak sütun adına boşluk koyabilmemizi sağlar. 
+
+Son satırdaki WHERE komutu opsiyoneldir. Şart belirtmeyeceksek kullanmayız.
+--------------------------------------------------------------------------------
+################################################################################

@@ -1,0 +1,22 @@
+### DELETE #####################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Tablodaki bir kaydı veya tablonun tamamını siler.
+
+TRUNCATE komutuna göre daha yavaş çalışır.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+DELETE FROM TABLOADI
+WHERE ŞARTLAR
+
+Burada WHERE kısmına herhangi bir şart belirlemezsek tablomuzun tamamını siler
+fakat tablomuzdaki artan değerleri sıfırlamaz. Bu durumda tabloya yeni bir
+kayıt eklediğimizde, tabloda hiç kayıt olmamasına rağmen en son kayıttaki
+değeri bir arttırarak yeni kaydı numaralandırır.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################
