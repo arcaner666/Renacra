@@ -1,0 +1,28 @@
+### BİRDEN FAZLA TABLODAN AYNI ANDA VERİ SORGULAMA #############################
+
+--- Tanım ----------------------------------------------------------------------
+Bir veya birden fazla tablodan aynı anda veri sorgulamak için TABLOADI.SÜTUN1
+şeklinde çekmek istediğimiz tabloyu ve sütun adını yazarız.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT CUSTOMERS.*,ADDRESS.ADDRESSTEXT 
+FROM CUSTOMERS,ADDRESS
+WHERE CUSTOMERS.ID=ADDRESS.CUSTOMERID
+
+Burada CUSTOMERS.* demek SELECT * ile aynı anlama gelir. Yani CUSTOMERS
+tablosunun tüm sütunlarını çağırır. 
+
+"." ise sütun ile tablonun bağlantılı olduğunun belirtir. 
+
+SELECT'ten sonra gelen ifadeler çağırılacak bölgeleri belirtir. 
+
+WHERE şartında ise CUSTOMERS tablosunun ID'si ile ADDRESS tablosundaki 
+CUSTOMERID değerleri eşit olanları yani birbiriyle bağlantılı verileri 
+getirmesini söyler.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

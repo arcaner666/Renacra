@@ -1,0 +1,34 @@
+### ALIAS KULLANIMI ############################################################
+
+--- Tanım ----------------------------------------------------------------------
+Bir veya birden fazla tablodan aynı anda veri sorgularken TABLO1.SÜTUN1,
+TABLO1.SÜTUN2, TABLO2.SÜTUN1, TABLO2.SÜTUN2 şeklinde çekmek istediğimiz
+tabloyu ve sütun adını tek tek yazarız. 
+
+Bu durumda tablo adının sürekli tekrar etmesi sorgumuzun okunabilirliğini 
+düşürür. 
+
+Böyle durumlarda Alias adı verilen kısaltmaları kulanabiliriz.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT
+CUSTOMERS.USERNAME_,CUSTOMERS.PASSWORD_,CUSTOMERS.EMAIL,ADDRESS.ADDRESSTEXT 
+FROM CUSTOMERS,ADDRESS 
+WHERE CUSTOMERS.ID=ADDRESS.CUSTOMERID
+
+Bu ifade aşağıdaki şekilde yazılabilir.
+
+SELECT C.USERNAME_,C.PASSWORD_,C.EMAIL,A.ADDRESSTEXT 
+FROM CUSTOMERS C,ADDRESS AS A
+WHERE C.ID=A.CUSTOMERID
+
+Önceleri SQL Server'da alias belirtirken alias'dan önce AS deyimi 
+kullanılıyordu. Şuan ise gerekli değil. Virgülden önce yazdığımız kelimeyi 
+alias olarak kabul edecektir.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################
