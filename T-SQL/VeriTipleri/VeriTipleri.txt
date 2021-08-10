@@ -1,0 +1,155 @@
+### VERİ TİPLERİ ###############################################################
+
+--- Sayısal Veri Tipleri -------------------------------------------------------
+
+### bigint ###
+Minimum: -2^63   (-9,223,372,036,854,775,808)
+Maximum:  2^63-1 (9,223,372,036,854,775,807)
+Boyut: 8 Byte
+
+### int ###
+Minimum: -2^31   (-2,147,483,648)
+Maximum: 2^31-1  (2,147,483,647)
+Boyut: 4 Byte
+
+### smallint ###
+Minimum: -2^15   (-32,768)
+Maximum: 2^15-1  (32767)
+Boyut: 2 Byte
+
+### tinyint ###
+Minimum: 0
+Maximum: 255
+Boyut: 1 Byte
+
+### bit ###
+Minimum: 0
+Maximum: 1
+Boyut: Eğer tabloda 8 ya da daha az bit kolonu varsa 1 Byte, 8'den fazla ise 2
+Byte yer kaplar.
+
+### decimal/numeric ###
+Minimum: -10^38+1
+Maximum: 10^38-1
+Boyut: 1'den 9'a kadar hassasiyet için:   5 Byte
+       10'dan 19'a kadar hassasiyet için: 9 Byte
+	   20'den 28'e kadar hassasiyet için: 13 Byte
+	   29'den 38'a kadar hassasiyet için: 17 Byte
+
+### money ###
+Minimum: -922,337,203,685,477.5808
+Maximum: 922,337,203,685,477.5807
+Boyut: 8 Byte
+
+### smallmoney ###
+Minimum: -214,748.3648
+Maximum: 214,748.3647
+Boyut: 4 Byte
+
+### float ###
+-1.79308 ile -2.23308, 0    7 basamağa kadar 4 Byte
+2.23308 ile 1.79308         15 basamağa kadar 8 Byte 
+
+### Real ###
+-3.438 ile -1.1838, 0
+1.1838 ile 3.438
+Boyut: 4 Byte
+--------------------------------------------------------------------------------
+
+--- Metin(String) Veri Tipleri -------------------------------------------------
+### char(8000) ###
+Parantez içerisinde belirtilen sayı kadar karakter alanı tutar. İçindeki
+bilgiden bağımsız olarak içi boş bile olsa belirlenen karakter sayısı kadar
+boşluk atar. Belirlenen her karakter sayısı için 1 Byte alan kaplar. Karakter
+belirleme üst sınırı 8000 karakterdir.
+
+char Unicode karakterleri desteklemez. Sadece İngilizce harfler, sayılar ve
+noktalama işaretlerinden oluşan 255 karakteri tutar.
+
+Çok yer kaplamasına rağmen bu veri türünün bazı avantajları vardır. Örneğin
+bu veri tipindeki bir veri içerisinde arama yapmak çok daha kolaydır. Çünkü
+uzunluğu sabittir. Diğer veri türlerinde arama yaparken önce uzunluk
+hesaplanır, sonra arama yapılır. Bu da ekstra işlem gücü harcar. 
+
+### varchar(8000) ###
+İçine girilen verinin uzunluğu kadar alan kaplar. Belirlenen karakterden fazla
+değer girilemez. İçindeki her karakter için 1 Byte alan kaplar. Karakter
+belirleme üst sınırı 8000 karakterdir.
+
+varchar Unicode karakterleri desteklemez. Sadece İngilizce harfler, sayılar ve
+noktalama işaretlerinden oluşan 255 karakteri tutar.
+
+### nchar(4000) ###
+Parantez içerisinde belirtilen sayı kadar karakter alanı tutar. İçindeki
+bilgiden bağımsız olarak içi boş bile olsa belirlenen karakter sayısı kadar
+boşluk atar. Belirlenen her karakter sayısı için 2 Byte alan kaplar. Karakter
+belirleme üst sınırı 4000 karakterdir.
+
+nchar Unicode karakterleri destekler. Fakat bu da ekstra boyut artışına sebep
+olur.
+
+Çok yer kaplamasına rağmen bu veri türünün bazı avantajları vardır. Örneğin
+bu veri tipindeki bir veri içerisinde arama yapmak çok daha kolaydır. Çünkü
+uzunluğu sabittir. Diğer veri türlerinde arama yaparken önce uzunluk
+hesaplanır, sonra arama yapılır. Bu da ekstra işlem gücü harcar. 
+
+### nvarchar(4000) ###
+İçine girilen verinin uzunluğu kadar alan kaplar. Belirlenen karakterden fazla
+değer girilemez. İçindeki her karakter için 2 Byte alan kaplar. Karakter
+belirleme üst sınırı 4000 karakterdir.
+
+nvarchar Unicode karakterleri destekler. Fakat bu da ekstra boyut artışına
+sebep olur.
+
+### varchar(MAX) ###
+İçine girilen verinin uzunluğu kadar alan kaplar. İçindeki her karakter için
+1 Byte alan kaplar. Karakter belirleme üst sınırı 2GB'a kadardır.
+
+varchar Unicode karakterleri desteklemez. Sadece İngilizce harfler, sayılar ve
+noktalama işaretlerinden oluşan 255 karakteri tutar.
+
+### nvarchar(MAX) ###
+İçine girilen verinin uzunluğu kadar alan kaplar. İçindeki her karakter için
+2 Byte alan kaplar. Karakter belirleme üst sınırı 2GB'a kadardır.
+
+nvarchar Unicode karakterleri destekler. Fakat bu da ekstra boyut artışına
+sebep olur.
+--------------------------------------------------------------------------------
+
+--- Tarih Veri Tipleri ---------------------------------------------------------
+### date ### 
+Minimum: 0001-01-01
+Maximum: 9999-12-31
+Boyut: 4 Byte
+
+### smalldate ###
+Minimum: 1900-01-01
+Maximum: 2079-06-06
+Boyut: 3 Byte
+
+### datetime ###
+Minimum: 1753-01-01 00:00:00.000
+Maximum: 9999-12-31 23:59:59.997
+Boyut: 8 Byte
+
+### datetime2 ###
+Minimum: 0001-01-01 00:00:00.0000000
+Maximum: 9999-12-31 23:59:59.9999999
+Boyut: 1-2 hassasiyet için: 6 Byte
+       3-4 hassasiyet için: 7 Byte
+       5-7 hassasiyet için: 8 Byte
+
+### datetimeoffset ###
+Minimum: 0001-01-01 00:00:00.0000000
+Maximum: 9999-12-31 23:59:59.9999999
+Time Zone Offset Aralığı: -14:00 / +14:00
+Boyut: 1-2 hassasiyet için: 8 Byte
+       3-4 hassasiyet için: 9 Byte
+       5-7 hassasiyet için: 10 Byte
+
+### time ###
+Minimum: 00:00:00.0000000
+Maximum: 23:59:59.9999999
+Boyut: 5 Byte (Default olarak kullanılırsa)
+--------------------------------------------------------------------------------
+################################################################################

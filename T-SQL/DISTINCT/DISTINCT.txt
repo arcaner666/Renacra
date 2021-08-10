@@ -1,0 +1,25 @@
+### DISTINCT ###################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Tablonun içindeki belirtilen sütun veya sütunlarda tekrar eden bölümleri
+tekilleştirir.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT DISTINCT
+SÜTUN1,SÜTUN2,SÜTUN3
+FROM TABLOADI
+WHERE ŞARTLAR
+
+SELECT DISTINCT CITY FROM CUSTOMERS
+Tablodaki şehirleri yazar fakat her şehri bir kere yazar.
+
+SELECT DISTINCT CITY,DISTRICT FROM CUSTOMERS
+Tablodaki şehirleri ve ilçeleri yazar fakat her ilçeyi bir kere yazar. İlçe
+sayısı kadar da şehir yazar.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

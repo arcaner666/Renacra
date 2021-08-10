@@ -1,0 +1,70 @@
+### GROUPBY ####################################################################
+
+BAZ ALINAN TABLO --> SALES
+|ID|FICHENO|DATE_|DATE2|ITEMCODE|ITEMNAME|BRAND|AMOUNT|PRICE|TOTALPRICE|CITY|
+
+--- Tanım ----------------------------------------------------------------------
+Aggregate fonksiyonları ile çıkardığımız özet bilgileri gruplayarak
+görüntülememizi sağlar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT
+KOLON1,KOLON2,SUM(PRICE),COUNT(ID),MIN(PRICE),MAX(PRICE),AVG(PRICE)
+FROM TABLOADI
+GROUP BY KOLON1,KOLON2
+
+SELECT CITY,SUM(TOTALPRICE) AS TOTALPRICE
+FROM SALES 
+GROUP BY CITY
+ORDER BY SUM(TOTALPRICE) DESC
+Bu sorgu SALES tablosundaki tek seferde yapılan toplam alışveriş tutarlarının
+toplamını yani toplam ciroyu şehirlere göre gruplayarak hesaplar ve bu sütuna
+TOTALPRICE adını atar. ORDER BY ile bu sonuçları büyükten küçüğe sıralar.
+
+SELECT CITY,
+MIN(AMOUNT) AS MINPRICE,
+MAX(AMOUNT) AS MAXPRICE,
+COUNT(FICHENO) AS ROWCOUNT_,
+SUM(TOTALPRICE) AS TOTALPRICE,
+AVG(TOTALPRICE) AS AVGPRICE
+FROM SALES 
+GROUP BY CITY
+Bu sorgu SALES tablosunda yazılan Aggregate fonksiyonlarını çalıştırır ve AS
+deyimiyle yeni oluşan sonuç tablosundaki adsız sütunlara isimler atar. Eğer
+bir sorguda Aggregate fonksiyonu kullanılmışsa ve bir sütun adı yazılmışsa
+aynı sütun GROUP BY deyimiyle beraber yazılmak zorundadır.
+
+Bir ildeki mağazanın gün bazlı toplam satışını hesaplamak için;
+SELECT CITY,DATE2,SUM(TOTALPRICE) AS TOTALPRICE 
+FROM SALES WHERE CITY='ANKARA'
+GROUP BY CITY,DATE2
+ORDER BY CITY,DATE2
+
+Bir günün illerdeki mağazalara göre toplam satışını hesaplamak için;
+USE ETRADE2
+SELECT DATE2,CITY,SUM(TOTALPRICE) AS TOTALPRICE 
+FROM SALES WHERE DATE2='2019-01-01'
+GROUP BY DATE2,CITY
+ORDER BY DATE2,CITY
+
+Aylara göre mağazaların toplam satışını bulmak için öncelikle SALES tablosuna
+MONTHNAME_ adında varchar(50) tipinde yeni bir sütun ekleriz. Daha sonra
+aşağıdaki komut ile DATE2 sütunundan aldığımız tarihin ay kısmını kontrol
+ederiz. MONTHNAME_'e bu aya göre veri atarız.
+UPDATE SALES SET MONTHNAME_='01.OCAK' WHERE DATEPART(MONTH,DATE2)=1
+UPDATE SALES SET MONTHNAME_='02.ŞUBAT' WHERE DATEPART(MONTH,DATE2)=2
+...
+UPDATE SALES SET MONTHNAME_='12.ARALIK' WHERE DATEPART(MONTH,DATE2)=12
+Artık ayları ayrı tutabildiğimize göre aylara göre mağazaların toplam
+satışını bulabiliriz.
+SELECT MONTHNAME_,CITY,SUM(TOTALPRICE) AS TOTALPRICE
+FROM SALES
+GROUP BY MONTHNAME_,CITY
+ORDER BY MONTHNAME_ ASC,SUM(TOTALPRICE) DESC
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

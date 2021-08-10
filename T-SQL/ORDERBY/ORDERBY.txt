@@ -1,0 +1,32 @@
+### ORDERBY ####################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Yaptığımız sorguyu hangi sütuna göre sıralayacağımızı belirler.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT
+KOLON1,KOLON2,KOLON3...
+FROM TABLOADI
+WHERE ŞARTLAR
+
+ORDER BY KOLON1 ASC,KOLON2 DESC,KOLON3 ASC
+
+Burada ASC küçükten büyüğe yada A'dan Z'ye sıralama yapar. DESC ise tam tersi
+yönde sıralar.
+
+SELECT * FROM CUSTOMERS ORDER BY CITY ASC,DISTRICT ASC,CUSTOMERNAME ASC
+
+CUSTOMERS tablosununun tüm sütunlarını önce CITY'e, sonra DISTRICT'e, daha
+sonra ise CUSTOMERNAME'e göre A'dan Z'ye sıralı şekilde çağırır.
+
+SELECT * FROM CUSTOMERS ORDER BY 2,3
+
+CUSTOMERS tablosununun tüm sütunlarını önce ikinci sütuna, sonra üçüncü
+sütuna göre A'dan Z'ye sıralı şekilde çağırır.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

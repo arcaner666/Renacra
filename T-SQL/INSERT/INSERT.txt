@@ -18,6 +18,7 @@ INSERT INTO CUSTOMERS
 (ID, CUSTOMERNAME, CITY, BIRTHDATE, DISTRICT, GENDER)
 VALUES
 (5, 'MEHMET ÖZAL', 'ANTALYA', '1989-11-23', 'MURATPAŞA', 'E')
+
 SQL dilinde string ve date türü veriler iki tek tırnak işareti içerisine
 yazılır.
 

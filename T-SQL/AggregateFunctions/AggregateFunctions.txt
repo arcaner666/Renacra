@@ -1,0 +1,50 @@
+### AGGREGATE FUNCTIONS ########################################################
+
+BAZ ALINAN TABLO --> SALES
+|ID|FICHENO|DATE_|DATE2|ITEMCODE|ITEMNAME|BRAND|AMOUNT|PRICE|TOTALPRICE|CITY|
+
+--- Tanım ----------------------------------------------------------------------
+Tablolardaki verilerden özet çıkarmada kullanılır.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT
+SUM(PRICE),COUNT(ID),MIN(PRICE),MAX(PRICE),AVG(PRICE)
+FROM TABLOADI
+--------------------------------------------------------------------------------
+
+--- COUNT ----------------------------------------------------------------------
+SALES tablosundaki tüm satırları sayar.
+
+SELECT COUNT(*) FROM SALES
+--------------------------------------------------------------------------------
+
+--- MIN ------------------------------------------------------------------------
+SALES tablosunun AMOUNT sütunundaki değerlerden en küçük olanı döndürür.
+
+SELECT MIN(AMOUNT) FROM SALES
+--------------------------------------------------------------------------------
+
+--- MAX ------------------------------------------------------------------------
+SALES tablosunun AMOUNT sütunundaki değerlerden en küçük ve en büyük olanları
+döndürür.
+
+SELECT MIN(AMOUNT),MAX(AMOUNT) FROM SALES
+--------------------------------------------------------------------------------
+
+--- AVG ------------------------------------------------------------------------
+SALES tablosunun AMOUNT sütunundaki en küçük ve en büyük değerleri,
+FICHENO her satıra özgü olduğu için toplam satır sayısını, AMOUNT sütunundaki
+sayıların toplamını yani toplam satılan ürün adedini ve AMOUNT sütunundaki
+sayıların ortalamasını yani her satışta satılan ortalama ürün adedini
+döndürür.
+
+SELECT
+MIN(AMOUNT),MAX(AMOUNT),COUNT(FICHENO),SUM(AMOUNT),AVG(AMOUNT)
+FROM SALES
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

@@ -1,0 +1,29 @@
+### TOP ########################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Tablonun belirli bir kısmını çağırmaya yarar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT TOP N
+KOLON1,KOLON2,KOLON3...
+FROM TABLOADI
+WHERE ŞARTLAR
+
+Burada N sayı veya yüzdedir.
+
+SELECT TOP 20 * FROM CUSTOMERS ORDER BY CUSTOMERNAME
+
+CUSTOMERS tablosunu CUSTOMERNAME'e göre sıralar. İlk 20 kaydın tüm
+sütunlarını getirir.
+
+SELECT TOP 50 PERCENT * FROM CUSTOMERS ORDER BY CUSTOMERNAME
+
+CUSTOMERS tablosunu CUSTOMERNAME'e göre sıralar. Sıralanmış kayıtların yüzde
+ellisinin tüm sütunlarını getirir.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################

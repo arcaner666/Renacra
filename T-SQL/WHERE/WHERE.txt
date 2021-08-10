@@ -1,0 +1,67 @@
+### WHERE ######################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Bir işlem gerçekleştirirken bunu bir şarta bağlamamızı sağlar.
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT SUTUN1,SUTUN2,...
+FROM TABLOADI
+WHERE SUTUN1='DEĞER'
+
+CUSTOMERS tablosundaki yaşı 30'dan büyük olanları getir dediğimizde;
+
+SELECT * FROM CUSTOMERS WHERE AGE>30
+
+CUSTOMERS tablosundaki yaşı 30'dan küçük veya 30'a eşit olanları getir
+dediğimizde;
+
+SELECT * FROM CUSTOMERS WHERE NOT AGE>30
+
+SELECT * FROM CUSTOMERS
+WHERE BIRTHDATE BETWEEN '19900101' AND '19950101'
+
+Yukarıdaki sorgu 1990 ile 1995 arasında doğanların kayıtlarını getirir.
+SELECT * deyimi kullanıldığı için kayıtların tüm sütunlarını getirir. Seçime
+1990-01-01 ve 1995-01-01 tarihinde doğanları da dahil eder.
+
+SELECT * FROM CUSTOMERS
+WHERE CUSTOMERNAME LIKE 'ALI%'
+
+Bu sorgu müşterilerden adı ALI kelimesiyle başlayanları getirir. Sondaki %
+ise kelimenin bulunduğu yeri belirtmede kullanılır.
+ALI% kelimenin başında ALI'yi arar.
+%ALI kelimenin sonunda ALI'yi arar.
+%ALI% kelimenin içinde ALI'yi arar.
+
+SELECT * FROM CUSTOMERS
+WHERE CITY IN ('ISTANBUL','ANKARA','IZMIR')
+
+Bu sorgu CITY kısmında ISTANBUL, IZMIR VE ANKARA yazanları gösterir.
+
+UPDATE CUSTOMERS SET GENDER='ERKEK' WHERE GENDER='E'
+
+Bu sorgu CUSTOMERS tablosunda GENDER bölümünde E yazanları ERKEK'le değiştirir.
+--------------------------------------------------------------------------------
+
+--- Where Operatörleri ---------------------------------------------------------
+=          Eşittir
+<>         Eşit değildir
+>          Büyüktür
+<          Küçüktür
+>=         Büyük veya eşittir
+<=         Küçük veya eşittir
+BETWEEN    Arasındadır
+LIKE       İle başlar, ile biter, içerir
+IN         İçindedir
+NOT LIKE   İle başlamaz, ile bitmez, İçermez
+NOT IN     İçinde değildir
+AND        Her iki şart sağlanıyorsa çalışır
+OR         İki şarttan bir sağlanıyorsa çalışır
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+Eğer veri tabanımız Case-Insensitive ise ALI, Ali, ALİ, ali, alı
+kelimeleri birbirine eşittir.
+--------------------------------------------------------------------------------
+################################################################################

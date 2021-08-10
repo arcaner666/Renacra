@@ -1,0 +1,24 @@
+### AND ve OR ##################################################################
+
+--- Tanım ----------------------------------------------------------------------
+Aynı anda sağındaki ve solundaki şartın ikisinin birden doğru olduğu durumda 
+çalışan şart AND'dir.
+
+Sağındaki ve solundaki şartlardan yalnızca birinin doğru olduğu durumda çalışan 
+şart OR'dur.
+
+--------------------------------------------------------------------------------
+
+--- Kullanım Şekli -------------------------------------------------------------
+SELECT *
+FROM CUSTOMERS
+WHERE CITY='İSTANBUL' AND DISTRICT='ÜSKÜDAR' OR DISTRICT='SARIYER'
+
+Yukarıdaki sorgu müşterilerden CITY alanı İSTANBUL olan aynı zamanda DISTRICT 
+alanı da ÜSKÜDAR veya SARIYER olan kayıtları getirir.
+--------------------------------------------------------------------------------
+
+--- Detaylar -------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+################################################################################
