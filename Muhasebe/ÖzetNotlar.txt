@@ -1,0 +1,27 @@
+### ÖZET NOTLAR ################################################################
+
+Şirketlerin kendi tüzel kişilikleri vardır. Sahibi, ortağı veya personelinden 
+bağımsızdır. Borçlarda gelirler de şirkete göre yapılır. Ortaklar ya da sahibe 
+kar payı dağıtımı yapılır.
+
+Muhasebede dönemsellik ilkesi gereğince ekonomik faaliyetler her yılın başında 
+başlar, sonunda biter. Bu aralığa bir dönem denir. Şirketin açılışı farklı bir 
+tarihte ise açılış tarihinden yine yıl sonuna kadar bir dönem kabul edilir. Bu 
+döneme kıst dönem denir.
+
+Ekonomik bir işlem ne zaman gerçekleşirse o zaman kaydı yapılmalıdır. Yani 
+firmamızın bir satış yaptığını düşünelim. Ödeme alıp almamamızdan bağımsız 
+olarak satışın içeriği belirlendiyse hemen kayıt yapmalıyız.
+
+Hangi sektörde hizmet verildiği ya da ürün satıldığı farketmeksizin bütün 
+ekonomik işlemler para ile ölçülmelidir. Örneğin; domatesi kg ile suyu litre 
+ile kaydetmek yerine tüm varlıkları parasal karşılığı ile kaydederiz. Bunun 
+yanında Dolar, Euro gibi dövizler ile işlem yapıldığında da o günün 
+döviz kuru üzerinden TL'ye çevirerek işlem kaydedilir.
+
+Her gider, maliyet, satış, alış usülüne uygun olarak belgelendirilmiş olmak
+zorundadır. Yoksa kabul edilmez.
+
+Şirketin mali işlemlerinin kaydının tutulma yöntemleri dönemlere göre farklı 
+olmamalı, dönemler arasında karşılaştırılabilir ve tutarlı olmalıdır.
+################################################################################
