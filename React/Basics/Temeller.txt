@@ -3,6 +3,7 @@
 Kurs 1 => FrontEnd Masters - Complete Intro To React, v6
 
 --- Tanım ----------------------------------------------------------------------
+
 React, Facebook'un geliştirdiği bir front-end kütüphanesidir. 
 
 Amacı MVC yapısını tek bir component'te birleştirerek kodların 
