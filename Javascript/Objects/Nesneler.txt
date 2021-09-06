@@ -1,7 +1,7 @@
 ### NESNELER ###################################################################
 
 Javascript'teki nesne {} işaretleri ile tanımlanır. Javascript'te eğer birşeyin 
-arkasında bir nokta varsa o şey nesnedir.
+arkasında bir . nokta varsa o şey nesnedir.
 
 // Nesne Tanımlama Şekli 1
 var person = {};

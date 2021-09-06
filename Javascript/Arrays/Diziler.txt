@@ -1,5 +1,7 @@
 ### DİZİLER ####################################################################
 
+--- Tanım ----------------------------------------------------------------------
+
 Diziler Javascript'te [] şeklinde tanımlanır. Aynı nesneler gibi dizilere de 
 alttaki şekilde eleman atayabiliriz. Çünkü Javascript'te diziler de nesnedir. 
 Daha doğrusu aslında Javascript'te dizi diye birşey yoktur. Elbette çok ufak 
@@ -19,4 +21,65 @@ Mrs. White
 Mr. White
 false
 true
+--------------------------------------------------------------------------------
+
+--- Array.isArray() ------------------------------------------------------------
+
+Bir nesnenin dizi olup olmadığını anlamak için Array.isArray() fonksiyonu 
+içerisine kontrol edilmek istenen nesne girilir.
+--------------------------------------------------------------------------------
+
+--- length ---------------------------------------------------------------------
+
+Bir dizideki eleman sayısını döndüren diziAdi.length property'si özel bir 
+property'dir. Sadece diziye bir index ile atananları eleman olarak sayar.
+
+var person = [];
+person.name = "Mrs. White";
+console.log(person.length);
+person[0] = "First numerical assignment";
+console.log(person.length);
+person[1] = "Second numerical assignment";
+console.log(person.length);
+0
+1
+2
+
+Fakat burada çok kritik bir nokta vardır. Eğer bir diziye olması gerekenden 
+büyük bir index ile bir eleman atanırsa length property'si çağırıldığında son 
+atanan index'in bir fazlasını döndürür.
+
+var person = [];
+person.name = "Mrs. White";
+console.log(person.length);
+person[0] = "First numerical assignment";
+console.log(person.length);
+person[10] = "Second numerical assignment";
+console.log(person.length);
+0
+1
+11
+--------------------------------------------------------------------------------
+
+--- push() ---------------------------------------------------------------------
+
+Bir dizinin içerisine eleman atamayı sağlar. push metodu ile atanan değerler 
+indexlere atanır ve indexleri ile erişilebilirler. Bu sebeple length metodu ile 
+sayılabilirler.
+
+var students = [];
+console.log(students);
+students.push("Jack");
+console.log(students);
+students.push("Joe");
+console.log(students);
+students.push("Natalie");
+console.log(students);
+console.log(students.length);
+[]
+['Jack']
+['Jack', 'Joe']
+['Jack', 'Joe', 'Natalie']
+3
+--------------------------------------------------------------------------------
 ################################################################################

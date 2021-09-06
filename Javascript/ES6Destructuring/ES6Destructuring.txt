@@ -1,0 +1,117 @@
+### ES6 DESTRUCTURING ##########################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Destructuring değişken tanımlamanın ve bu değişkenleri bir nesneden ya da bir 
+diziden dışarıya çıkarmanın basitleştirilmiş bir yoludur.
+
+Bu yöntemle dizilerin ve nesnelerin özellikleri kullanılarak pratik bir şekilde 
+değişken tanımlamaları yapılır.
+--------------------------------------------------------------------------------
+
+--- Dizilerde Destructuring ----------------------------------------------------
+
+ES6 Destructuring Değişken Deklarasyonu
+const [first, second] = [true, false];
+let [first, second] = [true, false];
+var [first, second] = [true, false];
+
+ES6 Destructuring Değer Atama
+[first, second] = [true, false];
+
+Burada olay şudur. Diziler, bu şekilde birbirlerine atanırken belirli bir 
+sırayla atanırlar. Biz de bunu kullanarak tek tek eleman adlarını yazmaktan 
+kurtulmuş oluruz.
+
+Bu ifadede eşitliğin sağ tarafı dizidir ancak sol tarafı bir dizi deklarasyonu 
+değildir. Sol tarafta sadece first ve last adında iki tane değişken oluşur.
+
+Sol taraftaki first değişkenine eşitliğin karşısındaki sıraya göre ilk eleman, 
+sol taraftaki second değişkenine ise eşitliğin karşısındaki ikinci eleman 
+atanır.
+
+Eğer bir değişkenin deklare edildikten sonra tekrar değişmesini istemiyorsak 
+const kullanırız. 
+
+Eğer bir değişkenin yalnızca içerisinde bulunduğu alanda tanımlanmasını 
+istiyorsak let kullanırız.
+
+var yerine const ve let kullanılması artık Best Practice olmuştur.
+--------------------------------------------------------------------------------
+
+--- Nesnelerde Destructuring ---------------------------------------------------
+
+ES6 Destructuring Nesne Deklarasyonu
+const {first, second} = {second: 1, first: 0};
+let {first, second} = {first: 0, second: 1};
+var {first, second} = {second: 1, first: 0};
+
+ES6 Destructuring Propertylere Değer Atama
+{first, second} = {first: 0, second: 1};
+
+Buradaki yapıda ise dizidekinin aksine sıralama önemsizdiz. second her zaman 
+second'a, first ise her zaman first'e atanan değere eşit olacaktır.
+--------------------------------------------------------------------------------
+
+--- Destructuring'in Farklı Kullanım Şekilleri ---------------------------------
+
+var [a, b, c] = [true, false];
+console.log(a);
+console.log(b);
+console.log(c);
+true
+false
+undefined
+
+---
+
+var [a, , c] = [1, 2, 3];
+console.log(a);
+console.log(c);
+1
+3
+
+---
+
+var [a, , c] = [1, , 3];
+console.log(a);
+console.log(c);
+1
+3
+
+---
+
+var [a, ...c] = [1, 2, 3];
+console.log(a);
+console.log(c);
+1
+[ 2, 3 ]
+
+---
+
+var a = 1, b = 2;
+[a, b] = [b, a];
+console.log(a);
+console.log(b);
+2
+1
+
+---
+
+var [a, [b, [c, d]]] = [1, [2, [[[3, 4], 5], 6]]];
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+1
+2
+[ [ 3, 4 ], 5 ]
+6
+
+---
+
+var {user: x} = {user: 5};
+console.log(x);
+5
+--------------------------------------------------------------------------------
+################################################################################
