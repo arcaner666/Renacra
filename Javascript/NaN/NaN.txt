@@ -1,0 +1,26 @@
+### NaN ########################################################################
+
+Not a Number'ın kısaltması olsa da daha çok bir durumu ifade eder.
+
+var greeting = "Hello Class!";
+var something = greeting / 2;
+console.log(something);
+console.log(Number.isNaN(greeting));
+console.log(Number.isNaN(something));
+NaN
+false
+true
+
+Burada something içerisine anlamsız bir işlem atamaya çalışıyoruz ve sonuç bir
+sayı değil. Bu durumda something değişkenini yazdırmaya çalıştığımızda bize NaN
+çıktısını veriyor.
+
+Eğer bir değişkenin NaN durumunda olup olmadığını öğrenmek istiyorsak
+Number.isNaN() özelliğini kullanırız. Burada greeting bir string olduğu için
+NaN durumunda değildir ve konsol bize false döndürür.
+
+Oysa aynısını something için yaparsak bize NaN döndürür.
+
+Javascript'te matematiksel işlemler yaparken NaN durumuna özellikle dikkat
+etmeliyiz çünkü bir noktada NaN aldığımızda bu geri kalan bütün işlemi bozar.
+################################################################################

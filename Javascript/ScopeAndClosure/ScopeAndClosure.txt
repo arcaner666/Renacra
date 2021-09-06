@@ -1,0 +1,158 @@
+### SCOPE AND CLOSURE ##########################################################
+
+--- Scope ----------------------------------------------------------------------
+
+Scope genel olarak Javascript'tin bir şeyleri bulmak veya işlemek için bakacağı 
+yerdir. Bir değişkenin ya da nesnenin tanımlı olduğu kapsamdır.
+
+var teacher = "Kyle";
+function otherClass() {
+    teacher = "Suzy";
+    topic = "React";
+    console.log("Welcome!");
+}
+otherClass();
+console.log(teacher);
+console.log(topic);
+Welcome!
+Suzy
+React
+
+Burada öncelikle teacher'ın global bir değişken olarak tanımlandığını 
+görüyoruz. otherClass() fonksiyonu içerisinde bu değişken değiştirilmiş en 
+sonda ise en son değeri konsola yazdırılmıştır.
+
+topic değişkeninde ise farklı bir durum söz konusu. Bu Javascript dosyasının en 
+başında "use strict" ifadesi olmadığından yani strict modda çalışmadığından 
+topic global olarak tanımlanmamış bile olsa topic = "React" ifadesi topic'i 
+global bir değişken olarak gizlice tanımlıyor.
+
+Eğer üstteki kodların başına "use strict" ekleseydik kodların hata verdiğini
+görecektik.
+
+strict modda olmadan da topic'in başına let deyimini ekleseydik yine hata 
+verecekti. Çünkü let ifadesi önüne geldiği değişkeni aynı C#'taki private gibi 
+sadece bulunduğu kod bloğunun içinde tanımlı hale getirir.
+--------------------------------------------------------------------------------
+
+--- undefined vs undeclared ----------------------------------------------------
+
+Javascript'te bu ikisi birbirinden tamamen farklı kavramlardır ve asla aynı 
+değillerdir. undefined demek bir değişken tanımlanmış ama içine bir değer 
+atanmamış demektir. undeclared ise hiç bir şekilde o değişken tanımlanmamış 
+ve değişkene nasıl ulaşılması gerektiği bilinmiyor demektir.
+--------------------------------------------------------------------------------
+
+--- Fonksiyon İfadeleri (Function Expressions) ---------------------------------
+
+Javascript'te fonksiyonlarda aynı değişkenler gibidir. Yani bir fonksiyon da 
+bir değişken içerisine atanabilir. Başka bir fonksiyonun içerisine parametre 
+olarak girilebilir. Bir fonksiyon dönüş değeri olarak başka bir fonksiyonu 
+döndürebilir.
+
+Bu şekilde işlemlere tabi tutulan fonksiyonlara function expression(fonksiyon 
+ifadesi) denir.
+
+// Anonim Fonksiyon İfadesi (Anonymous Function Expressions)
+var clickHandler = function() {
+    //..
+}
+
+// Adlandırılmış Fonksiyon İfadesi (Named Function Expressions)
+var keyHandler = function keyHandler() {
+    //..
+}
+
+### NOT ###: Kursu veren Kyle Simpsons herkesin genelde anonim fonksiyon 
+ifadesi kullandığını söylüyor fakat ona göre elimizden geldiğince adlandırılmış 
+fonksiyon ifadesi kullanmalıymışız.
+
+// ÖNERİLMEYEN KULLANIM
+var ids = people.map(person => person.id);
+
+// ÖNERİLEN KULLANIM
+var ids = people.map(function getId(person) {
+    return person.id;
+});
+
+Önerilmeyen kullanımdaki şekle Arrow Functions denir.
+--------------------------------------------------------------------------------
+
+--- Immediately Invoked Function Expression ------------------------------------
+
+Javascript'te bir fonksiyonu () içerisine almak o fonksiyonu function
+expression haline getirir. Normal fonksiyon tanımlamaya ise function 
+declaration denir.
+
+Bunun arkasından gelen () ise bu tanımlanmış function expression'ı hemen
+çalıştırmaya yarar.
+
+var teacher = "Kyle";
+( function anotherTeacher() {
+    var teacher = "Suzy";
+    console.log(teacher);
+})();
+console.log(teacher);
+Suzy
+Kyle
+
+Burada teacher'ın fonksiyonun içerisinde tekrar atanmasına rağmen global olan 
+teacher'ın değişmemesi function expression tanımlanması sayesinde gerçekleşir. 
+Javascript'te eğer bir fonksiyonun üzerine yazmadan onu kullanmak istersek bu 
+şekilde encapsulation yönteminden faydalanırız.
+--------------------------------------------------------------------------------
+
+--- Block Scoping --------------------------------------------------------------
+
+Immediately Invoked Function Expression'a alternatif olarak bir bloğu 
+soyutlamak istiyorsak let deyimini kullanırız. Bu sayede global değişkenimizi  
+çeşitli işlemler yaparken değiştirilmekten korumuş oluruz.
+
+var teacher = "Kyle";
+{
+    let teacher = "Suzy";
+    console.log(teacher);
+}
+console.log(teacher);
+Suzy
+Kyle
+--------------------------------------------------------------------------------
+
+--- Closure --------------------------------------------------------------------
+
+Closure bir fonksiyonun, başka bir lexical scope tarafından çağırılsa bile 
+kendi lexical scope'unu hatırlamasıdır. Başka bir değişle; bir fonksiyon kendi 
+kapsamı dışındaki bir değişkeni kullanıyorsa ve bu fonksiyon başka bir 
+kapsamdan çalıştırılsa bile o değişkene hala erişimi vardır.
+
+function ask(question) {
+    setTimeout(function waitASec() {
+        console.log(question);
+    }, 2000);
+}
+ask("What is closure?");
+What is closure?
+
+Burada çoğu kişi question değişkeninin ask() fonksiyonu çalışmasını bitirdikten 
+sonra Garbage Collector tarafından hafızadan atılacağını düşünür. Ancak durum 
+böyle değildir. Eğer ask() fonksiyonu içerisinde let öneki eklenmiş değişkenler 
+tanımlansaydı bu doğru olurdu. Ancak burada console.log() ifadesi içerisindeki 
+question değişkeni ask() fonksiyonuna giren question değişkenini işaret ediyor. 
+Yani aslında "What is closure?" string'i ask() fonksiyonu içine girdikten sonra 
+aslında question değişkenine kopyalanıyor ve bu iki değişken arasında başka bir 
+bağlantı kalmıyor. Yani ask() fonksiyonu bitmiş olsa bile question değişkeni 
+halen hafızada yaşamaya devam ediyor. İşte biz bu duruma closure diyoruz.
+
+function ask(question) {
+    return function holdYourQuestion() {
+        console.log(question);
+    }
+}
+var myQuestion = ask("What is closure?");
+myQuestion();
+
+Burada eğer programın başka bir bölümünde ben myQuestion() fonksiyonunu tekrar 
+kullanırsam bana "What is closure?" cevabını verecektir. Bunun hatırlanmasını 
+sağlayan sistem closure'dur.
+--------------------------------------------------------------------------------
+################################################################################

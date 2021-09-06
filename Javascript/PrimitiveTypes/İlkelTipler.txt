@@ -1,0 +1,46 @@
+### İLKEL TİPLER ###############################################################
+
+Genelde çoğu yerde Javascript'te her şey bir nesnedir denilir fakat bu doğru
+değildir. Javascript'te değişkenlerin tipi yoktur. Değerlerin tipleri vardır.
+
+İlkel tipler; undefined, string, number, boolean, object, symbol gibi tiplerdir.
+
+console.log(typeof v);
+var v;
+console.log(typeof v);
+v = "1";
+console.log(typeof v);
+v = 2;
+console.log(typeof v);
+v = true;
+console.log(typeof v);
+v = {};
+console.log(typeof v);
+v = Symbol();
+console.log(typeof v);
+v = null;
+console.log(typeof v);
+v = function () { };
+console.log(typeof v);
+v = [1, 2, 3];
+console.log(typeof v);
+undefined
+undefined
+string   
+number   
+boolean  
+object   
+symbol   
+object   
+function 
+object 
+
+Burada önemli ayrıntılardan biri de şudur: ilk durumda v değişkeni hiç
+tanımlanmadan tipi sorulmuştur, ikinci satırda ise v adında bir değişken
+tanımlanmış fakat bu değişkene herhangi bir değer atanmadan tipi sorulmuştur.
+Her iki durumda da typeof bize undefined döndürüyor. Javascript bu iki durumu
+aynı şekilde değerlendiriyor.
+
+typeof fonksiyonları rahatlıkla tanıyorken dizileri tanımıyor ve bize object
+döndürüyor. Bu da Javascript'in buglarından birisidir.
+################################################################################

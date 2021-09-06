@@ -1,0 +1,108 @@
+### THIS VE PROTOTYPE ##########################################################
+
+--- this -----------------------------------------------------------------------
+
+Bir fonksiyonun önüne eklenen this deyimi bu fonksiyonun nasıl
+çalıştırılıcağını, çalışma esnasında nereyi baz alacağını ya da hangi kapsamda 
+çalıştırılacağını belirler. this deyimi sayesinde bir fonksiyonu çağırırken 
+içeriğini değiştirebilir ve normalde olması gerekenden farklı bir işlem 
+yapmasını sağlayabiliriz. this'in işlevini belirleyen dört farklı kullanım şekli
+vardır.
+
+// Implicit Binding Rule
+var workshop = {
+    teacher: "Kyle",
+    ask(question){
+        console.log(this.teacher,question);
+    }
+}
+workshop.ask("What is implicit binding?");
+Kyle What is implicit binding?
+
+Burada this'in anlamını belirleyen şey workshop.ask() satırıdır this 
+kelimesinin workshop nesnesi içerisinde bulunması değildir. Burada ask 
+metodu çağırıldığında this kelimesi bu metodun önündeki workshop nesnesine 
+bakar ve burayı işaret ederek bu nesne içinde teacher adından bir değişken 
+olup olmadığına bakar. Ardından bu değişkeni kullanır. Buna örtük bağlama 
+kuralı(implicit binding rule) denir.
+
+// Explicit Binding Rule
+function ask(question) {
+    console.log(this.teacher, question);
+}
+function otherClass() {
+    var myContext = {
+        teacher: "Suzy"
+    };
+    ask.call(myContext, "Why?");
+}
+otherClass();
+Suzy Why?
+
+Burada ise this.teacher ifadesi herhangi bir nesnenin içerisinde değil. Bu 
+sebeple biz ask fonksiyonunu nasıl çağırırsak this kelimesi ona göre bir içerik 
+kazanacak. .call ifadesi bir fonksiyonu çağırmanın bir başka yoludur. Eğer biz 
+bu şekilde ask fonksiyonun çağırır içerisine de bir myContext nesnesini 
+gönderirsek this bu sefer myContext içerisindeki teacher değişkenini işaret 
+eder. Biz bu duruma ise açık bağlama kuralı(explicit binding rule) deriz.
+--------------------------------------------------------------------------------
+
+--- Prototypes -----------------------------------------------------------------
+
+Bugünlerde pek sık kullanılmasa da aslında Javascript'te class'ların temelini 
+aşağıdaki yapı oluşturur.
+
+function Workshop(teacher) {
+    this.teacher = teacher;
+}
+Workshop.prototype.ask = function(question) {
+    console.log(this.teacher,question);
+}
+var deepJS = new Workshop("Kyle");
+var reactJS = new Workshop("Suzy");
+deepJS.ask("Is 'prototype' a class?");
+reactJS.ask("Isn't 'prototype' ugly?");
+Kyle Is 'prototype' a class?
+Suzy Isn't 'prototype' ugly?
+
+Burada normalde bir fonksiyon olan Workshop içindeki this deyimi ile birlikte 
+bundan sonra oluşturulacak Workshop classları için bir constructor'a dönüşür. 
+
+Eğer bu Workshop class'ının içerisine bir metot eklemek istersek 
+Workshop.prototype.metotAdı yapısına eklemek istediğimiz metodu atarız.
+
+Biz var deepJS = new Workshop("Kyle"); şeklinde bir ifadeyi çalıştırdığımızda 
+Workshop fonksiyonu bize Workshop adında bir nesne oluşturur, içerisindeki 
+constructor'ı çalıştırır ve bunu Workshop.prototype'a bağlar.
+
+Burada biz deepJS. dediğimizde hem deepJS.ask metoduna ulaşırken hem de 
+istersek deepJS.teacher property'sine ulaşabiliriz.
+--------------------------------------------------------------------------------
+
+--- class ----------------------------------------------------------------------
+
+Javascript'te aslında class diye birşey önceden yoktu. Son yıllarda Ecmascript 
+6 ile birlikte bu prototype sistemi üzerine class sistemi inşa edildi. Bu
+sistem eski prototype sisteminden hem daha güzel görünüyor hem de kodlarımızın 
+daha kolay yazılmasını sağlayarak karmaşayı azaltıyor.
+
+class Workshop {
+    constructor(teacher){
+        this.teacher = teacher;
+    }
+    ask(question){
+        console.log(this.teacher,question);
+    }
+}
+var deepJS = new Workshop("Kyle");
+var reactJS = new Workshop("Suzy");
+deepJS.ask("Is 'class' a class?");
+reactJS.ask("Is this class OK?");
+Kyle Is 'class' a class?
+Suzy Is this class OK?
+
+Burada class Workshop{} deyimi class'ı tanımlarken constructor ile bu class 
+içerisine property'ler atanıyor. Bu class'a bir metot eklemek içinse 
+Workshop.prototype şeklinde bir yazım kullanmamıza da gerek kalmıyor.
+--------------------------------------------------------------------------------
+################################################################################

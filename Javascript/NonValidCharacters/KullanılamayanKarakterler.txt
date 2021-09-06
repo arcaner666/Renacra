@@ -1,0 +1,36 @@
+### KULLANILAMAYAN KARAKTERLER #################################################
+
+Bir dizide property tanımlarken property adında özel karakterler kullanmamaya 
+özen göstermeliyiz. Ama illaki kullanmamız gerekiyorsa bu özel karakterleri '' 
+veya "" içerisine alırsak tanımlamamız mümkün olur.
+
+var box = {};
+box['material'] = "cardboard";
+box[0] = 'meow';
+box[2 + 2] = 'evaluated value';
+box['^&*'] = "testing 123";
+console.log(box);
+{
+  '0': 'meow',
+  '4': 'evaluated value',
+  material: 'cardboard', 
+  '^&*': 'testing 123'
+}
+
+Biz eğer bir property'i [] yöntemiyle oluşturursak bu parantezler içerisinde 
+bir fonksiyon çağırabilir ya da bir işlem yapabiliriz.
+
+Eğer üstteki atama şekli yerine tüm property'leri tek seferde atamak istersek;
+
+var box = {
+    material: "cardboard",
+    0: "meow",
+    "^&*": "testing 123"
+};
+console.log(box);
+{ '0': 'meow', material: 'cardboard', '^&*': 'testing 123' }
+
+Normalde bu şekilde property atarken aslında eskiden property adları da "" 
+içerisinde yazılırdı fakat artık buna ihtiyaç kalmadı. Ancak eğer property 
+adında özel karakterler kullanmak istiyorsak "" içerisinde yazmalıyız.
+################################################################################

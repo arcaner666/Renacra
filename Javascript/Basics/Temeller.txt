@@ -1,6 +1,7 @@
 ### TEMELLER (BASICS) ##########################################################
 
 --- Tanım ----------------------------------------------------------------------
+
 Javascript dinamik tipli, bir betik dilidir. 
 
 İnternetteki web sitelerinin %97'sini oluşturur.
@@ -19,6 +20,7 @@ değiştirebilir.
 --------------------------------------------------------------------------------
 
 --- Javascript'in Kullanım Şekilleri -------------------------------------------
+
 HTML5 kodları okumaya yukarıdan başlar. 
 
 Javascript kodları iki şekilde yazılabilir:
@@ -64,9 +66,5 @@ yazıp HTML5 belgemizin içerisinden bu dosyaya link verebiliriz.
 	   <script src="main.js"></script>
 </body>
 </html>
---------------------------------------------------------------------------------
-
---- Detaylar -------------------------------------------------------------------
-
 --------------------------------------------------------------------------------
 ################################################################################

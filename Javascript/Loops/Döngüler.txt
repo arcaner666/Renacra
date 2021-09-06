@@ -1,0 +1,40 @@
+### DÖNGÜLER ###################################################################
+
+--- for ------------------------------------------------------------------------
+
+for döngüsü bir istenen sayıda tekrarlamak için kullanılır. for döngüsünün
+Javascript'te iki farklı kullanım şekli vardır.
+
+var students = ["Ahmet", "Mehmet", "Veli"];
+// FOR KULLANIM ŞEKLİ 1
+for (let i = 0; i < students.length; i++) {
+    console.log(students[i]);
+}
+// FOR KULLANIM ŞEKLİ 2
+for (student of students) {
+    console.log(student);
+}
+Ahmet
+Mehmet
+Veli
+Ahmet
+Mehmet
+Veli
+--------------------------------------------------------------------------------
+
+--- while ----------------------------------------------------------------------
+
+while döngüsü içindeki şart true olduğu sürece çalışır.
+
+while (students.length > 0) {
+    let student = students.pop();
+    console.log(students);
+}
+[ 'Ahmet', 'Mehmet' ]
+[ 'Ahmet' ]
+[]
+
+Burada pop() özelliği dizinin en son indexteki elemanını siler.
+--------------------------------------------------------------------------------
+
+################################################################################

@@ -1,0 +1,56 @@
+### BRACKET NOTASYONU ##########################################################
+
+Javascript'te dizilerde nesnedir ve dizilere property'ler dizi.property = "";
+şeklinde atanabilir demiştik. Javascript'te [] işaretlerini ise biz noktayı 
+kullanamadığımız zamanlarda kullanırız. Bir property tanımlarken array.0 
+diyemeyiz. array.'dan sonra property adı olarak string vermek zorundayız.
+
+var person = [];
+person.name = "Mrs. White";
+var who = person.name;
+person[0] = "I was not in the Billiards room."
+console.log(person);
+console.log(person.name);
+console.log(person[0]);
+[ 'I was not in the Billiards room.', name: 'Mrs. White' ]
+Mrs. White
+I was not in the Billiards room.
+
+Aynı şekilde bir diziden bir property'i çağırırken de eğer bu property'nin adı 
+sayı ise array[sayı] şeklinde çağırırız.
+
+// Yanlış Kullanım
+var person = [];
+person.name = "Mrs. White";
+person[plea] = "I would never!";
+console.log(person);
+console.log(person[plea]);
+HATA!!!
+
+// Doğru Kullanım
+var person = [];
+var plea = "whouldShe";
+person.name = "Mrs. White";
+person[plea] = "I would never!";
+console.log(person);
+console.log(person[plea]);
+[ name: 'Mrs. White', whouldShe: 'I would never!' ]
+I would never!
+
+İstersek diziye sayı ile atama yapar gibi string'le de atama yapabiliriz ve 
+aynı şekilde array[propertyAdı] şeklinde atanmış değere erişebiliriz. Fakat 
+bunu yapabilmemiz için anahtarın kesinlikle string olması gerekir aksi takdirde 
+hata alırız.
+
+var person = [];
+person.name = "Mrs. White";
+person["gender"] = "Male";
+console.log(person);
+console.log(person["gender"]);
+[ name: 'Mrs. White', gender: 'Male' ]
+Male
+
+Bir değişkene string atayarak kullanabileceğimiz gibi direk dizideki 
+parantezler içerisine string girerek de property oluşturabilir ve onu geri 
+çağırabiliriz.
+################################################################################

@@ -1,0 +1,16 @@
+### TİPLER #####################################################################
+
+--- typeof ---------------------------------------------------------------------
+
+typeof herhangi bir değişkenin türünü bize döndürür.
+
+typeof null bize object döndürür. Bu neredeyse 20 yıldır var olan bir
+Javascript bug'ıdır. Bunu değiştirmek hali hazırdaki birçok sistemi
+bozacağından değiştirilemiyor.
+
+typeof [1,2,3] bize object döndürür. Bu da sıkıntı yaşayabileceğimiz
+durumlardan biridir. Buna da hatadan daha çok eksik bilgilendirme diyebiliriz.
+Buradaki mantık dizilerin içinde obje de tutabilmesi sebebiyle tipe obje
+demesidir.
+--------------------------------------------------------------------------------
+################################################################################

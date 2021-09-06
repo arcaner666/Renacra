@@ -1,0 +1,28 @@
+### PROPERTY ACCESS ############################################################
+
+Nesnelerin property'lerine ulaşmak için .propertyAdı şeklinde ulaşırız.
+
+var person = {};
+person.name = "Mrs. White";
+var who = person.name;
+person.name = "Mr. White";
+console.log(who);
+console.log(person.name);
+Mrs. White
+Mr. White
+
+Burada önemli bir konu da değişkenlerin hafızada nasıl tutulduğudur. 
+person.name değişkenine önce "Mrs. White" string'i atanıyor. Ardından bu 
+değişken who değişkenine atanıyor. Böyle bir durumda biz person.name 
+değişkenini bir daha değiştirdiğimiz zaman who bundan etkilenmez. Çünkü 
+person.name de who da değer tiptirler. Bu sebeple değerin kendisi değişkendir.
+
+Burada person.name'in eski değeri olan "Mrs. White" değişkeni ise Garbage 
+Collector tarafından daha sonra hafızadan atılacaktır.
+
+### NOT ###: Eğer ilerde referans tiplerle çalışırken bir problemle karşılaşmak 
+istemiyorsan bir referans tip ile çalışmaya başlayacağın anda aynı değer 
+tiplerle çalıştığımız gibi ondan bir kopya alıp onun üzerinde çalışmak her 
+zaman daha iyidir. Bu yaklaşım uygulamamızın modülerliğini arttırır ve ilerde 
+yaşayacağımız sorunları azaltır.
+################################################################################

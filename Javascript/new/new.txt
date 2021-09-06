@@ -1,0 +1,13 @@
+### new #######################################################################
+
+Bir sınıftan yeni bir örnek oluşturmak istediğimiz ya da var olan bir yapıdan
+yeni bir tane yaratmak istediğimizde kullanırız.
+
+new Kullanan Nesneler:                   new Kullanmayan Nesneler: 
+Object()                                 String()
+Array()                                  Number()
+Function()                               Boolean()
+Date()
+RegExp()
+Error()    
+################################################################################

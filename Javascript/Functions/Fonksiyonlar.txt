@@ -1,0 +1,43 @@
+### FUNCTIONS ##################################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Fonksiyonlar bir işlemi veya işlem grubunu farklı yerlerde ve farklı zamanlarda
+çalıştırmak istediğimizde tekrar tekrar aynı işlemleri yazmadan kısa bir şekilde
+bu işlem grubunu çalıştırmamızı sağlayan yapılardır.
+--------------------------------------------------------------------------------
+
+--- Prosedür -------------------------------------------------------------------
+
+var students = ["Ahmet", "Mehmet", "Veli"];
+function greetStudents(students) {
+    for (student of students) {
+        console.log(`Merhaba, ${student}`);
+    }
+}
+greetStudents(students);
+Merhaba, Ahmet
+Merhaba, Mehmet
+Merhaba, Veli
+
+### NOT ###: Burada ` işaretleri bizim bir string içerisine değişken eklememizi
+sağlar. Eklenecek değişken ise ${degiskenadi} içerisine yazılır. Normalde +
+operatörü ile iki string'i birleştirdiğimiz zaman bu iki string ile birlikte
+bir de bunların birleşmiş hali için RAM'de ayrıca bir string daha tanımlanır.
+Bu da hafızayı gereksiz yere doldurur. Bunun yerine biz bu yöntemi kullanırız. 
+
+Üstteki gibi geriye değer döndürmeyen yapılara prosedür denir. 
+--------------------------------------------------------------------------------
+
+--- Fonksiyon ------------------------------------------------------------------
+
+Alttaki gibi değer döndürenler yapılara fonksiyon denir.
+
+function timeRemaining(timeElapsed, endTime) {
+    return endTime - timeElapsed;
+}
+var left = timeRemaining(42, 240);
+console.log(left);
+198
+--------------------------------------------------------------------------------
+################################################################################

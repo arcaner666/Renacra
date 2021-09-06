@@ -1,0 +1,22 @@
+### DİZİLER ####################################################################
+
+Diziler Javascript'te [] şeklinde tanımlanır. Aynı nesneler gibi dizilere de 
+alttaki şekilde eleman atayabiliriz. Çünkü Javascript'te diziler de nesnedir. 
+Daha doğrusu aslında Javascript'te dizi diye birşey yoktur. Elbette çok ufak 
+farklar vardır fakat bu gerçeği değiştirmiyor. Dizilerin nesnelere ek olarak 
+bulunan tek özelliği üzerinde array.push, array.pop gibi dizi metotları 
+olmasıdır. Bunlar da aslında birer nesne fonksiyonudur. 
+
+var person = [];
+person.name = "Mrs. White";
+var who = person.name;
+person.name = "Mr. White";
+console.log(who);
+console.log(person.name);
+console.log(typeof person === "array");
+console.log(typeof person === "object");
+Mrs. White
+Mr. White
+false
+true
+################################################################################

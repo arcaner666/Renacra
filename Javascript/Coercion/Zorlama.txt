@@ -1,0 +1,64 @@
+### ZORLAMA ####################################################################
+
+--- String Birleştirme (sayıyı stringe çevirme) --------------------------------
+
+var msg1 = "There are ";
+var numStudents = 16;
+var msg2 = " students.";
+console.log(msg1 + numStudents + msg2);
+There are 16 students.
+
+### NOT ###: Bu işlemin tek bir istisnası var. Eğer çok büyük sayılarla 
+çalışıyorsak ya da virgülden sonraki basamakları çok fazla olan bir sayıyı 
+string'e çevirmek istiyorsak bu işlem beklenmedik sonuçlar yaratabilir. Bunun 
+için kullanılan bazı özel fonksiyonlar var.
+--------------------------------------------------------------------------------
+
+--- String'i Sayıya Çevirme ----------------------------------------------------
+
+// String'i Sayıya Çevirme
+var students = "2";
+function addAStudent(students) {
+    return students + 1;
+}
+addAStudent(Number(students.value));
+console.log(students);
+2
+
+Burada addAStudent() fonksiyonu içerisinde giren parametreyle matematiksel bir 
+işlem yaptığı için içerisine giren parametrenin sayı olduğundan emin olmalıyız.
+--------------------------------------------------------------------------------
+
+--- Doğruluk-Yanlışlık ---------------------------------------------------------
+
+Çeşitli durumlar boolean'e çevrilmeye çalışıldığında dönecek sonuçlar aşağıda 
+gösterilmiştir.
+
+False kabul edilen durumlar:                True kabul edilen durumlar:
+""                                          
+0, -0                                       
+null                                        False olmayan tüm durumlar
+NaN                                         
+false                                       
+undefined
+
+### NOT ###: Bir şart bloğunu üstteki ifadelere göre oluşturmaya çalışırken 
+dikkat etmemiz gereken en önemli konulardan biri şudur: bütün bu tipler bazı 
+özel durumlarda birbirlerine dönüşebilirler. Bu sebeple if bloklarına şart 
+olarak girdiğimiz ifadelerin dönüş tiplerinden emin olmalıyız.
+--------------------------------------------------------------------------------
+
+--- == / === -------------------------------------------------------------------
+
+== ifadesinin Javascript'te değerlerin eşitliğini karşılaştırdığı söylenirken
+=== ifadesinin ise hem değerleri hem de tipi karşılaştırdığı söylenir. Aslında 
+bu iki ifade de doğru değildir.
+
+== ifadesi sağında ve solundaki ifadelerde tip dönüşümüne izin verirken
+=== ifadesi sağında ve solundaki ifadelerde tip dönüşümüne izin vermez.
+
+### NOT ###: Her zaman === kullanmak zorundayız diye birşey yoktur. Eğer işleme 
+giren türlerden eminsek ya da kodu daha okunabilir hale getirecekse == 
+kullanmakta bir sakınca yoktur.
+--------------------------------------------------------------------------------
+################################################################################

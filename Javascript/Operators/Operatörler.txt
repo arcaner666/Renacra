@@ -1,0 +1,70 @@
+### OPERATÖRLER ################################################################
+
+3 + 4
+43 - 1
+"Kyle " + "Simpson"
+!false
+3.0 == 3
+3 < 4
+true || false
+
++  Toplama işlemi / String birleştirme
+-  Çıkarma işlemi
+/  Bölme işlemi
+*  Çarpma işlemi
+** Üs alma
+%  Kalanı bulma
+++ Bir attırma
+-- Bir azaltma
+
+=  Sağdaki değişkeni soldaki değişkene atama
+
++= Soldaki değişken ile sağdaki değişkeni toplayıp sonucu soldaki değişkene 
+atama
+
+-= Soldaki değişkenden sağdaki değişkeni çıkarıp sonucu soldaki değişkene atama
+
+*= Soldaki değişken ile sağdaki değişkeni çarpıp sonucu soldaki değişkene atama
+
+/= Soldaki değişkeni sağdaki değişkene bölüp sonucu soldaki değişkene atama
+
+%= Soldaki değişkenin sağdaki değişkene bölümünden kalanı soldaki değişkene 
+atama
+
+**= Soldaki değişken üzeri sağdaki değişkeni soldaki değişkene atama
+
+== Soldaki değişkenin değeri sağdaki değişkenin değerine eşitse true değilse
+false döndürür.
+
+=== Soldaki değişkenin değeri sağdaki değişkenin değerine eşitse ve tipler de
+eşitse true değilse false döndürür.
+
+!= Soldaki değişkenin değeri sağdaki değişkenin değerine eşit değilse true 
+eşitse false döndürür.
+
+!== Soldaki değişkenin değeri sağdaki değişkenin değerine eşit değilse ve
+tipler de eşit değilse true eşitse false döndürür.
+
+> Soldaki değişkenin değeri sağdaki değişkenin değerinden büyükse true değilse
+false döndürür.
+
+< Soldaki değişkenin değeri sağdaki değişkenin değerinden küçükse true değilse
+false döndürür.
+
+>= Soldaki değişkenin değeri sağdaki değişkenin değerinden büyük veya eşitse
+true değilse false döndürür.
+
+<= Soldaki değişkenin değeri sağdaki değişkenin değerinden küçük veya eşitse
+true değilse false döndürür.
+
+? Ternary operatorü içerisinde tek satırlık kod olan if, else if ve else
+satırlarını tek bir satırda tanımlamaya yarar.
+
+&& Hem soldaki blok hem de sağdaki blok true ise true diğer tüm durumlarda
+false döndürür.
+
+|| Soldaki blok veya sağdaki bloktan yalnızca biri veya her ikisi true ise true
+diğer tüm durumlarda false döndürür.
+
+! Önüne geldiği blok true ise false, false ise true'ya çevirir.
+################################################################################
