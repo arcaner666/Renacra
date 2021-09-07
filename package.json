@@ -1,0 +1,23 @@
+{
+  "name": "renacra",
+  "version": "1.0.0",
+  "description": "Web Geliştirme Notlarım",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcaner666/Renacra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcaner666/Renacra/issues"
+  },
+  "homepage": "https://github.com/arcaner666/Renacra#readme",
+  "dependencies": {
+    "underscore": "^1.13.1"
+  }
+}

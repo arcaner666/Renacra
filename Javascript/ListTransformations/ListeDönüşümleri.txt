@@ -1,0 +1,195 @@
+### LİSTE DÖNÜŞÜMLERİ ##########################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Frontend tarafında sürekli API'lerden gelen verilerle çalışırız. Bu veriler her 
+zaman istediğimiz formatta olmayabiliyor. Bu sebeple biz de liste dönüşüm 
+tekniklerini kullanarak frontend'in ihtiyaçlarına göre verileri 
+şekillendiririz. 
+--------------------------------------------------------------------------------
+
+--- İç İçe Alma (Nesting) ------------------------------------------------------
+
+const game = {};
+game['suspects'] = [];
+game.suspects.push(        
+    {
+        name: "Rusty",
+        color: "orange"
+    },
+    {
+        name: "Miss Scarlet",
+        color: "red"
+    },
+);
+
+yerine;
+
+const game = {
+    'suspects' : [
+        {
+            name: "Rusty",
+            color: "orange"
+        },
+        {
+            name: "Miss Scarlet",
+            color: "red"
+        }
+    ]
+};
+
+kullanılabilir.
+--------------------------------------------------------------------------------
+
+--- Döngü Alıştırmaları --------------------------------------------------------
+
+const game = {
+    'suspects' : [
+        {
+            name: "Rusty",
+            color: "orange"
+        },
+        {
+            name: "Miss Scarlet",
+            color: "red"
+        }
+    ]
+};
+
+var gameLoop = function(){
+    for (let i = 0; i < game.suspects.length; i++){
+        for (let key in game.suspects[i]) {
+            if (game.suspects[i][key] === "Rusty") {
+                console.log("Found em");
+            } else {
+                console.log("Next time");
+            }
+        }
+    }
+}
+
+gameLoop();
+
+Bu alıştırmada game nesnesi içerisindeki suspects property'sine atanmış dizi 
+içerisindeki iki nesnenin property'lerine nasıl erişeceğimizi görüyoruz.
+--------------------------------------------------------------------------------
+
+--- underscore.js --------------------------------------------------------------
+
+https://underscorejs.org adresinden ulaşılabilecek olan bu kütüphane, bize 
+C#'taki LINQ kütüphanesine benzer bir şekilde diziler ve nesneler için çeşitli 
+işlevler sunar. Elle, uzun uzun yapmamız gereken işleri kısaltarak 
+üretkenliğimizi arttırır.
+
+npm install underscore
+
+ardından kütüphanenin kullanılacağı Javascript dosyasına;
+
+var _ = require("underscore");
+
+_ üzerinden kütüphanenin tüm fonksiyonlarına erişebiliriz.
+--------------------------------------------------------------------------------
+
+--- forEach --------------------------------------------------------------------
+
+Burada amacımız suspects dizisindeki elemanları CreateSuspectObjects 
+fonksiyonu sayesinde yeni bir nesne olarak suspectsList dizisine yazmak. 
+
+function CreateSuspectObjects(name) {
+    return {
+        name: name,
+        color: name.split(' ')[1],
+        speak(){
+            console.log("My name is ", name);
+        }
+    };
+};
+var suspects = ["Miss Scarlet", "Colonel Mustard", "Mr. White"];
+var suspectsList = [];
+suspects.forEach(element => {
+    suspectsList.push(CreateSuspectObjects(element));
+});
+console.log(suspectsList[0]);
+console.log(suspectsList[1]);
+console.log(suspectsList[2]);
+{ name: 'Miss Scarlet', color: 'Scarlet', speak: [Function: speak] }
+{ name: 'Colonel Mustard', color: 'Mustard', speak: [Function: speak] }
+{ name: 'Mr. White', color: 'White', speak: [Function: speak] }
+
+Burada forEach metodu arrow function => adı verilen yapı sayesinde atama 
+işlemini hızlıca yapabildik. forEach metodunu yazmanın bunun dışında bir kaç 
+farklı yolu daha var. Fakat hepsinin yaptığı iş temelde aynı. Her bir elemanın 
+üzerinden geçer ve her geçişinde bir fonksiyonu çağırır.
+
+ES6'da gelen özelliklerden biri de nesnelere property'ler gibi metotlar da 
+atanabilmesidir. Üstteki speak fonksiyonu aslında dönen nesnenin metodudur.
+
+function CreateSuspectObjects(name) {
+    return {
+        name: name,
+        color: name.split(' ')[1],
+        speak(){
+            console.log("My name is", name);
+        }
+    };
+};
+var suspects = ["Miss Scarlet", "Colonel Mustard", "Mr. White"];
+var suspectsList = [];
+suspects.forEach(element => {
+    suspectsList.push(CreateSuspectObjects(element));
+});
+suspectsList[0].speak();
+suspectsList[1].speak();
+suspectsList[2].speak();
+My name is Miss Scarlet
+My name is Colonel Mustard
+My name is Mr. White
+--------------------------------------------------------------------------------
+
+--- _.each (underscore.js) -----------------------------------------------------
+
+var _ = require("underscore");
+var list = ["Sally", "Georgie", "Porgie"];
+var callback = function(name, i, list) {
+    if (list[i + 1]) {
+        console.log(name, "is younger than", list[i + 1]);
+    } else {
+        console.log(name, "is oldest.");
+    }
+};
+_.each(list, callback);
+Sally is younger than Georgie
+Georgie is younger than Porgie
+Porgie is oldest.
+
+Burada _.each metodu ilk parametre olarak üzerinde çalışacağı diziyi, ikinci 
+parametre olarak ise her iterasyonda çalışacak fonksiyonu alır. Bu fonksiyon 
+içerisine parametre olarak dizide o an üzerinden geçilen eleman girer.
+
+_.each metodu hem nesnelerde, hem de dizilerde kullanılabilir.
+
+Şimdi ise bu metodu kendimiz underscore.js'i kullanmadan yazalım.
+
+const _ = {};
+_.each = function(list, callback) {
+    if (Array.isArray(list)) {
+        for (let i = 0; i < list.length; i++) {
+            callback(list[i], i, list);            
+        }
+    } else {
+
+    }
+}
+_.each(["Sally", "Georgie", "Porgie"], function(name, i, list) {
+    if (list[i + 1]) {
+        console.log(name, "is younger than", list[i + 1]);
+    } else {
+        console.log(name, "is oldest.");
+    }
+});
+
+Burada aslında underscore.js'deki _.each metodu da bizim yazdığımız da altta
+aynı işi yapıyor. underscore.js'in farkı bu işi daha kısa bir şekilde daha 
+okunaklı yapması.
+--------------------------------------------------------------------------------
+################################################################################
