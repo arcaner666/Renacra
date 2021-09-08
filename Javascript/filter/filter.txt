@@ -1,0 +1,86 @@
+### filter #####################################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Bu metot parametre olarak olarak üzerinde gezilen elemanın metot tarafından 
+döndürülecek yeni diziye eklenip eklenmeyeceğine karar veren, true-false 
+döndüren bir fonksiyon alır.
+
+Eğer bu fonksiyon true döndürürse eleman yeni diziye eklenir, eğer false 
+döndürürse eklenmez.
+
+filter metodu yalnızca dizi metodu olduğu için kullanımı pek önerilmiyor. Bunun 
+yerine bir üst bölümdeki gibi ya underscore, lodash gibi kütüphaneleri
+kullanmalıyız ya da yine bir üst bölümde yazdığımız map'in filter versiyonunu 
+yazmalıyız.
+
+const numbers = [2, 5, 8, 13, 15, 17];
+function isBigEnough(value) {
+    return value >= 10;
+}
+console.log(numbers.filter(isBigEnough));
+[ 13, 15, 17 ]
+--------------------------------------------------------------------------------
+
+--- underscore.js --------------------------------------------------------------
+
+https://underscorejs.org adresinden ulaşılabilecek olan bu kütüphane, bize 
+C#'taki LINQ kütüphanesine benzer bir şekilde diziler ve nesneler için çeşitli 
+işlevler sunar. Elle, uzun uzun yapmamız gereken işleri kısaltarak 
+üretkenliğimizi arttırır.
+
+npm install underscore
+
+ardından kütüphanenin kullanılacağı Javascript dosyasına;
+
+import * as _ from "underscore";
+
+_ üzerinden kütüphanenin tüm fonksiyonlarına erişebiliriz.
+--------------------------------------------------------------------------------
+
+--- _.filter (underscore.js vs kendi yazdığımız) -------------------------------
+
+underscore.js'deki _.filter metodu ilk parametre olarak üzerinde çalışacağı 
+diziyi, ikinci parametre olarak ise üzerinde gezilen elemanın metot tarafından 
+döndürülecek yeni diziye eklenip eklenmeyeceğine karar veren, true-false 
+döndüren bir fonksiyon alır.
+
+Eğer bu fonksiyon true döndürürse eleman yeni diziye eklenir, eğer false 
+döndürürse eklenmez.
+
+import * as _ from "underscore";
+const weapons = ["candlestick", "lead pipe", "revolver"];
+const makeBroken = function(item, i, list) {
+    return `broken ${item}`;
+}
+console.log(_.map(weapons, makeBroken));
+[ 'broken candlestick', 'broken lead pipe', 'broken revolver' ]
+
+Burada weapons dizisindeki her bir elemanın önüne broken kelimesi eklenmiştir. 
+Sonuçlar ile yeni bir dizi oluşturulmuş ve bu dizi geri döndürülmüştür.
+
+Şimdi underscore.js ile yazdığımız bu yapıyı kendimiz yazmaya çalışalım. 
+
+const _ = {};
+const numbers = [5, 7, 9, 12, 15, 16];
+const compareNumbers = function(value, i, list) {
+    return value > 10;
+}
+_.filter = function(list, callback) {
+    let newList = [];
+    for (let i = 0; i < list.length; i++) {
+        if (callback(list[i], i, list) === true) {
+            newList.push(list[i]);
+        }
+    }
+    return newList;
+}
+console.log(_.filter(numbers, compareNumbers));
+[ 12, 15, 16 ]
+
+Burada callback fonksiyonu içerisine -her ne kadar son ikisini kullanmasak da- 
+üç parametre girmemizin sebebi olabildiğince genel(generic) bir yapı 
+oluşturabilmektir. _.filter içerisine girecek callback fonksiyonunun 
+olabildiğince çok durumu kapsamasına yardımcı olabilmektir.
+--------------------------------------------------------------------------------
+################################################################################

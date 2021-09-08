@@ -31,7 +31,7 @@ Bu da hafızayı gereksiz yere doldurur. Bunun yerine biz bu yöntemi kullanır�
 
 --- Fonksiyon ------------------------------------------------------------------
 
-Alttaki gibi değer döndürenler yapılara fonksiyon denir.
+Alttaki gibi değer döndüren yapılara fonksiyon denir.
 
 function timeRemaining(timeElapsed, endTime) {
     return endTime - timeElapsed;
@@ -39,5 +39,51 @@ function timeRemaining(timeElapsed, endTime) {
 var left = timeRemaining(42, 240);
 console.log(left);
 198
+--------------------------------------------------------------------------------
+
+--- Arrow Function (=>) --------------------------------------------------------
+
+Arrow function, Javascript'te yazdığımız kodları ifade etmenin bir başka 
+yoludur. C#'taki LINQ kütüphanesindeki kullanımıyla benzer bir kullanımı vardır.
+
+var nameImprover = (name, adj) => `Lord ${name}, The Monster ${adj}`;
+console.log(nameImprover("Caner", "Slayer"));
+Lord Caner, The Monster Slayer
+
+Arrow function'da function deyimini kullanmamıza gerek yoktur. 
+
+Arrow function'da eğer fonksiyon içerisine birden fazla parametre girecekse;
+
+(parametre1, parametre2) => parametre1 + parametre2;
+
+Eğer fonksiyon içerisine sadece tek bir parametre girecekse ()'i de kullanmadan;
+
+parametre1 => parametre1 + parametre2;
+
+şeklinde fonksiyonu tanımlarız.
+
+Arrow function'da eğer fonksiyonun içi tek satırlıksa;
+
+(parametre1, parametre2) => parametre1 + parametre2;
+
+Eğer fonksiyonun içi çok satırlıksa;
+
+(parametre1, parametre2) => {
+    let parametre3 = 0;
+    parametre3 = parametre1 + parametre2;
+    return parametre3 * 0.5;
+}
+
+şeklinde fonksiyonu tanımlarız.
+
+Arrow function'ı diğer fonksiyonlardan ayıran en önemli özelliği kendi this 
+deyimine sahip olmamasıdır. Diğer fonksiyonların içerisinde this deyimi 
+kullanıldığında bu deyim fonksiyonun içerisinde bulunduğu scope'u işaret eder. 
+Fakat arrow function'da this deyimi kullanılamaz. Kullanılsa da çalışmaz. Arrow 
+function içerisindeki her şey yalnızca kendi scope'u içerisinde gerçekleşir.
+
+Arrow function'lar metot olarak kullanılamazlar.
+
+Arrow function'lar constructor olarak kullanılamazlar.
 --------------------------------------------------------------------------------
 ################################################################################

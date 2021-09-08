@@ -1,0 +1,73 @@
+### map ########################################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Bu metot bir dizideki elemanların herbirini sırayla gezer. Her iterasyonda 
+callback fonksiyonundan dönen sonucu yeni bir diziye aynı indexle atar.
+
+map metodu geriye üzerinde çalıştığı dizinin callback fonksiyonu sayesinde 
+değiştirilmiş versiyonunu yeni bir dizi olarak döndürür.
+
+map metodu yalnızca dizi metodu olduğu için kullanımı pek önerilmiyor. Bunun 
+yerine bir üst bölümdeki gibi ya underscore, lodash gibi kütüphaneleri
+kullanmalıyız ya da yine bir üst bölümde yazdığımız each'in map versiyonunu 
+yazmalıyız.
+
+var arr = [1,2,3];
+var newArray = arr.map(function(v, i, arr) {
+    return v * 2;   
+});
+console.log(newArray);
+[ 2, 4, 6 ]
+--------------------------------------------------------------------------------
+
+--- underscore.js --------------------------------------------------------------
+
+https://underscorejs.org adresinden ulaşılabilecek olan bu kütüphane, bize 
+C#'taki LINQ kütüphanesine benzer bir şekilde diziler ve nesneler için çeşitli 
+işlevler sunar. Elle, uzun uzun yapmamız gereken işleri kısaltarak 
+üretkenliğimizi arttırır.
+
+npm install underscore
+
+ardından kütüphanenin kullanılacağı Javascript dosyasına;
+
+import * as _ from "underscore";
+
+_ üzerinden kütüphanenin tüm fonksiyonlarına erişebiliriz.
+--------------------------------------------------------------------------------
+
+--- _.map (underscore.js vs kendi yazdığımız) ----------------------------------
+
+underscore.js'deki _.map metodu ilk parametre olarak üzerinde çalışacağı dizi 
+veya nesneyi ikinci parametre olarak callback fonksiyonunu alır.
+
+import * as _ from "underscore";
+const weapons = ["candlestick", "lead pipe", "revolver"];
+const makeBroken = function(item) {
+    return `broken ${item}`;
+}
+console.log(_.map(weapons, makeBroken));
+[ 'broken candlestick', 'broken lead pipe', 'broken revolver' ]
+
+Burada weapons dizisindeki her bir elemanın önüne broken kelimesi eklenmiştir. 
+Sonuçlar ile yeni bir dizi oluşturulmuş ve bu dizi geri döndürülmüştür.
+
+Şimdi underscore.js ile yazdığımız bu yapıyı kendimiz yazmaya çalışalım. 
+
+const _ = {};
+const weapons = ["candlestick", "lead pipe", "revolver"];
+const makeBroken = function(item) {
+    return `broken ${item}`;
+}
+_.map = function(list, callback) {
+    let newList = [];
+    for (let i = 0; i < list.length; i++) {
+        newList.push(callback(list[i], i, list));
+    }
+    return newList;
+}
+console.log(_.map(weapons, makeBroken));
+[ 'broken candlestick', 'broken lead pipe', 'broken revolver' ]
+--------------------------------------------------------------------------------
+################################################################################

@@ -1,0 +1,140 @@
+### forEach ####################################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Bu metot bir dizideki elemanların her birini sırayla gezerek her bir 
+iterasyonda bir callback fonksiyonu çağırır.
+
+forEach metodu geriye undefined döndürür yani bir şey döndürmez aslında.
+
+forEach metodu yalnızca dizi metodu olduğu için kullanımı pek önerilmiyor. 
+Bunun yerine bir alt bölümdeki gibi ya underscore, lodash gibi kütüphaneleri 
+kullanmalıyız ya da yine bir alt bölümdeki gibi kendi each fonksiyonumuzu 
+yazmalıyız.
+
+Burada amacımız suspects dizisindeki elemanları CreateSuspectObjects 
+fonksiyonu sayesinde yeni bir nesne olarak suspectsList dizisine yazmak. 
+
+function CreateSuspectObjects(name) {
+    return {
+        name: name,
+        color: name.split(' ')[1],
+        speak(){
+            console.log("My name is ", name);
+        }
+    };
+};
+var suspects = ["Miss Scarlet", "Colonel Mustard", "Mr. White"];
+var suspectsList = [];
+suspects.forEach(element => {
+    suspectsList.push(CreateSuspectObjects(element));
+});
+console.log(suspectsList[0]);
+console.log(suspectsList[1]);
+console.log(suspectsList[2]);
+{ name: 'Miss Scarlet', color: 'Scarlet', speak: [Function: speak] }
+{ name: 'Colonel Mustard', color: 'Mustard', speak: [Function: speak] }
+{ name: 'Mr. White', color: 'White', speak: [Function: speak] }
+
+Burada forEach metodu arrow function => adı verilen yapı sayesinde atama 
+işlemini hızlıca yapabildik. forEach metodunu yazmanın bunun dışında bir kaç 
+farklı yolu daha var. Fakat hepsinin yaptığı iş temelde aynı. Her bir elemanın 
+üzerinden geçer ve her geçişinde bir fonksiyonu çağırır.
+
+ES6'da gelen özelliklerden biri de nesnelere property'ler gibi metotlar da 
+atanabilmesidir. Üstteki speak fonksiyonu aslında dönen nesnenin metodudur.
+
+function CreateSuspectObjects(name) {
+    return {
+        name: name,
+        color: name.split(' ')[1],
+        speak(){
+            console.log("My name is", name);
+        }
+    };
+};
+var suspects = ["Miss Scarlet", "Colonel Mustard", "Mr. White"];
+var suspectsList = [];
+suspects.forEach(element => {
+    suspectsList.push(CreateSuspectObjects(element));
+});
+suspectsList[0].speak();
+suspectsList[1].speak();
+suspectsList[2].speak();
+My name is Miss Scarlet
+My name is Colonel Mustard
+My name is Mr. White
+--------------------------------------------------------------------------------
+
+--- underscore.js --------------------------------------------------------------
+
+https://underscorejs.org adresinden ulaşılabilecek olan bu kütüphane, bize 
+C#'taki LINQ kütüphanesine benzer bir şekilde diziler ve nesneler için çeşitli 
+işlevler sunar. Elle, uzun uzun yapmamız gereken işleri kısaltarak 
+üretkenliğimizi arttırır.
+
+npm install underscore
+
+ardından kütüphanenin kullanılacağı Javascript dosyasına;
+
+import * as _ from "underscore";
+
+_ üzerinden kütüphanenin tüm fonksiyonlarına erişebiliriz.
+--------------------------------------------------------------------------------
+
+--- _.each (underscore.js vs kendi yazdığımız) ---------------------------------
+
+Aşağıda underscore.js adlı kütüphane kullanılarak yaşlarına göre küçükten 
+büyüğe sıralı bir şekilde verilen dizi içerisindeki elemanlara uygun çıktılar 
+verilmeye çalışılıyor.
+
+import * as _ from "underscore";
+const list = ["Sally", "Georgie", "Porgie"];
+const callback = function(name, i, list) {
+    if (list[i + 1]) {
+        console.log(name, "is younger than", list[i + 1]);
+    } else {
+        console.log(name, "is oldest.");
+    }
+};
+_.each(list, callback);
+Sally is younger than Georgie
+Georgie is younger than Porgie
+Porgie is oldest.
+
+Burada _.each metodu ilk parametre olarak üzerinde çalışacağı dizi veya 
+nesneyi, ikinci parametre olarak ise her iterasyonda çalışacak fonksiyonu alır. 
+Bu fonksiyona ise opsiyonel olarak üç parametre girebilir. İlki o anki eleman 
+ya da property, ikincisi indexi üçüncüsü ise üstünde çalışılan dizi veya 
+nesnedir.
+
+Burada
+
+_.each metodu hem nesnelerde, hem de dizilerde kullanılabilir.
+
+Şimdi ise bu metodu kendimiz underscore.js'i kullanmadan yazalım.
+
+const _ = {};
+const persons = ["Sally", "Georgie", "Porgie"];
+const comparePersons = function(value, i, list){
+    if (list[i + 1]) {
+        console.log(value, "is younger than", list[i + 1]);
+    } else {
+        console.log(value, "is oldest.");
+    }
+}
+_.each = function(list, callback) {
+    for (let i = 0; i < list.length; i++) {
+        callback(list[i], i, list);            
+    }
+}
+_.each(persons, comparePersons);
+Sally is younger than Georgie
+Georgie is younger than Porgie
+Porgie is oldest.
+
+Burada aslında underscore.js'deki _.each metodu da bizim yazdığımız da arka 
+planda aynı işi yapıyor. underscore.js'in farkı bu işi daha kısa bir şekilde 
+daha okunaklı yapması.
+--------------------------------------------------------------------------------
+################################################################################
