@@ -86,4 +86,116 @@ Arrow function'lar metot olarak kullanılamazlar.
 
 Arrow function'lar constructor olarak kullanılamazlar.
 --------------------------------------------------------------------------------
+
+--- Spread Operatörü (...) -----------------------------------------------------
+
+Bu operatör fonksiyon içerisine giren ve herhangi bir değişkenle eşleşmeyen 
+bütün argümanları yanına eklendiği değişkende birleştirir.
+
+const createTuple = (a, b, c, ...d) => {
+  return [
+    [a, c],
+    [b, d],
+  ];
+};
+const newTuples = createTuple("It", "be", "could", "anyone", "no one");
+console.log(newTuples);
+[ [ 'It', 'could' ], [ 'be', [ 'anyone', 'no one' ] ] ]
+--------------------------------------------------------------------------------
+
+--- arguments ------------------------------------------------------------------
+
+Bu deyim bir fonksiyon içerisine giren tüm parametreleri içerisinde barındırır.
+Sadece fonksiyon içerisine geçen değerleri alır. Varsayılan parametreleri almaz.
+Ayrıca spread operatörü de arguments'in alacağı parametreleri etkilemez.
+
+const createTuple = function (a, b, c, ...d) {
+  console.log(arguments);
+};
+const newTuples = createTuple("It", "be", "could", "anyone", "no one");
+[Arguments] {
+  '0': 'It',
+  '1': 'be',
+  '2': 'could',
+  '3': 'anyone',
+  '4': 'no one'
+}
+--------------------------------------------------------------------------------
+
+--- Varsayılan Parametreler ----------------------------------------------------
+
+Bir fonksiyonda tanımlanan parametreler eğer fonksiyonun çağırılma anında 
+fonksiyon içerisine girilmemişlerse hata alırız. Fakat varsayılan parametre 
+atayarak bu sorunu çözebiliriz.
+
+// ES6 İle Yazılmış Versiyon
+const add = function (a, b = 2) {
+  console.log(arguments);
+  return a + b;
+};
+console.log(add(3));
+[Arguments] { '0': 3 }
+5
+
+Şimdi bir de üstteki kodları ES5 ile yazalım.
+
+// ES5 İle Yazılmış Versiyon
+const add = function (a, b) {
+  b = b || 2;
+  console.log(arguments);
+  return a + b;
+};
+console.log(add(3));
+[Arguments] { '0': 3 }
+5
+--------------------------------------------------------------------------------
+
+--- Dizi Benzeri Nesneler (Array-Like Object) ----------------------------------
+
+Javascript'te diziye benzeyen indexleri olan fakat dizi olmayan, üzerinde push, 
+pop, slice gibi dizi metotları uygulanamayan array-like object denilen yapılar 
+vardır.
+
+{
+    0: "was",
+    1: "it",
+    2: "in"
+}
+
+Örneğin; arguments metodu bize bir fonksiyona giren argümanları dizi benzeri 
+bir nesne olarak döndürür. Eğer biz bu dizi benzeri nesneyi gerçek bir diziye 
+dönüştürmek istiyorsak aşağıdaki yöntemi kullanırız.
+
+// ES5 İle Yazılan Versiyon
+const constructArr = function () {
+  const arr = Array.prototype.slice.call(arguments);
+  return arr;
+};
+console.log(constructArr("was", "it", "in"));
+[ 'was', 'it', 'in' ]
+
+Burada Array.prototype.slice.call(arguments); ifadesi arguments nesnesini bir 
+diziye çevirir. Arka planda nasıl çalıştığını anlamamız çok mühim değilmiş.
+
+// ES6 İle Yazılan Versiyon
+const constructArr = function () {
+  const arr = Array.from(arguments);
+  return arr;
+};
+console.log(constructArr("was", "it", "in"));
+[ 'was', 'it', 'in' ]
+--------------------------------------------------------------------------------
+
+--- Fonksiyonlar Da Nesnedir ---------------------------------------------------
+
+Javascript'te fonksiyonlar da birer nesnedirler. Eğer istersek fonksiyonlara da 
+property'ler ekleyebiliriz.
+
+const add = function (a, b) {
+  return a + b;
+};
+add.example = "testing 123";
+console.log(add.example);
+testing 123
+--------------------------------------------------------------------------------
 ################################################################################

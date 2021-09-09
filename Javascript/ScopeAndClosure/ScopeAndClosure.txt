@@ -35,6 +35,85 @@ verecekti. Çünkü let ifadesi önüne geldiği değişkeni aynı C#'taki priva
 sadece bulunduğu kod bloğunun içinde tanımlı hale getirir.
 --------------------------------------------------------------------------------
 
+--- Fonksiyonlarda Scope -------------------------------------------------------
+
+Burada bir fonksiyonun scope'unun neresi olduğuna bakacağız.
+
+Burada öncelikle firstFn adında bir fonksiyon tanımlanarak içerisinde 
+localToFirstFn adlı bir değişken tanımlanmıştır.
+
+Ardından firstFn içerisinde secondFn fonksiyonu çağırılmıştır.
+
+Altından ise secondFn adlı fonksiyon tanımlanarak localToFirstFn değişkeni 
+konsola yazdırılmak istenmiştir.
+
+var globalVar = "global";
+var firstFn = function () {
+  var localToFirstFn = "first";
+  secondFn();
+};
+var secondFn = function () {
+  console.log(localToFirstFn);
+};
+firstFn();
+ReferenceError: localToFirstFn is not defined
+
+Burada hata alınmasının sebebi şudur; secondFn fonksiyonu önce localToFirstFn değişkenini konsola yazdırabilmek için önce kendi scope'unda arar.
+
+Orada bulamazsa eğer kendisinin tanımlandığı scope'a bakar ki burası da 
+globalVar değişkeninin olduğu hizadır.
+
+Yani bir fonksiyon kendisiyle aynı seviyede tanımlanan bir fonksiyonun 
+içerisinden çağırılsa dahi o fonksiyonun scope'una erişemez.
+
+Scope'ta arama işlemi yalnızca yukarı doğru, yani evebenyne(parent) doğru 
+ilerler.
+
+Eğer secondFn içerisinde localToFirstFn yerine globalVar'ı çağırmış olsaydık 
+hata almayacaktık.
+
+var globalVar = "global";
+var firstFn = function () {
+  var localToFirstFn = "first";
+  secondFn();
+};
+var secondFn = function () {
+  console.log(globalVar);
+};
+firstFn();
+global
+
+Bir fonksiyon her çağırıldığında {} içerisinde tanımlanan blok yani fonksiyonun 
+scope'u yeniden tanımlanır.
+
+var globalVar = "global";
+var fn = function () {
+  var localVariable;
+  if (localVariable === undefined) {
+    globalVar = "alpha";
+  } else if (localVariable === "initialized") {
+    globalVar = "omega";
+  }
+  localVariable = "initialized";
+  console.log(globalVar);
+};
+fn();
+fn();
+alpha
+alpha
+
+Bir fonksiyon aynı anda hem kendi scope'una hem de içinde bulunduğu scope'a 
+erişebilir.
+
+var outerName = "outer";
+var fn = function () {
+  var innerName = "inner";
+  console.log(innerName + outerName);
+};
+fn();
+innerouter
+--------------------------------------------------------------------------------
+
 --- undefined vs undeclared ----------------------------------------------------
 
 Javascript'te bu ikisi birbirinden tamamen farklı kavramlardır ve asla aynı 

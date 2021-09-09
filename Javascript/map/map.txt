@@ -9,9 +9,8 @@ map metodu geriye üzerinde çalıştığı dizinin callback fonksiyonu sayesind
 değiştirilmiş versiyonunu yeni bir dizi olarak döndürür.
 
 map metodu yalnızca dizi metodu olduğu için kullanımı pek önerilmiyor. Bunun 
-yerine bir üst bölümdeki gibi ya underscore, lodash gibi kütüphaneleri
-kullanmalıyız ya da yine bir üst bölümde yazdığımız each'in map versiyonunu 
-yazmalıyız.
+yerine ya underscore, lodash gibi kütüphaneleri kullanmalıyız ya da yine bir 
+üst bölümde yazdığımız each'in map versiyonunu yazmalıyız.
 
 var arr = [1,2,3];
 var newArray = arr.map(function(v, i, arr) {

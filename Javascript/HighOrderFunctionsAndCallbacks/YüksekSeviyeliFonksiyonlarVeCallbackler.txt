@@ -1,0 +1,100 @@
+### YÜKSEK SEVİYELİ FONKSİYONLAR VE CALLBACKLER ################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Javascript'te bütün fonksiyonlar nesnedir. Aynı zamanda da veridir. Yani diğer 
+programlama dillerinin aksine Javascript'te fonksiyonlar diğer fonksiyonlar 
+içerisine parametre olarak girilebilirken aynı zamanda fonksiyonlar geriye 
+fonksiyon döndürebilir.
+
+Bu tarz işler yapan fonksiyonlara yüksek seviyeli fonksiyonlar ya da callback 
+fonksiyonları denir.
+--------------------------------------------------------------------------------
+
+--- Callback -------------------------------------------------------------------
+
+Burada ifElse adlı fonksiyon içerisine parametre olarak fonksiyon almış ve 
+kendi içerisindeki mantığa göre içerisine girilen fonksiyonu geri döndürdükten 
+sonra çalıştırmıştır.
+
+const ifElse = (condition, isTrue, isFalse) => {
+  return condition ? isTrue() : isFalse();
+};
+ifElse(
+  true,
+  () => {
+    console.log(true);
+  },
+  () => {
+    console.log(false);
+  }
+);
+true
+
+Eğer üstteki;
+
+return condition ? isTrue() : isFalse(); 
+
+satırını;
+
+return condition ? isTrue : isFalse;
+
+şeklinde yazmış olsaydık geriye döndürdüğü fonksiyonu çalıştırmadan sadece 
+fonksiyonun kendini döndürecekti.
+--------------------------------------------------------------------------------
+
+--- İç İçe Fonksiyon Yapısı ----------------------------------------------------
+
+var increment = function (n) {
+  return n + 1;
+};
+var square = function (n) {
+  return n * n;
+};
+var doMathSoIDontHaveTo = function (n, func) {
+  return func(n);
+};
+console.log(doMathSoIDontHaveTo(5, increment));
+console.log(doMathSoIDontHaveTo(4, square));
+6
+16
+--------------------------------------------------------------------------------
+
+--- Argümanların İçeriye Aktarılması -------------------------------------------
+
+const ifElse = (condition, isTrue, isFalse, p) => {
+  return condition ? isTrue(p) : isFalse(p);
+};
+ifElse(
+  true,
+  (p) => {
+    console.log(`${true} ${p}`);
+  },
+  (p) => {
+    console.log(`${false} ${p}`);
+  },
+  "Hi!"
+);
+true Hi!
+--------------------------------------------------------------------------------
+
+--- Argümanların Spread Operatörüyle Toplu Olarak İçeriye Aktarılması ----------
+
+const ifElse = (condition, isTrue, isFalse, ...args) => {
+  return condition ? isTrue(...args) : isFalse(...args);
+};
+ifElse(
+  true,
+  (...args) => {
+    console.log(`${true} ${args}`);
+  },
+  (...args) => {
+    console.log(`${false} ${args}`);
+  },
+  "Hi!",
+  "Bye",
+  "Hola"
+);
+true Hi!,Bye,Hola
+--------------------------------------------------------------------------------
+################################################################################
