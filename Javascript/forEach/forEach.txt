@@ -108,8 +108,6 @@ Bu fonksiyona ise opsiyonel olarak üç parametre girebilir. İlki o anki eleman
 ya da property, ikincisi indexi üçüncüsü ise üstünde çalışılan dizi veya 
 nesnedir.
 
-Burada
-
 _.each metodu hem nesnelerde, hem de dizilerde kullanılabilir.
 
 Şimdi ise bu metodu kendimiz underscore.js'i kullanmadan yazalım.

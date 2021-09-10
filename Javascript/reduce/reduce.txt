@@ -2,13 +2,77 @@
 
 --- Tanım ----------------------------------------------------------------------
 
+Bu metot içerisine girilen callback fonksiyonuna göre aldığı parametreleri bu 
+fonksiyonun mantığıyla işler. Çıktıyı tekrar argüman olarak içerisine alır ve 
+tekrar bir çıktı verir. Dizinin her elemanı için bu işlem tekrarlanır.
+
+Javascript'teki dizilerin metodu olan reduce iki parametre alır. Birincisi her 
+iterasyonda işlemi yapacak callback fonksiyonudur. İkincisi ise başlangıç 
+değeridir. 
+
+reduce her zaman işlem sonunda tek bir değer, nesne yada fonksiyon döndürür.
+
+const array1 = [1, 2, 3];
+const reducer = (previousValue, currentValue) => {
+  return previousValue + currentValue;
+};
+console.log(array1.reduce(reducer));
+6
 --------------------------------------------------------------------------------
 
---- Kullanım Şekli -------------------------------------------------------------
+--- underscore.js --------------------------------------------------------------
 
+https://underscorejs.org adresinden ulaşılabilecek olan bu kütüphane, bize 
+C#'taki LINQ kütüphanesine benzer bir şekilde diziler ve nesneler için çeşitli 
+işlevler sunar. Elle, uzun uzun yapmamız gereken işleri kısaltarak 
+üretkenliğimizi arttırır.
+
+npm install underscore
+
+ardından kütüphanenin kullanılacağı Javascript dosyasına;
+
+import * as _ from "underscore";
+
+_ üzerinden kütüphanenin tüm fonksiyonlarına erişebiliriz.
 --------------------------------------------------------------------------------
 
---- Detaylar -------------------------------------------------------------------
+--- _.reduce (underscore.js vs kendi yazdığımız) -------------------------------
 
+Aşağıda içerisinde sayılar bulunan bir diziyi underscore.js'deki _.reduce 
+metodu ile nasıl toplayabileceğimiz gösterilmiştir.
+
+import * as _ from "underscore";
+const numberToSum = [1, 2, 3];
+const sum = function (value, memo) {
+  return memo + value;
+};
+console.log(_.reduce(numberToSum, sum, 0));
+
+_.reduce metodu hem nesnelerde, hem de dizilerde kullanılabilir.
+
+Şimdi ise bu metodu kendimiz underscore.js'i kullanmadan yazalım.
+
+const _ = {};
+_.reduce = function (list, cb, initial) {
+  let memo = initial;
+  for (let i = 0; i < list.length; i++) {
+    if (i === 0 && memo === undefined) {
+      memo = list[0];
+    } else {
+      memo = cb(list[i], memo);
+    }
+  }
+  return memo;
+};
+const numberToSum = [1, 2, 3];
+const sum = function (value, memo) {
+  return memo + value;
+};
+console.log(_.reduce(numberToSum, sum, 0));
+6
+
+Burada kendi yazdığımız _.reduce fonksiyonumuza başlangıç değeri olarak 0 
+yerine hiçbir şey de girmeseydik yine aynı sonucu alacaktık. Fakat sıfırdan 
+farklı bir değer girseydik sonuç değişecekti.
 --------------------------------------------------------------------------------
 ################################################################################

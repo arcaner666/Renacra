@@ -233,5 +233,51 @@ myQuestion();
 Burada eğer programın başka bir bölümünde ben myQuestion() fonksiyonunu tekrar 
 kullanırsam bana "What is closure?" cevabını verecektir. Bunun hatırlanmasını 
 sağlayan sistem closure'dur.
+
+Aşağıda closure'u anlamamız için bir başka örnek anlatılmıştır.
+
+const myLogger = () => {
+  const x = "Help! I think I found a clue!";
+  let count = 0;
+  const logger = () => {
+    console.log(`${x} ${++count}`);
+  };
+  return logger;
+};
+const funcLogger = myLogger();
+const funcLogger2 = myLogger();
+funcLogger();
+funcLogger();
+Help! I think I found a clue! 1
+Help! I think I found a clue! 2
+
+Burada myLogger fonksiyonu içerisindeki logger fonksiyonunu döndüren bir
+fonksiyondur.
+
+funcLogger ve funcLogger2 fonksiyonlarına da myLogger fonksiyonu çalıştırılmış 
+ve dönen fonksiyon bu iki değişkene atanmıştır.
+
+Burada funcLogger fonksiyonu arka arkaya iki kez çalıştırıldığında funcLogger 
+içerisine sadece logger fonksiyonu atandığı için sadece logger'ın scope'u 
+sıfırlanır. Ancak myLogger'daki count sıfırlanmaz. Bu sebeple funcLogger'ın 
+ikinci kez çalışmasında count değişkeni bir artar.
+
+Fakat alttaki durumda myLogger fonksiyonu iki farklı değişkene atanmıştır ve bu 
+durumda myLogger fonksiyonu için iki farklı scope oluşur.  
+
+const myLogger = () => {
+  const x = "Help! I think I found a clue!";
+  let count = 0;
+  const logger = () => {
+    console.log(`${x} ${++count}`);
+  };
+  return logger;
+};
+const funcLogger = myLogger();
+const funcLogger2 = myLogger();
+funcLogger();
+funcLogger2();
+Help! I think I found a clue! 1
+Help! I think I found a clue! 1
 --------------------------------------------------------------------------------
 ################################################################################

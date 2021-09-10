@@ -1,0 +1,25 @@
+### SetTimeout #################################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Bu fonksiyon içerisine girilen fonksiyonu bizim belirlediğimiz sürenin sonunda 
+çalıştırır. Asenkron bir metottur. Dikkatli kullanılması gerekir çünkü 
+programın cevap süresini etkiler.
+
+const myLogger = () => {
+  const x = "Help! I think I found a clue!";
+  const logger = () => {
+    console.log(x);
+  };
+  setTimeout(logger, 1000);
+  console.log("what happens first? this log or the alert?");
+};
+myLogger();
+what happens first? this log or the alert?
+Help! I think I found a clue!
+
+Burada SetTimeout asenkron olduğu için Javascript bu satırı gördükten sonra 
+alttan kodları çalıştırmaya devam eder. SetTimeout'da belirlenen süreye göre 
+SetTimeout içindeki fonksiyonu bu sürenin sonunda çalıştırır.
+--------------------------------------------------------------------------------
+################################################################################
