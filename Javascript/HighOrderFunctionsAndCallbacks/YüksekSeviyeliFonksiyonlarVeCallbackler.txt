@@ -7,8 +7,7 @@ programlama dillerinin aksine Javascript'te fonksiyonlar diğer fonksiyonlar
 içerisine parametre olarak girilebilirken aynı zamanda fonksiyonlar geriye 
 fonksiyon döndürebilir.
 
-Bu tarz işler yapan fonksiyonlara yüksek seviyeli fonksiyonlar ya da callback 
-fonksiyonları denir.
+Bu tarz işler yapan fonksiyonlara yüksek seviyeli fonksiyonlar denir.
 --------------------------------------------------------------------------------
 
 --- Genelleştirilmiş Fonksiyonlar (Generalized Functions) ----------------------
@@ -42,6 +41,9 @@ parametrenin değerini yani fonksiyona giren argümanları o fonksiyon
 çalıştırılana kadar bilmemiz gerekmiyorsa yüksek seviyeli fonksiyonlarda da 
 fonksiyon içerisine parametre olarak giren fonksiyonun içeriğine de bu yüksek 
 seviyeli fonksiyonu çalıştırana kadar karar vermeyebiliriz.
+--------------------------------------------------------------------------------
+
+--- Yüksek Seviyeli Fonksiyonlar (High Order Functions) ------------------------
 
 Şimdi ise alttaki gibi bir fonksiyonumuz olduğunu düşünelim.
 
@@ -58,14 +60,33 @@ const result = copyArrayAndMultiplyBy2(myArray);
 Bu fonksiyon da aslında problemli çünkü eğer bir bu dizideki elemanları 2 ile 
 çarpmak yerine 2'ye bölmek istersek tüm fonksiyonu tek bir karakter değişikliği 
 için baştan yazmak zorunda mı kalmalıyız? Tabi ki de hayır. Bunun yerine bu 
-fonksiyonu yüksek seviyeli bir fonksiyon haline getirmeliyiz. 
+fonksiyonu yüksek seviyeli bir fonksiyon haline getirmeliyiz.
+
+function copyArrayAndManipulate(array, instructions) {
+  const output = [];
+  for (let i = 0; i < array.length; i++) {
+    output.push(instructions(array[i]));
+  }
+  return output;
+}
+const myArray = [1, 2, 3];
+function multiplyBy2(input) {
+  return input * 2;
+}
+const result = copyArrayAndManipulate(myArray, multiplyBy2);
+
+Burada ise instructions parametresine hangi fonksiyonu verirsek onu bizim için 
+işleyecek ve bize sonucu döndürecek. Bu sayede tüm fonksiyonu baştan yazmak 
+yerine sadece farklı olan bölümleri yazdık.
 --------------------------------------------------------------------------------
 
 --- Callback -------------------------------------------------------------------
 
-Burada ifElse adlı fonksiyon içerisine parametre olarak fonksiyon almış ve 
-kendi içerisindeki mantığa göre içerisine girilen fonksiyonu geri döndürdükten 
-sonra çalıştırmıştır.
+Yüksek seviyeli fonksiyon içerisine argüman olarak giren fonksiyonlara denir. 
+
+Burada ifElse adlı fonksiyon içerisine argüman olarak fonksiyon almış ve kendi 
+içerisindeki mantığa göre içerisine girilen fonksiyonu geri döndürdükten sonra 
+çalıştırmıştır.
 
 const ifElse = (condition, isTrue, isFalse) => {
   return condition ? isTrue() : isFalse();

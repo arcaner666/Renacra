@@ -5,6 +5,9 @@
 Fonksiyonlar bir işlemi veya işlem grubunu farklı yerlerde ve farklı zamanlarda
 çalıştırmak istediğimizde tekrar tekrar aynı işlemleri yazmadan kısa bir şekilde
 bu işlem grubunu çalıştırmamızı sağlayan yapılardır.
+
+Fonksiyonlar eğer yüksek seviyeli bir fonksiyon gibi oluşturulmadılarsa
+hafızada tanımlandıktan sonra değiştirilemezler.
 --------------------------------------------------------------------------------
 
 --- Prosedür -------------------------------------------------------------------
