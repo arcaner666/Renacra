@@ -10,15 +10,25 @@ fonksiyon döndürebilir.
 Bu tarz işler yapan fonksiyonlara yüksek seviyeli fonksiyonlar denir.
 --------------------------------------------------------------------------------
 
+--- Fonksiyonel Programlama (Functional Programming) ---------------------------
+
+Fonksiyonel Programlama, Nesne Yönelimli Programlama'dan çok daha farklı bir 
+yaklaşımdır. Nasıl ki Nesne Yönelimli Programlama isimlerle alakalıysa yapısı 
+içerisindeki ve çalışılan her şey nesneyse, Fonksiyonel Programlama'da fiiller 
+ile alakalıdır. Fonksiyonel Programlama'da çok büyük bir oranda fonksiyonlar 
+kullanılır. Fonksiyonlar diğer fonksiyonların içerisine parametre olarak girer. 
+Fonksiyonlar fonksiyon geri döndürür.  
+--------------------------------------------------------------------------------
+
 --- Genelleştirilmiş Fonksiyonlar (Generalized Functions) ----------------------
 
 Fonksiyonlara neden ihtiyacımız olduğu anlamak için aşağıdaki örneği 
 inceleyelim.
 
-Aşağıda verilen kullarra göre 10'un karesini alan bir fonksiyon yazmak
+Aşağıda verilen kurallara göre 10'un karesini alan bir fonksiyon yazmak
 istediğimizi varsayalım;
 
-- İçerisine hiçbir argüman almamalı
+- Hiçbir parametresi olmamalı
 - 10 * 10 ifadesini döndürmeli
 
 Şimdi bu durumda yazacağımız kod nasıl olmalıdır?
@@ -30,7 +40,7 @@ function tenSquared() {
 İşte bu çok kötü bir fonksiyon örneğidir. Ya 10 yerine 9'un karesini almak 
 isteseydik. O zaman bir fonksiyon daha yazmak zorunda kalacaktık.
 
-Bu sebeple bu fonksiyonu alttaki gibi genelleştirmemiz gerekmektedir;
+Bu sebeple fonksiyonu alttaki gibi genelleştirmemiz gerekmektedir;
 
 function squareNumber(number) {
   return number * number;
@@ -84,9 +94,10 @@ yerine sadece farklı olan bölümleri yazdık.
 
 Yüksek seviyeli fonksiyon içerisine argüman olarak giren fonksiyonlara denir. 
 
-Burada ifElse adlı fonksiyon içerisine argüman olarak fonksiyon almış ve kendi 
+Aşağıda ifElse adlı fonksiyon içerisine argüman olarak fonksiyon almış ve kendi 
 içerisindeki mantığa göre içerisine girilen fonksiyonu geri döndürdükten sonra 
-çalıştırmıştır.
+çalıştırmıştır. ifElse fonksiyonuna high order function, isTrue ve isFalse 
+içerisine argüman olarak giren iki arrow function'a da callback function denir.
 
 const ifElse = (condition, isTrue, isFalse) => {
   return condition ? isTrue() : isFalse();

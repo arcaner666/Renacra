@@ -8,6 +8,12 @@ bu işlem grubunu çalıştırmamızı sağlayan yapılardır.
 
 Fonksiyonlar eğer yüksek seviyeli bir fonksiyon gibi oluşturulmadılarsa
 hafızada tanımlandıktan sonra değiştirilemezler.
+
+Javascript'te fonksiyonlar birinci sınıf nesnelerdir;
+
+ - Değişkenlere, sabitlere ve property'lere atanabilirler.
+ - Fonksiyonlara argüman olarak girilebilirler.
+ - Fonksiyonlardan parametre olarak döndürülebilirler.
 --------------------------------------------------------------------------------
 
 --- Prosedür -------------------------------------------------------------------
@@ -61,8 +67,8 @@ değerler parametrelerin içerisinde tutulur.
 
 --- Arrow Function (=>) --------------------------------------------------------
 
-Arrow function, Javascript'te yazdığımız kodları ifade etmenin bir başka 
-yoludur. C#'taki LINQ kütüphanesindeki kullanımıyla benzer bir kullanımı vardır.
+Arrow function, Javascript'te yazdığımız fonksiyonları ifade etmenin bir başka 
+yoludur.
 
 var nameImprover = (name, adj) => `Lord ${name}, The Monster ${adj}`;
 console.log(nameImprover("Caner", "Slayer"));
@@ -103,6 +109,12 @@ function içerisindeki her şey yalnızca kendi scope'u içerisinde gerçekleşi
 Arrow function'lar metot olarak kullanılamazlar.
 
 Arrow function'lar constructor olarak kullanılamazlar.
+
+### NOT ###: Her zaman sırf daha kısa ve okunabilir diye arrow functions 
+kullanmamalıyız. Özellikle yüksek seviyeli fonksiyonlar içerisine giren 
+callback fonksiyonlarını kesinlikle adlandırarak kullanmalıyız. Arrow 
+functions'ı özellikle basit bir fonksiyon tanımlayacaksak veya çok fazla 
+kullanılmayacak bir fonksiyon yazacağımız zaman kullanmalıyız.
 --------------------------------------------------------------------------------
 
 --- Spread Operatörü (...) -----------------------------------------------------

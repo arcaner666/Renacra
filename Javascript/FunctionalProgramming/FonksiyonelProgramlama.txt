@@ -1,9 +1,0 @@
-### FONKSİYONEL PROGRAMLAMA ####################################################
-
-Fonksiyonel Programlama, Nesne Yönelimli Programlama'dan çok daha farklı bir 
-yaklaşımdır. Nasıl ki Nesne Yönelimli Programlama isimlerle alakalıysa yapısı 
-içerisindeki ve çalışılan her şey nesneyse, Fonksiyonel Programlama'da fiiller 
-ile alakalıdır. Fonksiyonel Programlama'da çok büyük bir oranda fonksiyonlar 
-kullanılır. Fonksiyonlar diğer fonksiyonların içerisine parametre olarak girer. 
-Fonksiyonlar fonksiyon geri döndürür.  
-################################################################################
