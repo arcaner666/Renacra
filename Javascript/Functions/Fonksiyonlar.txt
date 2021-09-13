@@ -41,6 +41,21 @@ console.log(left);
 198
 --------------------------------------------------------------------------------
 
+--- Parametre (Parameter) ------------------------------------------------------
+
+Bir fonksiyonun tanımlanırken fonksiyon içerisinde çalışacak, işleme alınacak 
+argümanları tutan değişkenlerdir. Fonksiyonları () ile çalıştırana yani 
+çağırana kadar bu parametrelerin değerini, içlerinde tuttukları veriyi bilmemiz 
+gerekmez.
+--------------------------------------------------------------------------------
+
+--- Argüman (Argument) ---------------------------------------------------------
+
+Bir fonksiyon çalıştırıldığı anda parametreler vasıtasıyla fonksiyonun 
+içerisine giren ve fonksiyon içerisinde işleme alınacak olan değerlerdir. Bu 
+değerler parametrelerin içerisinde tutulur. 
+--------------------------------------------------------------------------------
+
 --- Arrow Function (=>) --------------------------------------------------------
 
 Arrow function, Javascript'te yazdığımız kodları ifade etmenin bir başka 

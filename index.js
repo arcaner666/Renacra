@@ -1,9 +1,9 @@
-const newClue = (name) => {
-  const length = name.length;
-  return (weapon) => {
-    let clue = length + weapon.length;
-    return !!(clue % 1);
-  };
-};
-const funcNew = newClue("Caner");
-console.log(funcNew("sword"));
+function copyArrayAndMultiplyBy2(array, callback) {
+  const output = [];
+  for (let i = 0; i < array.length; i++) {
+    output.push(callback(array[i]));
+  }
+  return output;
+}
+const myArray = [1, 2, 3];
+const result = copyArrayAndMultiplyBy2(myArray);

@@ -11,6 +11,56 @@ Bu tarz işler yapan fonksiyonlara yüksek seviyeli fonksiyonlar ya da callback
 fonksiyonları denir.
 --------------------------------------------------------------------------------
 
+--- Genelleştirilmiş Fonksiyonlar (Generalized Functions) ----------------------
+
+Fonksiyonlara neden ihtiyacımız olduğu anlamak için aşağıdaki örneği 
+inceleyelim.
+
+Aşağıda verilen kullarra göre 10'un karesini alan bir fonksiyon yazmak
+istediğimizi varsayalım;
+
+- İçerisine hiçbir argüman almamalı
+- 10 * 10 ifadesini döndürmeli
+
+Şimdi bu durumda yazacağımız kod nasıl olmalıdır?
+
+function tenSquared() {
+  return 10 * 10;
+}
+
+İşte bu çok kötü bir fonksiyon örneğidir. Ya 10 yerine 9'un karesini almak 
+isteseydik. O zaman bir fonksiyon daha yazmak zorunda kalacaktık.
+
+Bu sebeple bu fonksiyonu alttaki gibi genelleştirmemiz gerekmektedir;
+
+function squareNumber(number) {
+  return number * number;
+}
+
+Fonksiyonlardaki argüman ve parametre ilişkisindeki gibi nasıl ki bir 
+parametrenin değerini yani fonksiyona giren argümanları o fonksiyon 
+çalıştırılana kadar bilmemiz gerekmiyorsa yüksek seviyeli fonksiyonlarda da 
+fonksiyon içerisine parametre olarak giren fonksiyonun içeriğine de bu yüksek 
+seviyeli fonksiyonu çalıştırana kadar karar vermeyebiliriz.
+
+Şimdi ise alttaki gibi bir fonksiyonumuz olduğunu düşünelim.
+
+function copyArrayAndMultiplyBy2(array) {
+  const output = [];
+  for (let i = 0; i < array.length; i++) {
+    output.push(array[i] * 2);
+  }
+  return output;
+}
+const myArray = [1, 2, 3];
+const result = copyArrayAndMultiplyBy2(myArray);
+
+Bu fonksiyon da aslında problemli çünkü eğer bir bu dizideki elemanları 2 ile 
+çarpmak yerine 2'ye bölmek istersek tüm fonksiyonu tek bir karakter değişikliği 
+için baştan yazmak zorunda mı kalmalıyız? Tabi ki de hayır. Bunun yerine bu 
+fonksiyonu yüksek seviyeli bir fonksiyon haline getirmeliyiz. 
+--------------------------------------------------------------------------------
+
 --- Callback -------------------------------------------------------------------
 
 Burada ifElse adlı fonksiyon içerisine parametre olarak fonksiyon almış ve 

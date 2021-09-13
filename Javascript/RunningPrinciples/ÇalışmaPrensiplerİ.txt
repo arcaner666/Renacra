@@ -1,0 +1,133 @@
+### ÇALIŞMA PRENSİPLERİ ########################################################
+
+--- Tanım ---------------------------------------------------------------------
+
+Javascript'te kodlar çalıştırılırken iki işlem yapılır;
+
+1) En üsten başlayarak kodlar satır satır okunur ve çalıştırılır.
+
+2) Veriyi hafızada bir yere kaydeder ve ihtiyaç olduğununda buradan çağırır.
+--------------------------------------------------------------------------------
+
+--- Thread Of Execution --------------------------------------------------------
+
+Javascript bizim kodlarımızı okurken en baştan başlar ve satır satır aşağıya 
+doğru inerek her satırı sırayla çalıştırır. Bu duruma "Thread Of Execution" adı 
+verilir.
+
+Javascript'te aynı anda yalnızca bir tane Thread Of Execution çalışır. Yani 
+Javascript'te aynı anda yalnızca tek bir işlem yapılabilir.
+--------------------------------------------------------------------------------
+
+--- Memory ---------------------------------------------------------------------
+
+Javascript, diziler ve stringler gibi verileri daha sonra kullanabilelim diye 
+hafızada tutar. Hatta fonksiyonların kodlarını bile hafızada tutabilir.
+--------------------------------------------------------------------------------
+
+--- Execution Context ----------------------------------------------------------
+
+Thread Of Execution ve Memory'nin bir araya gelmesiyle oluşan yapıya "Execution 
+Context" denir. Fonksiyonlar Javascript'te adeta küçük bir program gibi 
+çalışırlar. Ana kaynak kodlarımız gibi onların da kendi kaynak kodu ayrıymış 
+gibi çalışırlar. Execution Context ise bu ayrık bölgeye verilen addır.
+--------------------------------------------------------------------------------
+
+--- Global Execution Context ---------------------------------------------------
+
+Ana kaynak kodlarımızın yani ana Javascript dosyamızın çalıştığı execution 
+context'e verilen addır. Bu bizim ana programımızdır.
+--------------------------------------------------------------------------------
+
+--- Call Stack -----------------------------------------------------------------
+
+Javascript'te kodlar çalıştırılırken thread of execution'un ne zaman hangi 
+fonksiyonda olacağına karar veren, fonksiyonların ve kodların çalışma sırasını 
+tutan yere "Call Stack" denir. Javascript'te verileri sakladığımız diziler ve 
+nesneler gibi bir de stack'ler vardır. 
+
+Javascript'te bir fonksiyonu çalıştırdığımızda bu fonksiyon stack'in en üstüne 
+eklenir. Call stack'in en önemli özelliklerinden biri ise her zaman aynı anda 
+yalnızca tek bir fonksiyonu çalıştırır ve çalıştırma işlemine her zaman call 
+stack'in en üstünden başlar.
+
+Thread of execution, eğer bir fonksiyon içerisinde return deyimini görürse bu 
+fonksiyonu o anda call stack'ten atar.
+
+Call stack'in en altında her zaman global fonksiyon bulunur. Örnek vermek 
+gerekirse; Javascript dosyamızda yazdığımız tüm kaynak kodlarımız adeta global 
+identifier'ına sahip bir fonksiyonun içerisindeymiş gibi düşünebiliriz. Bu 
+fonksiyon ise her zaman call stack'in en altında yer alır. Bu sayede bu 
+fonksiyon içerisinde hangi fonksiyon çalışırsa çalışsın fonksiyon sonlandığında 
+thread of execution gene global execution context'e döner.
+
+Eğer bu global execution context'de yer alan bir fonksiyonun içerisinde bir 
+fonksiyon daha tanımlanıp çalıştırılsaydı bu fonksiyon da call stack'in en 
+üstüne eklenirdi. Eğer bunun içinde de bir fonksiyon tanımlanıp çalıştırılsaydı 
+bu da onun üstüne eklenecekti. Yani bu şekilde iç içe fonksiyonlar çalışmasını 
+bitirdikten sonra hemen global context'e dönmez. Onu kaplayan execution 
+context'e döner. Böylece thread of execution sırayla bu execution context'ler 
+arasında gezerek programımızı çalıştırır.
+--------------------------------------------------------------------------------
+
+--- Örnek ----------------------------------------------------------------------
+const num = 3;
+function multiplyBy2(inputNumber) {
+  const result = inputNumber * 2;
+  return result;
+}
+const output = multiplyBy2(num);
+const newOutput = multiplyBy2(10);
+console.log(output);
+console.log(newOutput);
+6
+20
+
+Buradaki kodlar çalışmaya başladığında Javascript sırasıyla aşağıdaki işlemleri yapar;
+
+1) Hafızada num identifier'ına sahip bir sabit oluşturulur ve bu sabite 3 
+sayısı atanır. Burada özellikle değişken yerine sabit terimini kullanıyoruz 
+çünkü const'lara tanımlandıktan sonra başka bir değer atanamaz. Bu sebeple 
+const'a değişken denemez.
+
+2) Hafızada multiplyBy2 identifier'ına sahip bir fonksiyon oluşturulur ve bu 
+fonksiyonun tüm içeriği hafızaya string olarak alınır. Biz fonksiyonun () ile 
+çağırmadığımız sürece bu fonksiyon çalışmaz.
+
+3) output adında bir sabit tanımlanır. Eğer sağ taraf çalıştırılmadan bu sabite 
+bakılsaydı değeri undefined olurdu;
+
+4) Sağ taraftaki multiplyBy2 fonksiyonunun yanına eklediğimiz () sayesinde 
+Javascript bunun bir fonksiyon çağırma işlemi olduğunu anlar. Tam bu anda bir 
+alt satıra geçmeden multiplyBy2 fonksiyonu için yeni bir execution context 
+oluşturulur. Bu execution context'te ise yine iki bölüm vardır; thread of 
+execution ve local memory. Fakat bu execution context'teki local memory'nin 
+global execution context'teki local memory'den farkı içerisinde tanımlanan 
+sabitlerin ve değişkenlerin sadece bu fonksiyon içerisinde erişilebilir 
+olmasıdır. Global execution context'ten buradaki local memory içerisindeki 
+değişkenlere erişilemez.
+
+5) Daha sonra ise multiplyBy2 fonksiyonunun execution context'ine geçilir. 
+Burada ise önce fonksiyon içerisine girilen inputNumber, multiplyBy2 
+fonksiyonunun local memory'sinde saklanır. Burada inputNumber'a 
+"parameter(parametre)", içerisindeki 3 değerine ise "argument(argüman)" denir.
+
+6) Ardından yine bu fonksiyonun local memory'sinde result adlı bir sabit 
+tanımlanır ve bu sabite fonksiyona giren inputNumber'ın iki ile çarpılmış hali 
+atanır.
+
+7) Fonksiyonun içerisindeki son satırda ise Javascript local memory'de result 
+adındaki sabiti arar çünkü Javascript result sabitini tanımaz. Sonra ise local 
+memory'den getirilen bu sabitin argümanı return deyimiyle fonksiyon dışına 
+döndürülür.
+
+8) Bir fonksiyonun sonucu nereden çağırıldıysa oraya döndürülür. Bu örnekte ise 
+output sabitine döndürülür.
+
+9) Daha sonra ise newOutput adında bir sabit tanımlanır, multiplyBy2 fonksiyonu 
+10 argümanı ile tekrar çalıştırılır ve dönen sonuç atanır. Fakat burada 
+fonksiyon ikinci kez çalıştırıldığında fonksiyonun kullandığı bir önceki 
+execution context tamamen silinerek yerine yeni bir execution context 
+oluşturulur. 
+--------------------------------------------------------------------------------
+################################################################################
