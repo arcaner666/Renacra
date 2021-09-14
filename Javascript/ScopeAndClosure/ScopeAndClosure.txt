@@ -66,7 +66,7 @@ globalVar değişkeninin olduğu hizadır.
 Yani bir fonksiyon kendisiyle aynı seviyede tanımlanan bir fonksiyonun 
 içerisinden çağırılsa dahi o fonksiyonun scope'una erişemez.
 
-Scope'ta arama işlemi yalnızca yukarı doğru, yani evebenyne(parent) doğru 
+Scope'ta arama işlemi yalnızca yukarı doğru, yani evebeyne(parent) doğru 
 ilerler.
 
 Eğer secondFn içerisinde localToFirstFn yerine globalVar'ı çağırmış olsaydık 
@@ -84,7 +84,7 @@ firstFn();
 global
 
 Bir fonksiyon her çağırıldığında {} içerisinde tanımlanan blok yani fonksiyonun 
-scope'u yeniden tanımlanır.
+scope'u sıfırlanır, ardından yeniden tanımlanır.
 
 var globalVar = "global";
 var fn = function () {
@@ -197,17 +197,23 @@ Suzy
 Kyle
 --------------------------------------------------------------------------------
 
---- Closure --------------------------------------------------------------------
+--- Fonksiyonlarda Hafıza ------------------------------------------------------
 
-Closure bir fonksiyonun, başka bir lexical scope tarafından çağırılsa bile 
-kendi lexical scope'unu hatırlamasıdır. Başka bir değişle; bir fonksiyon kendi 
-kapsamı dışındaki bir değişkeni kullanıyorsa ve bu fonksiyon başka bir 
-kapsamdan çalıştırılsa bile o değişkene hala erişimi vardır.
+Normalde Javascript'te tanımlı bir fonksiyonun her çağırılışında o fonksiyon 
+için yeni bir execution context oluşturulur ve hafızada bu fonksiyon 
+içerisindeki değişkenleri, sabitleri, fonksiyonları, parametreleri tutmak için 
+yeni bir alan ayrılır.
+
+Fonksiyonun çalışması sona erdiğinde ise fonksiyondan dönen değer hariç her şey 
+sıfırlanır.
+--------------------------------------------------------------------------------
+
+--- Closure --------------------------------------------------------------------
 
 function ask(question) {
     setTimeout(function waitASec() {
         console.log(question);
-    }, 2000);
+    }, 1000);
 }
 ask("What is closure?");
 What is closure?
@@ -279,5 +285,50 @@ funcLogger();
 funcLogger2();
 Help! I think I found a clue! 1
 Help! I think I found a clue! 1
+
+Closure'un anlaşılması için aşağıda bir başka örnek daha verilmiştir.
+
+function createFunction() {
+  function multiplyBy2(num) {
+    return num * 2;
+  }
+  return multiplyBy2;
+}
+const generatedFunction = createFunction();
+const result = generatedFunction(3);
+
+1) Burada öncelikle global memory'de createFunction adında bir fonksiyon 
+tanımlanmıştır.
+
+2) Ardından generatedFunction adında bir sabit oluşturulur ve undefined atanır.
+
+3) Daha sonra ise bu createFunction çağırıldığı için yeni bir execution context 
+oluşur. 
+
+4) Bu execution context'in local memory'sinde multiplyBy2 fonksiyonu tanımlanır.
+
+5) multiplyBy2 fonksiyonunun identifier'ı hariç fonksiyonun tanımı 
+generatedFunction sabitine atanır.
+
+6) Son satırda generatedFunction içerisine 3 argümanı girilerek 
+çalıştırıldığında ise multiplyBy2 fonksiyonunun tanımını 3 argümanıyla 
+çalıştırır ve bize 6 sonucunu verir. Burada kritik nokta şudur. 
+generatedFunction sabiti ile createFunction veya multiplyBy2 fonksiyonları 
+arasında hiç bir bağlantı yoktur. Çünkü generatedFunction sabitine 
+createFunction fonksiyonundan multiplyBy2'nin tanımı atanmıştır. Yani aynı bir 
+sayıyı bir sabite atar gibi atanmış ve daha sonra bunlar arasında hiçbir 
+bağlantı kalmamıştır.
+
+Yani aslında generatedFunction(3)'ü çalıştırdığımızda 3 argümanı bizim 
+gördüğümüzün aksine multiplyBy2 fonksiyonunun tanımına ya da execution 
+context'ine gitmez. multiplyBy2'nun execution context'i return satırından sonra 
+tamamen silinir. 3 argümanı global execution context'te tanımlı 
+generatedFunction sabitine atanmış multiplyBy2'nun tanımına ya da kopyasına 
+girer.
+
+Closure bir fonksiyonun, başka bir lexical scope tarafından çağırılsa bile 
+kendi lexical scope'unu hatırlamasıdır. Başka bir değişle; bir fonksiyon kendi 
+kapsamı dışındaki bir değişkeni kullanıyorsa ve bu fonksiyon başka bir 
+kapsamdan çalıştırılsa bile o değişkene hala erişimi vardır.
 --------------------------------------------------------------------------------
 ################################################################################

@@ -1,12 +1,9 @@
-function copyArrayAndManipulate(array, instructions) {
-  const output = [];
-  for (let i = 0; i < array.length; i++) {
-    output.push(instructions(array[i]));
+function createFunction() {
+  function multiplyBy2(num) {
+    return num * 2;
   }
-  return output;
+  return multiplyBy2;
 }
-const myArray = [1, 2, 3];
-function multiplyBy2(input) {
-  return input * 2;
-}
-const result = copyArrayAndManipulate(myArray, multiplyBy2);
+const generatedFunction = createFunction();
+const result = generatedFunction(3);
+console.log(result);
