@@ -114,14 +114,6 @@ fn();
 innerouter
 --------------------------------------------------------------------------------
 
---- undefined vs undeclared ----------------------------------------------------
-
-Javascript'te bu ikisi birbirinden tamamen farklı kavramlardır ve asla aynı 
-değillerdir. undefined demek bir değişken tanımlanmış ama içine bir değer 
-atanmamış demektir. undeclared ise hiç bir şekilde o değişken tanımlanmamış 
-ve değişkene nasıl ulaşılması gerektiği bilinmiyor demektir.
---------------------------------------------------------------------------------
-
 --- Fonksiyon İfadeleri (Function Expressions) ---------------------------------
 
 Javascript'te fonksiyonlarda aynı değişkenler gibidir. Yani bir fonksiyon da 

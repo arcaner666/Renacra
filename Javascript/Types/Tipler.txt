@@ -1,8 +1,55 @@
 ### TİPLER #####################################################################
 
+--- İlkel Tipler ---------------------------------------------------------------
+
+Genelde çoğu yerde Javascript'te her şey bir nesnedir denilir fakat bu doğru
+değildir. Javascript'te değişkenlerin tipi yoktur. Değerlerin tipleri vardır.
+
+İlkel tipler; undefined, string, number, boolean, object, symbol gibi tiplerdir.
+
+console.log(typeof v); // undefined
+var v;
+console.log(typeof v); // undefined
+v = "1";
+console.log(typeof v); // string
+v = 2;
+console.log(typeof v); // number
+v = true;
+console.log(typeof v); // boolean
+v = {};
+console.log(typeof v); // object
+v = Symbol();
+console.log(typeof v); // symbol
+v = null;
+console.log(typeof v); // object
+v = function () { };
+console.log(typeof v); // function
+v = [1, 2, 3];
+console.log(typeof v); // object
+
+Burada önemli ayrıntılardan biri de şudur: ilk durumda v değişkeni hiç
+tanımlanmadan tipi sorulmuştur, ikinci satırda ise v adında bir değişken
+tanımlanmış fakat bu değişkene herhangi bir değer atanmadan tipi sorulmuştur.
+Her iki durumda da typeof bize undefined döndürüyor. Javascript bu iki durumu
+aynı şekilde değerlendiriyor.
+
+typeof fonksiyonları rahatlıkla tanıyorken dizileri tanımıyor ve bize object
+döndürüyor. Bu da Javascript'in buglarından birisidir.
+
+Javascript'te null ve undefined farklı anlamlara gelse de ikisi de boşluğu 
+tanımlar. 
+
+Dizinin indexi sıfırdan başlar, eleman sayısı eksi bire kadar devam eder. 
+
+Objeler anahtar(key) ve değer(value) şeklinde veri tutarlar. Keyi çağırmak 
+value'yu getirir.
+--------------------------------------------------------------------------------
+
 --- typeof ---------------------------------------------------------------------
 
-typeof herhangi bir değişkenin türünü bize döndürür.
+typeof herhangi bir değişkenin türünü bize string olarak döndürür.
+
+typeof her zaman string döndürür.
 
 typeof null bize object döndürür. Bu neredeyse 20 yıldır var olan bir
 Javascript bug'ıdır. Bunu değiştirmek hali hazırdaki birçok sistemi
@@ -12,5 +59,115 @@ typeof [1,2,3] bize object döndürür. Bu da sıkıntı yaşayabileceğimiz
 durumlardan biridir. Buna da hatadan daha çok eksik bilgilendirme diyebiliriz.
 Buradaki mantık dizilerin içinde obje de tutabilmesi sebebiyle tipe obje
 demesidir.
+--------------------------------------------------------------------------------
+
+--- undefined vs undeclared vs uninitialized -----------------------------------
+
+Javascript'te undefined ve undeclared birbirinden tamamen farklı kavramlardır.
+undefined demek bir değişken tanımlanmış ama içine bir değer atanmamış 
+demektir. undeclared ise hiç bir şekilde o değişken tanımlanmamış ve değişkene 
+nasıl ulaşılması gerektiği bilinmiyor demektir.
+
+Fakat biz henüz tanımlanmamış bir değişkenin typeof operatörüyle türünü 
+sorgularsak bize yine de undefined döndürür. Bu da Javascript'in buglarından 
+biridir. Aslında bize undeclared döndürmeliydi.
+
+uninitialized ise bize ES6 ile birlikte gelen özelliklerden biridir. Bir 
+değişken ya da sabit içerisinde bulunduğu blokta tanımlanmamışsa yani undefined 
+durumuna gelmemişse uninitialized değerine sahip olur. Bu değişkene ya da 
+sabite herhangi bir şekilde dokunursak, kullanırsak, çağırırsak hata alırız.
+--------------------------------------------------------------------------------
+
+--- NaN ------------------------------------------------------------------------
+
+Not a Number'ın kısaltması olsa da daha çok bir durumu ifade eder.
+
+var greeting = "Hello Class!";
+var something = greeting / 2;
+console.log(something);
+console.log(Number.isNaN(greeting));
+console.log(Number.isNaN(something));
+NaN
+false
+true
+
+Burada something içerisine anlamsız bir işlem atamaya çalışıyoruz ve sonuç bir
+sayı değil. Bu durumda something değişkenini yazdırmaya çalıştığımızda bize NaN
+çıktısını veriyor.
+
+Eğer bir değişkenin NaN durumunda olup olmadığını öğrenmek istiyorsak
+Number.isNaN() özelliğini kullanırız. Burada greeting bir string olduğu için
+NaN durumunda değildir ve konsol bize false döndürür.
+
+Oysa aynısını something için yaparsak bize NaN döndürür.
+
+Javascript'te matematiksel işlemler yaparken NaN durumuna özellikle dikkat
+etmeliyiz çünkü bir noktada NaN aldığımızda bu geri kalan bütün işlemi bozar.
+
+İki NaN değerini === operatörü yardımıyla birbiriyle kıyaslarsak sonuç false 
+olur. Çünkü IEEE standartlarına göre iki NaN değeri asla birbirine eşit olamaz.
+--------------------------------------------------------------------------------
+
+--- isNan vs Number.isNaN ------------------------------------------------------
+
+isNaN fonksiyonu içerisine girilen değeri önce sayıya çevirmeye(coercion) 
+çalışır. Ardından çevirdiği bu verinin NaN durumunda olup olmadığını kontrol 
+eder. NaN durumunda ise true, değilse false döndürür.
+
+Eğer bu fonksiyonu Number.isNaN() şeklinde önüne Number ekleyerek kullanırsak 
+Javascript burada bize güvenir ve bizim bu fonksiyona sayı göndereceğimizden 
+emin olduğu için fonksiyon içine girilen değeri sayıya çevirmeye(coercion) 
+çalışmaz. Burada isNaN("my son's age") ifadesi true döndürürken 
+Number.isNaN("my son's age") ifadesinin false döndürmesinin sebebi budur.
+
+var myAge = Number("0o46");
+console.log(myAge);                        // 38
+var myNextAge = Number("39");
+console.log(myNextAge);                    // 39
+var myCatsAge = Number("n/a");
+console.log(myCatsAge);                    // NaN
+console.log(myAge - "my son's age");       // NaN
+console.log(myCatsAge === myCatsAge);      // false
+console.log(isNaN(myAge));                 // false
+console.log(isNaN(myCatsAge));             // true
+console.log(isNaN("my son's age"));        // true
+console.log(Number.isNaN(myCatsAge));      // true
+console.log(Number.isNaN("my son's age")); // false
+--------------------------------------------------------------------------------
+
+--- Eksi Sıfır (Negative Zero) -------------------------------------------------
+
+Javascript'in eski zamanlarında geliştiriciler -0 değerine ihtiyaç olmayacağını 
+düşündükleri için bu değeri düzgün bir şekilde dile entegre etmediler. Bu değer 
+ile çalışırken dikkatli olmalıyız. Aşağıda bu değerler çalışırken 
+yaşayabileceğimiz bazı sıkıntılı durumlar gösterilmiştir.
+
+Eğer bir değerin -0 olup olmadığını kesin olarak bilmek istiyorsak Object.is 
+fonksiyonunu kullanırız. Bu özellik ES6 ile geldi.
+
+var trendRate = -0;
+console.log(trendRate === -0);          // true
+console.log(trendRate.toString());      // "0"
+console.log(trendRate === 0);           // true
+console.log(trendRate < 0);             // false
+console.log(trendRate > 0);             // false
+console.log(Object.is(trendRate, -0));  // true
+console.log(Object.is(trendRate, 0));   // false
+
+Math.sign fonksiyonunun -0 ile kullanırken de dikkatli olmalıyız. Aşağıda 
+Math.sign fonksiyonunun eksiklerini çözen bir fonksiyon gösterilmiştir.
+
+console.log(Math.sign(-3)); // -1
+console.log(Math.sign(3)); // 1
+console.log(Math.sign(-0)); // -0 ???
+console.log(Math.sign(0)); // 0 ???
+// Math.sign() fonksiyonunu düzeltmek için;
+function sign(number) {
+  return number !== 0 ? Math.sign(number) : Object.is(number, -0) ? -1 : 1;
+}
+console.log(sign(-3)); // -1
+console.log(sign(3)); // 1
+console.log(sign(-0)); // -1
+console.log(sign(0)); // 1
 --------------------------------------------------------------------------------
 ################################################################################

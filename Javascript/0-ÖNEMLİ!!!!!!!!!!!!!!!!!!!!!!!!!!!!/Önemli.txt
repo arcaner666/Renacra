@@ -1,0 +1,27 @@
+### ÖNEMLİ !!! #################################################################
+
+Javascript ile ilgili bu notlardaki bilgilerin bazıları yanlış veya eksik 
+olabilir. 
+
+Bunun sebebi Javascript'in çalışma yapısı ile ilgili bir çok uzman ya da uzman 
+olduğunu söyleyen kişi aslında Javascript'in gerçek özelliklerini ya yeteri 
+kadar araştırmamış ya da kendi görüşlerini gerçek olarak lanse ediyor.
+
+Birçok Javascript videosu, kursu ya da kitabı yanlış bilgileri gerçek olarak 
+göstermeye çalışıyor. Bu konuda inanılmaz bir bilgi kirliliği var.
+
+Bu sebeple Javascript'in gerçekten arka planda nasıl çalıştığını anlamak 
+istiyorsak Javascript'in kendi dökümantasyonuna bakmalıyız. Javascript'in resmi 
+adı Ecmascript'tir.
+
+Bu konuda gerçekten uzman olduğunu düşündüğüm kişi Kyle Simpson, Javascript'in 
+en doğru kaynağının kendi dökümantasyonu olduğunu söylüyor.
+
+EcmaScript 2020 => https://tc39.es/ecma262/
+
+Kyle Simpson'a göre sırf tiplerde ve tip dönüşümlerinde yaşanan sıkıntılar için 
+Typescript kullanmanın gerekli olmadığını söylüyor.
+
+Eğer Javascript'in bu inceliklerine hakim olabilirsem başka ekstra bir dile 
+ihtiyacım kalmayabilir.
+################################################################################
