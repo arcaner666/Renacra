@@ -1,3 +1,4 @@
-const number = "143";
-const str = "143";
-console.log(number == str);
+var newFunc = function (x, y) {
+  return x + y;
+};
+console.log(newFunc(5, 8));

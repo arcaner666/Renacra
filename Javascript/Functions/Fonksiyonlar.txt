@@ -50,6 +50,49 @@ console.log(left);
 198
 --------------------------------------------------------------------------------
 
+--- Fonksiyon Tanımlama (Function Declaration) ---------------------------------
+
+Klasik, eski tip fonksiyon tanımlama yöntemidir. Günümüzde pek kullanılmaz. 
+Fonksiyonu global scope'a kaydeder.
+
+function sum(x, y) {
+  return x + y;
+}
+console.log(sum(5, 8));
+13
+--------------------------------------------------------------------------------
+
+--- Anonim Fonksiyon İfadesi (Anonymous Function Expression) -------------------
+
+İsimsiz fonksiyonlardır. Kendi scope'larına kaydedilirler.
+
+var newFunc = function (x, y) {
+  return x + y;
+};
+console.log(newFunc(5, 8));
+13
+--------------------------------------------------------------------------------
+
+--- İsimlendirilmiş Fonksiyon İfadesi (Named Function Expression) --------------
+
+Anonim fonksiyonların isimlendirilmiş halidir. Kendi scope'larına kaydedilirler.
+
+Kullanımı pek yaygın olmasa da Kyle Simpson her zaman bunu kullanmamızı 
+öneriyor. Bunun sebebi rekürsif işlemler yapıyorsak ya da çok katmanlı bir 
+scope'a sahip bir programla çalışıyorsak isimlendirilmiş fonksiyon ifadeleri 
+kendi kendilerini açıklamış olurlar. Bu da okunabilirliği arttırır.
+
+var newFunc = function sum(x, y) {
+  return x + y;
+};
+//console.log(sum(5, 8)); // HATA!!!
+console.log(newFunc(5, 8));
+
+Burada en son newFunc yerine sum fonksiyonuna erişmek istersek hata alırız. 
+Çünkü sum'ın kendi scope'u vardır ve burada tanımlıdır. newFunc ise burayı 
+referans gösterir.
+--------------------------------------------------------------------------------
+
 --- Parametre (Parameter) ------------------------------------------------------
 
 Bir fonksiyonun tanımlanırken fonksiyon içerisinde çalışacak, işleme alınacak 

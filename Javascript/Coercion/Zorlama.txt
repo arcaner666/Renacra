@@ -61,4 +61,23 @@ bu iki ifade de doğru değildir.
 giren türlerden eminsek ya da kodu daha okunabilir hale getirecekse == 
 kullanmakta bir sakınca yoktur.
 --------------------------------------------------------------------------------
+
+--- == Kullanırken Hatalardan Kaçınmak İçin Önemli Kurallar --------------------
+
+1) == operatörünü 0, "" ve "   " ile asla kullanma.
+
+2) == operatörünü non-primitive tiplerle asla kullanma zaten iki dizinin 
+yapısal benzerliğini == ile kıyaslayamazsın.
+
+3) (şart == true) veya (şart == false) şeklindeki yapıyı asla kullanma. 
+Javascript ifadeleri sayıya çevirmeye çalışacağı için hata alırsın. Bunun 
+yerine (şart), (!şart) yapısını veya (şart === true), (şart === false) yapısını 
+kullan.
+--------------------------------------------------------------------------------
+
+--- === Kullanırken Hatalardan Kaçınmak İçin Önemli Kurallar -------------------
+
+1) === operatörünü eğer karşılaştırmaya girecek olan değişkenlerin tiplerinden 
+emin değilsek kullanmalıyız. Bu sayede olası hataların önüne geçmiş oluruz.
+--------------------------------------------------------------------------------
 ################################################################################

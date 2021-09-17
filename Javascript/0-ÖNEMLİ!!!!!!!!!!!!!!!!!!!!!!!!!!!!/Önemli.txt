@@ -20,7 +20,9 @@ en doğru kaynağının kendi dökümantasyonu olduğunu söylüyor.
 EcmaScript 2020 => https://tc39.es/ecma262/
 
 Kyle Simpson'a göre sırf tiplerde ve tip dönüşümlerinde yaşanan sıkıntılar için 
-Typescript kullanmanın gerekli olmadığını söylüyor.
+Typescript kullanmanın gerekli olmadığını söylüyor. FAKAT!!!!! Eğer backend 
+tarafında C#, .NET teknolojileri kullanıyorsak ve bu tip sistemi kuvvetli olan 
+dillere aşinaysak Typescript kullanmamanın aptallık olduğunu söylüyor.
 
 Eğer Javascript'in bu inceliklerine hakim olabilirsem başka ekstra bir dile 
 ihtiyacım kalmayabilir.
