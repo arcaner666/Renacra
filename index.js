@@ -1,4 +1,16 @@
-var newFunc = function (x, y) {
-  return x + y;
+// var workshop = {
+//   teacher: "Kyle",
+//   ask(question) {
+//     console.log(this.teacher, "question");
+//   },
+// };
+
+var workshop = function () {
+  teacher = "Kyle";
+  return function ask() {
+    console.log(this.teacher, "question");
+  };
 };
-console.log(newFunc(5, 8));
+workshop("Normal Calling");
+setTimeout(ask(), 1000, "Lost this?");
+setTimeout(ask.bind(workshop), 2000, "Hard bound this?");
