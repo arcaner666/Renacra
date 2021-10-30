@@ -1,0 +1,23 @@
+### ls (List) ##################################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Terminalin yerleştiği, o anda içerisinde bulunulan klasörün içindeki 
+klasörleri ve dosyaları listeler.
+--------------------------------------------------------------------------------
+
+--- ls -------------------------------------------------------------------------
+
+Bu komut tek başına kullanıldığında terminalin yerleştiği yani şu anda 
+içerisinde bulunulan klasör içerisindeki klasörleri ve dosyaları teminale 
+yazdırır.
+--------------------------------------------------------------------------------
+
+--- ls > çıktıYapılacakDosyaAdı.txt --------------------------------------------
+
+ls > output.txt
+
+Bu komut terminalin yerleştiği yani şu anda içerisinde bulunulan klasör 
+içerisindeki klasörleri ve dosyaları adı verilen text dosyasına yazdırır.
+--------------------------------------------------------------------------------
+################################################################################

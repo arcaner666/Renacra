@@ -1,0 +1,24 @@
+### echo #######################################################################
+
+--- Tanım ----------------------------------------------------------------------
+
+Terminale veya başka herhangi bir dosyaya geri bildirim göndermede kullanılır.
+--------------------------------------------------------------------------------
+
+--- echo "mesaj" ---------------------------------------------------------------
+
+echo "Bu bir test mesajıdır."
+
+Bu şekilde bir kullanımda "" içerisindeki mesaj terminale geri yazdırılır.
+--------------------------------------------------------------------------------
+
+--- echo "mesaj" > dosyaAdı.txt ------------------------------------------------
+
+echo "This is a test" > test_1.txt
+echo "This is a second test" > test_2.txt
+echo "This is a third test" > test_3.txt
+
+Bu şekilde bir kullanımda ise yazılan mesajlar terminal yerine ilgili metin 
+dosyalarına yazılır.
+--------------------------------------------------------------------------------
+################################################################################
