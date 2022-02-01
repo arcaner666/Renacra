@@ -3,11 +3,13 @@
 script
 
 --- Tanım ----------------------------------------------------------------------
+
 HTML kodlarımıza Javascript ile erişmemizi ve sayfamıza çeşitli işlevler
 kazandırmamızı sağlar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 script etiketi genelde body etiketinin en altına yazılır.
 
 <body>

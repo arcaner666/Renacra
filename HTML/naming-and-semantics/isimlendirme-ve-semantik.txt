@@ -1,6 +1,7 @@
 ### İSİMLENDİRME VE SEMANTİK (NAMINGS AND SEMANTICS) ###########################
 
 --- Tanım ----------------------------------------------------------------------
+
 Bilgisayar bilimlerinde isimlendirme konusu her zaman zor bir problem olmuştur.
 
 İsimlendirme işine ciddi kafa yormalı ve önemsemeliyiz.
@@ -31,6 +32,7 @@ kullanmalıyız. blog-post-title gibi...
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 Genel olarak class'ları isimlendirirken bir class'ı görünüşüne göre değil
 yaptığı işleve göre isimlendirmeliyiz.
 

@@ -3,6 +3,7 @@
 cite
 
 --- Tanım ----------------------------------------------------------------------
+
 Bir çalışmanın adını belirtmek için kullanılır. 
 
 Bir film, kitap, müzik, tablo adı olabilir. 

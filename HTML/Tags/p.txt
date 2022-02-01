@@ -3,12 +3,14 @@
 paragraph
 
 --- Tanım ----------------------------------------------------------------------
+
 Bir paragrafı temsil eden elementtir.
 
 Yazıyı paragraflara ayırmak için kullanılır.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <p>Burası ilk paragraftır.
   Burası ilk paragraftır.
   Burası ilk paragraftır.
@@ -20,6 +22,7 @@ Yazıyı paragraflara ayırmak için kullanılır.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 Paragraflar blok düzeyindeki öğelerdir.
 
 Paragraflar içerisinde yalnızca yazılar veya satır içi etiketleri bulunmalıdır.

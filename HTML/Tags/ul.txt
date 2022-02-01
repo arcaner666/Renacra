@@ -3,10 +3,12 @@
 unordered list
 
 --- Tanım ----------------------------------------------------------------------
+
 Sırasız bir liste tanımlamaya yarar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <ul>
     <li>İlkbahar</li>
     <li>Yaz</li>
@@ -16,6 +18,7 @@ Sırasız bir liste tanımlamaya yarar.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 Her bir liste elemanı li içerisine yazılır.
 
 ol ve ul liste türleri istenildiği gibi iç içe veya geçişli olarak 

@@ -3,12 +3,14 @@
 link
 
 --- Tanım ----------------------------------------------------------------------
+
 HTML dökümanı ile bir dış kaynak arasında ilişki kurulmasını sağlar.
 
 Genelde CSS'ler HTML'e bu etiket ile bağlanır.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -3,10 +3,12 @@
 select
 
 --- Tanım ----------------------------------------------------------------------
+
 Üzerine tıklandığında kullanıcıya bir seçenekler menüsü açar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <label for="pet-select">Choose a pet:</label>
 <select name="pets" id="pet-select">
     <option value="">--Please choose an option--</option>

@@ -3,6 +3,7 @@
 anchor
 
 --- Tanım ----------------------------------------------------------------------
+
 a etiketi Web sayfalarına, dosyalara, e-posta adreslerine ve aynı sayfanın
 farklı bölümlerine kısayollar(hyperlink) yaratır. 
 
@@ -10,14 +11,17 @@ Bu kısayollara tıklamak bizi ilgili alana götürür.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <a href="https://example.com">Web Sitesi</a>
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 a etiketi içerisine yazılacak içerik bağlantının hedefini açıklayıcı olmalıdır.
 --------------------------------------------------------------------------------
 
 --- href -----------------------------------------------------------------------
+
 Bu alana gidilmek istenen bağlantı, konum, e-posta, telefon veya dosya adresi 
 girilir. a etiketine tıklamak bizi href özelliğine girilen yere gönderir. 
 
@@ -48,6 +52,7 @@ href="#top" ya da href="#" bizi sayfanın en üst kısmına gönderir.
 --------------------------------------------------------------------------------
 
 --- ping -----------------------------------------------------------------------
+
 a etiketine tıklandığında href içindeki URL'e tarayıcı boş bir POST isteği
 gönderirir.
 
@@ -56,10 +61,12 @@ Konsolda POST 405 ERROR!!!
 --------------------------------------------------------------------------------
 
 --- rel ------------------------------------------------------------------------
+
 HTML sayfası ile href içerisine yazılan URL arasındaki ilişkiyi belirtir.
 --------------------------------------------------------------------------------
 
 --- target ---------------------------------------------------------------------
+
 a etiketine tıklandığında gidilecek URL'in nerede gösterileceğini belirler.
 
 _self URL'i aynı sayfada açar. (Varsayılan)
@@ -82,6 +89,7 @@ yoksa _self gibi çalışır.
 --------------------------------------------------------------------------------
 
 --- type ---------------------------------------------------------------------
+
 İlgili URL'in hangi medya tipinde ya da içerik tipinde olduğunu belirtir.
 
 Genelde audio/ogg veya image/png gibi içeriğin türünü belirtir.

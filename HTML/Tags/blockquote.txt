@@ -3,6 +3,7 @@
 block quote
 
 --- Tanım ----------------------------------------------------------------------
+
 Belirli bir kaynaktan alıntı yapıldığını bildirir. 
 
 Uzun alıntılarda kullanılır. 
@@ -11,6 +12,7 @@ Tarayıcı genelde bu komutu girintiler.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <blockquote cite="https://www.ahmet.com">Eğitimime 2019'da başladım.
 </blockquote>
 --------------------------------------------------------------------------------

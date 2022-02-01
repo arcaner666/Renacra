@@ -3,6 +3,7 @@
 form
 
 --- Tanım ----------------------------------------------------------------------
+
 Kullanıcıdan veri almamızı sağlayan input, textarea, select gibi etiketleri 
 belirli bir bağlamda toplamamızı sağlar.
 
@@ -13,6 +14,7 @@ bir konteynırdır.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <form action="" method="get" class="form-example">
   <div class="form-example">
     <label for="name">Enter your name: </label>

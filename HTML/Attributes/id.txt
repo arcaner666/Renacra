@@ -1,6 +1,7 @@
 ### id #########################################################################
 
 --- Tanım ----------------------------------------------------------------------
+
 Etiketlere eşsiz birer ad vererek onları diğerlerinden ayırmamıza yarayan 
 özelliktir.
 
@@ -10,6 +11,7 @@ Bu özellik sayesinde ilgili etikete özel CSS veya Javascript kodu yazabiliriz.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 HTML:
 <p>A normal, boring paragraph. Try not to fall asleep.</p>
 <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>
@@ -34,6 +36,7 @@ CSS:
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 id'nin değerinin düz string olması tavsiye edilir.
 
 id boşluk içeremez. class özelliğinin aksine id'lerde boşluk olması 

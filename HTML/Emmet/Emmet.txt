@@ -1,12 +1,14 @@
 ### EMMET ######################################################################
 
 --- Tanım ----------------------------------------------------------------------
+
 Hızlı HTML5 kodu yazmamıza yarayan bir eklentidir. 
 
 Visual Studio Code'da dahili olarak bulunur.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 .wrapper>header+#content>ul>li*2^^footer kodunu yazıp Enter veya Tab'a
 basarsak;
 
@@ -60,6 +62,7 @@ Eğer bu yazım şekli karışık geliyorsa "()" yardımıyla da yazılabilir:
 --------------------------------------------------------------------------------
 
 --- lorem ipsum İle Rastgele Yazı Atama ----------------------------------------
+
 HTML'de "lorem ipsum" adında bir özellik vardır. 
 
 Emmet'te ve Visual Studio Code'da bulunur. Rastgele yazı yazmaya yarar.
@@ -82,6 +85,7 @@ Beş kelimelik, blok içinde, üç satır rastgele yazı yazar.
 --------------------------------------------------------------------------------
 
 --- Liste İçerisine Eleman Atama -----------------------------------------------
+
 ul>li.item$$*5{yazı}
 <ul>
 	<li class="item01">yazı</li>
@@ -116,6 +120,7 @@ ul>li.Eleman$@10*5{icerik$}
 --------------------------------------------------------------------------------
 
 --- Etiket İçerisine Özellik (Attribute) Atama ---------------------------------
+
 a[href="index.html"]{Anasayfa}
 <a href="index.html">Anasayfa</a>
 

@@ -3,6 +3,7 @@
 input
 
 --- Tanım ----------------------------------------------------------------------
+
 Platforma ve cihaza bağlı olarak kullanıcıdan bilgi almaya yarayan Web tabanlı 
 formlar için çok çeşitli kontrollerdir.
 
@@ -11,6 +12,7 @@ en karmaşık etiketlerden biridir.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <label for="name">Ad (4 ila 8 karakter):</label>
 <input type="text" id="name" name="name" required minlength="4" maxlength="8"
 size="10">
@@ -21,6 +23,7 @@ size="10">
 --------------------------------------------------------------------------------
 
 --- <input type="button"> ------------------------------------------------------
+
 Basit, tıklanabilir butondur.
 
 click olayını bir fonksiyon yardımıyla kontrol ederek istenilen işlemler

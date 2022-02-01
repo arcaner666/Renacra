@@ -3,15 +3,18 @@
 image
 
 --- Tanım ----------------------------------------------------------------------
+
 HTML dökümanı içerisinde resim göstermeye yarar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <img src="/media/images/grapefruit.jpg" alt="Grapefruit slice atop a pile of
 other slices">
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 Resimleri her zaman img etiketine koymak zorunda değiliz. 
 
 Eğer bir resim sitenin güzel görünmesi, sitenin arka planı gibi dekoratif
@@ -23,6 +26,7 @@ Eğer resim sayfanın içeriği ilgili bir şeyi içeriyorsa veya içerikle ilgi
 --------------------------------------------------------------------------------
 
 --- Desteklenen Resim Formatları -----------------------------------------------
+
 HTML'in kendisi herhangi bir resim formatını desteklemez. Genelde desteklenen 
 resim formatlarını HTML'in üzerinde çalıştığı platformlar belirler.
 
@@ -47,7 +51,9 @@ BMP, ICO ve TIFF gibi yaygın desteklenmeyen formatlardan kaçınılmalıdır.
 --------------------------------------------------------------------------------
 
 --- Resim Yüklenme Hataları ----------------------------------------------------
-Eğer bir resmi gösterirken veya yüklerken bir hata ile karşılaşıldığı durumlarda eğer resmin onerror olayı dinlenirse bu olay tetiklenir. 
+
+Eğer bir resmi gösterirken veya yüklerken bir hata ile karşılaşıldığı 
+durumlarda eğer resmin onerror olayı dinlenirse bu olay tetiklenir. 
 
 Aşağıdaki durumlarda bu hatalar meydana gelebilir.
 
@@ -64,6 +70,7 @@ resmin boyutları belirtilmediyse.
 --------------------------------------------------------------------------------
 
 --- alt ------------------------------------------------------------------------
+
 Bu özellik resme alternatif bir açıklama eklenmesini sağlar.
 
 Bu özellik zorunlu değildir fakat eğer herhangi bir sebeple resim yüklenemezse 
@@ -81,6 +88,7 @@ Arama motorları da alt etiketini okuyarak içeriği daha iyi anlar.
 --------------------------------------------------------------------------------
 
 --- crossorigin ----------------------------------------------------------------
+
 Görüntünün alınmasının bir CORS isteği kullanılarak yapılması gerekip
 gerekmediğini belirtir.
 
@@ -90,6 +98,7 @@ resmin canvas etiketi içerisinde kullanılmasını engeller.
 --------------------------------------------------------------------------------
 
 --- decoding -------------------------------------------------------------------
+
 Resmin hangi metotla çözümleneceğini belirler.
 
 sync resmi senkron bir biçimde çözümler. Sıraya uyar.
@@ -101,10 +110,12 @@ auto varsayılan moddur. Tarayıcı kullanıcı için en iyisine kendisi karar v
 --------------------------------------------------------------------------------
 
 --- height ---------------------------------------------------------------------
+
 Resmin pixel cinsinden yüksekliğini belirler. Integer olmalıdır.
 --------------------------------------------------------------------------------
 
 --- src ------------------------------------------------------------------------
+
 img etiketi içerisinde src özelliği zorunludur. 
 
 Bu özelliğe resmin dosya yolunu girilir.
@@ -114,6 +125,7 @@ Eğer srcset özelliğinde herhangi bir boyut tanımlanmamışsa resmin pixel
 --------------------------------------------------------------------------------
 
 --- width ----------------------------------------------------------------------
+
 Resmin pixel cinsinden genişliğini belirler. Integer olmalıdır.
 --------------------------------------------------------------------------------
 ################################################################################

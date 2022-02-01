@@ -1,6 +1,7 @@
 ### TEMELLER (BASICS) ##########################################################
 
 --- Tanım ----------------------------------------------------------------------
+
 HTML'in açılımı "Hyper Text Markup Language"dir. Türkçesi hiper metin 
 işaretleme dilidir. Metin üzerinde işaretlemeler yaparak metnin özelliklerini 
 değiştirir. Statiktir. Herhangi bir şekilde çalışmaz. Bir programlama dili değildir. Web sayfalarının temelini oluşturur.
@@ -14,6 +15,7 @@ ve daha iyi bir web geliştirme için çalışır.
 --------------------------------------------------------------------------------
 
 --- HTML'i Oluşturan Öğeler ----------------------------------------------------
+
  - Tags (Etiketler)
  - Attributes (Özellikler)
  - Elements (Elemanlar)
@@ -55,6 +57,7 @@ Eleman bir satırdaki içerik ve onu kaplayan etiketin tümüne denir. Örneğin
 --------------------------------------------------------------------------------
 
 --- HTML'in Genel Yapısı -------------------------------------------------------
+
 <!DOCTYPE html>
 <html lang="tr">
    <head>

@@ -3,6 +3,7 @@
 title
 
 --- Tanım ----------------------------------------------------------------------
+
 Bu kısım tarayıcının sekme çubuğunda görünen addır. 
 
 Her bir web sayfasının alt sayfalarının herbirinde farklı olmalıdır. 

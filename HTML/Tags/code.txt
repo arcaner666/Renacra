@@ -3,6 +3,7 @@
 code
 
 --- Tanım ----------------------------------------------------------------------
+
 Bilgisayar kodlarını yazmak için kullanılır. 
 
 pre etiketi ile aynı özellikleri taşır fakat yazıyı girintilemez.

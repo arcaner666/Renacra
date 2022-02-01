@@ -3,12 +3,14 @@
 preformatted text
 
 --- Tanım ----------------------------------------------------------------------
+
 Önceden formatlanmış yazıyı yazdırmak için kullanılır.
 
 pre etiketi kullanıldığında tarayıcılar bu yazıyı genellikle girintiler.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 Normalde HTML kelimeler arasına konulan boşluklardan yalnızca ilkini yazdırır.
 Örneğin;
 <p>

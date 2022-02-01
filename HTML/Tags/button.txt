@@ -3,16 +3,19 @@
 button
 
 --- Tanım ----------------------------------------------------------------------
+
 Üzerine tıklanabilir bir buton oluşturur.
 
 Bir formu göndermek veya bir içeriğe erişmek için kullanılır.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <button type="button">Favorilere Ekle</button>
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 Varsayılan olarak butonlar üzerinde çalıştıkları platformun stil özelliklerini 
 alırlar. Fakat CSS ile butonların görünümü değiştirilebilir.
 
@@ -21,6 +24,7 @@ resim gibi başka bazı satıriçi HTML elementleri yerleştirilebilir.
 --------------------------------------------------------------------------------
 
 --- autofocus ------------------------------------------------------------------
+
 Sayfa ilk yüklendiği anda odağı bu etiketin eklendiği butona getirir.
 
 Bir sayfada yalnızca bir tane autofocus özelliğine sahip eleman bulunabilir.
@@ -29,6 +33,7 @@ Bir sayfada yalnızca bir tane autofocus özelliğine sahip eleman bulunabilir.
 --------------------------------------------------------------------------------
 
 --- disabled -------------------------------------------------------------------
+
 Eklendiği buton ile kullanıcının etkileşime geçmesine izin vermez. Butonun 
 üzerine tıklanılamaz veya butona odaklanılamaz.
 
@@ -36,6 +41,7 @@ Eklendiği buton ile kullanıcının etkileşime geçmesine izin vermez. Butonun
 --------------------------------------------------------------------------------
 
 --- form -----------------------------------------------------------------------
+
 Butonu form etiketinin dışında bir yerde kullanmak istediğimiz zaman butonun
 ilişkili olduğu formu belirtmek için kullanırız.
 
@@ -47,6 +53,7 @@ ilişkilendirilir. Varsayılan ayar budur.
 --------------------------------------------------------------------------------
 
 --- type -----------------------------------------------------------------------
+
 Butona tıklandığında butonun varsayılan davranışı belirler.
 
 type="submit" sunucuya form verisini gönderir.
@@ -63,6 +70,7 @@ dökümanının o anki durumunu bozar.
 --------------------------------------------------------------------------------
 
 --- value ----------------------------------------------------------------------
+
 Butonun name özelliği ile ilişkili olarak ilgili form buton ile submit 
 edildiğinde bu değer sunucuya gönderilir.
 --------------------------------------------------------------------------------

@@ -3,6 +3,7 @@
 footer
 
 --- Tanım ----------------------------------------------------------------------
+
 Bu etiket bir döküman veya bir bölüm ile ilgili alt bilgiyi tanımlar. 
 
 Genelde yazar bilgisi, telif hakkı bilgisi, iletişim bilgisi, site haritası,
@@ -16,6 +17,7 @@ Bir dökümanda birden fazla footer etiketi kullanılabilir.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 footer etiketi içerisine iletişim bilgisi yazılmak istenirse bu bilgilerin 
 address etiketi içerisinde yazılması gerekir.
 --------------------------------------------------------------------------------

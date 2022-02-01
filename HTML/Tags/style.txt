@@ -3,6 +3,7 @@
 style
 
 --- Tanım ----------------------------------------------------------------------
+
 Bir HTML sayfasının görünümünü değiştirmek amacıyla yazdığımız CSS kodlarını
 yazdığımız etikettir.
 
@@ -15,6 +16,7 @@ style etiketi CSS'i HTML içerisinde ayrı bir bölüme yazmamızı sağlarken s
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <style type="text/css">
 p {
   color: #26b72b;

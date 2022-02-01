@@ -3,6 +3,7 @@
 header
 
 --- Tanım ----------------------------------------------------------------------
+
 Bu etiket bir veya daha fazla başlığı (h1-h6), logoyu, iconu, yazar
 bilgisini veya navigasyon linki grubunu içerir. 
 
@@ -14,6 +15,7 @@ Bir dökümanda birden fazla kez kullanılabilir.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 header bir footer'ın, address'in yada başka bir header'ın içine yerleştirilemez.
 --------------------------------------------------------------------------------
 ################################################################################

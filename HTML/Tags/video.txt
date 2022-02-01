@@ -3,6 +3,7 @@
 video
 
 --- Tanım ----------------------------------------------------------------------
+
 Web sayfasına video eklemeyi sağlar. 
 
 HTML üç tür videoyu destekler. MP4, ogg ve WebM.
@@ -11,6 +12,7 @@ Fakat her tarayıcı farklı video türlerini destekleyebilir.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <video width="320" height="240" controls autoplay loop muted>
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">

@@ -3,6 +3,7 @@
 header
 
 --- Tanım ----------------------------------------------------------------------
+
 Bir sayfadaki başlıkları belirtmek ve içerikte bir hiyerarşi oluşturmak için 
 kullanılır. 
 
@@ -10,6 +11,7 @@ h1'den h6'ya doğru küçülerek gider.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <h1> Burası h1 başlıktır. </h1>
 <h2> Burası h2 başlıktır. </h2>
 <h3> Burası h3 başlıktır. </h3>
@@ -19,6 +21,7 @@ h1'den h6'ya doğru küçülerek gider.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 Her sayfada birden fazla başlık bulunabilir.
 
 Yazı boyutunu ayarlamak için kullanılmamalıdır. Bunun için CSS'deki font-size 

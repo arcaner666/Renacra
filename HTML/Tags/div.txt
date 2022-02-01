@@ -3,6 +3,7 @@
 division
 
 --- Tanım ----------------------------------------------------------------------
+
 İçerik için genel bir kapsayıcıdır. 
 
 CSS ile herhangi bir şekilde stili değiştirilmemişse içerikte herhangi bir 
@@ -16,6 +17,7 @@ ile üzerinde çeşitli işlemler yapılmasını sağlar.
 --------------------------------------------------------------------------------
 
 --- Kullanım Şekli -------------------------------------------------------------
+
 <div>
     <p>Burası içerik.</p>
 </div>
@@ -28,6 +30,7 @@ kullanmak istediğimizde class ile isimlendiririz.
 --------------------------------------------------------------------------------
 
 --- Detaylar -------------------------------------------------------------------
+
 Tarayıcılar genellikle div bloğundan önce ve sonra bir satır boşluk bırakırlar.
 
 Bir div'i eğer sadece tek bir kez kullanacaksak id ile, birden fazla kez 
