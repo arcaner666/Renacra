@@ -1,0 +1,30 @@
+/* :root DOM'daki üst parent'ı seçer. Pseudo-class'tır. :root ve html selector'larının ikisi de html tag'ını seçer. Fakat :root daha yüksek specificity'e sahiptir.*/
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+/* box-sizing: border-box; özelliğini sitede bulunan tüm etiketleri seçen *(wildcard selector) yardımıyla sitemizdeki tüm etiketlere uygularız. Bunun amacı herhangi bir etikete width ve height verdiğimizde bu değerler etiket içindeki içerik + padding + border'ı kapsar. Aksi takdirde width ve height'a verdiğimiz değerler yalnızca etiket içindeki içeriğin boyutunu kapsar. Bunu yapmadığımız duruma örnek olarak width ve height'ı 100px olan bir div'imiz olduğunu düşünelim. Bu durumda sadece içeriğin boyutu 100px'e eşit olacaktır. Eğer buna 2px'lik bir padding eklediğimizde içerik(100px) + padding(2px) bir de 3px'lik bir border eklediğimizde içerik(100px)+ padding(2px) + border(3px)'e eşit olacaktır. Bu da bizi içinden çıkılmaz bir matematik hesabına götürür. */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* body etiketi tarayıcıya göre değişmekle birlikte mutlaka varsayılan olarak biraz padding veya margin içerir. Bunları sıfırlayarak içerisindeki elemanların ekrana yayılmasını sağlarız. */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--sans);
+}
