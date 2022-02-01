@@ -27,6 +27,7 @@ kullanılmalıdır.
 Eğer tek bir başlık kullanılacaksa bu her zaman h1 olmalıdır. İki tane 
 kullanılacaksa h1 ve h2 olmalıdır. Yani gidipte direk h3 kullanmamalıyız.
 
-Bir Web sitesinin her sayfada yalnızca bir tane h1 kullanılmalıdır ve bu başlık da sayfanın amacını düzgün bir biçimde anlatmalıdır.
+Bir Web sitesinin her sayfada yalnızca bir tane h1 kullanılmalıdır ve bu başlık 
+da sayfanın amacını düzgün bir biçimde anlatmalıdır.
 --------------------------------------------------------------------------------
 ################################################################################
