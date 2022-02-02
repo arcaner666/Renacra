@@ -5,21 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Projemize yeni yazı tipleri eklemek için bu şekilde linkleri kullanabiliriz. İlk iki link Google Fonts'a özeldir. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <!-- / -->
+
+    <!-- FontAwesome adlı siteden ücretsiz bazı icon'lar eklemek için alttaki script'i kullanırız. -->
+    <script src="https://kit.fontawesome.com/f4e18d6e6c.js" crossorigin="anonymous"></script>
+    <!-- / -->
+    
     <link rel="stylesheet" href="./portfolio.css">
-    <link rel="font" href="./fonts/Oxygen-Bold.ttf">
-    <link rel="font" href="./fonts/Oxygen-Light.ttf">
-    <link rel="font" href="./fonts/Oxygen-Regular.ttf">
-    <link rel="font" href="./fonts/OxygenMono-Regular.ttf">
     <title>Arcan Caner's Portfolio Site</title>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li>
+                <h1>
+                    <a href="portfolio.html">
+                        <span class="fas fa-skull-crossbones"aria-hidden="true"></span>
+                        Arcan Caner Şenol
+                    </a>
+                </h1>
+            </li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/arcancanersenol/" target="_blank">
+                    <!-- Biz LinkedIn yazısının normalde görünmemesini, Sadece LinkedIn ikonunun görünmesini fakat ekran okuyucuların da bu linki anlayabilmesi için LinkedIn yazısının kalmasını istiyoruz. Buradaki aria-hidden="true" property'si ikonumuzun ekran okuyuculardan gizlenmesini sağlar. -->
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <!-- sr-only class'ı bir elementin sadece ekran okuyucularda görünmesini sağlar. -->
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/arcaner666" target="_blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </li>
+            <li><a href="#resume" class="button">Resume</a></li>
+        </ul>
+    </nav>
+    <!-- Burada section etiketi ile id'yi sitemizdeki navigasyonda gezilecek bölümleri ayırmak için kullanıyoruz. -->
     <section id="intro">
-        <p>Hi, my name is <span>Arcan Caner Şenol.</span></p>
+        <p class="name">Hi, my name is <span>Arcan Caner Şenol.</span></p>
         <h2>I create the front end of websites.</h2> 
         <p>I'm a developer specializing in HTML, CSS, Javascript, Typescript and Angular. Currently, I'm working at <a href="#">STMedya Bilişim Teknolojileri</a>.
         </p> 
     </section>
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>I'm always interested in hearing about new teaching opportunities, writing, cirricula, or instructional design work.
+        </p>
+        <p><a href="mailto:arcaner666@gmail.com">E-mail me</a></p> 
+    </section>
+    <footer>
+        <h2>Arcan Caner Şenol &middot; Junior Web Developer</h2>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/arcancanersenol/" target="_blank">
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>                
+                <a href="https://github.com/arcaner666" target="_blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:arcaner666@gmail.com" target="_blank">
+                    <span class="fas fa-envelope" aria-hidden="true"></span>
+                    <span class="sr-only">E-Mail</span>
+                </a>
+            </li>
+        </ul>
+        <p>&copy; 2022 Arcan Caner Şenol. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

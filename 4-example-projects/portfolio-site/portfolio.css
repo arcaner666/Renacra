@@ -1,4 +1,9 @@
-/* :root DOM'daki üst parent'ı seçer. Pseudo-class'tır. :root ve html selector'larının ikisi de html tag'ını seçer. Fakat :root daha yüksek specificity'e sahiptir.*/
+/* Web sayfamız için CSS yazarken öncelikle tüm sayfamızı kapsayan genel etiketleri ve kuralları yazarız. Daha sonra alt bölümler için ilgili class'ları yazarız. */
+
+/* ### GENERIC STYLES ####################################################### */
+
+/* : ile başlayan selector'lar pseudo class'tır. Pseudo class'lar bir etikete çeşitli fonksiyonlar kazandırmak veya bir elemanı seçerken specificity'i arttırmak için kullanırız. Pseudo class'ın specificity'si class'larla aynıdır.*/
+/* :root DOM'daki üst parent'ı seçer. :root ve html selector'larının ikisi de html tag'ını seçer. Fakat :root daha yüksek specificity'e sahiptir. Biz genelde :root'u tüm dökümanı kapsayan ve tüm alt etiketlere parent'ın özelliklerini aktarmak(cascade) için kullanırız.*/
 :root {
     --black: #171321;
     --dkblue: #0d314b;
@@ -8,11 +13,15 @@
     --aqua: #86fbfb;
     --white: #f7f8fa;
     --font-size: 1.3rem;
+
+    /* HTML kısmında Google Fonts'dan yüklediğimiz yazı tiplerini burada artık kullanabilriz. */
     --mono: "Oxygen mono", monospace;
-    --sans: Oxygen, sans-serif;
+    --sans: "Oxygen", sans-serif;
 }
 
-/* box-sizing: border-box; özelliğini sitede bulunan tüm etiketleri seçen *(wildcard selector) yardımıyla sitemizdeki tüm etiketlere uygularız. Bunun amacı herhangi bir etikete width ve height verdiğimizde bu değerler etiket içindeki içerik + padding + border'ı kapsar. Aksi takdirde width ve height'a verdiğimiz değerler yalnızca etiket içindeki içeriğin boyutunu kapsar. Bunu yapmadığımız duruma örnek olarak width ve height'ı 100px olan bir div'imiz olduğunu düşünelim. Bu durumda sadece içeriğin boyutu 100px'e eşit olacaktır. Eğer buna 2px'lik bir padding eklediğimizde içerik(100px) + padding(2px) bir de 3px'lik bir border eklediğimizde içerik(100px)+ padding(2px) + border(3px)'e eşit olacaktır. Bu da bizi içinden çıkılmaz bir matematik hesabına götürür. */
+/* :: işareti bir pseudo element'tir. Bu işaret ise yazıyı şekillendirmek için kullanırız. Pseudo element'lerin specificity'si düşüktür. Genelde inline elementlere yakındır.*/
+/* box-sizing: border-box; özelliğini öncelikle html selector'ında tanımlıyoruz. Ardından *(universal selector) ile tüm etiketlerin bu özelliği miras almasını sağlıyoruz. Bunun amacı herhangi bir etikete width ve height verdiğimizde bu değerler etiket içindeki içerik + padding + border'ı kapsar. Aksi takdirde width ve height'a verdiğimiz değerler yalnızca etiket içindeki içeriğin boyutunu kapsar. Bunu yapmadığımız duruma örnek olarak width ve height'ı 100px olan bir div'imiz olduğunu düşünelim. Bu durumda sadece içeriğin boyutu 100px'e eşit olacaktır. Eğer buna 2px'lik bir padding eklediğimizde içerik(100px) + padding(2px) bir de 3px'lik bir border eklediğimizde içerik(100px)+ padding(2px) + border(3px)'e eşit olacaktır. Bu da bizi içinden çıkılmaz bir matematik hesabına götürür. */
+/* Alttaki blok, box-sizing kuralını tüm etiketlerimize tanımlamak için en güncel ve geçerli yöntemdir. */
 html {
     box-sizing: border-box;
 }
@@ -27,4 +36,198 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
 }
+
+/* h1-h6'lerden önce ve sonra tarayıcılar 1em gibi bir boşluk bırakırlar. Bazen h1-h6'ler arasında istediğimiz ölçüde bir boşluk bırakmak isteyebiliriz. */
+/* Web sayfamızda alt alta iki farklı blok olduğunu düşünelim. Eğer iki bloğumuzda da 1rem padding olduğunu varsayarsak bu iki blok yanyana geldiklerinde aralarında 2rem boşluk oluşur. Fakat ikisinde de 1rem margin olmuş olsaydı, yanyana geldiklerinde aralarında sadece 1rem boşluk oluşacaktı. Eğer biri 1rem, diğeri ise 2rem margine sahip olmuş olsaydı savaşı büyük olan yani 2rem kazanacak ve aralarında 2rem boşluk olmuş olacaktı. Kısaca padding'ler stack'lenirken margin'ler stack'lenmez bunu yerine büyük olan kazanır.*/
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: var(--magenta);
+}
+
+/* :hover pseudo class'ı bir etiketin üzerine mouse ile gelindiğinde ilgili CSS kurallarını etikete uygular. */
+/* Burada link'in normal hali altı çiziliyken mouse ile üzerine gelindiğinde renginin değişmesini ve alttaki çizginin yok olmasını sağlıyoruz. Tam tersini de yapabilirdik fakat o durumda sitemize inceleyen renk körü birisi link'leri  yalnızca renk ile seçmeye çalışacaktı ki bu durum onun için ciddi bir sıkıntı yaratacaktı. Bunun yerine alttaki yöntemi kullanmak erişilebilirlik açısından  daha iyi. */
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+}
+/* ########################################################################## */
+
+/* ### NAVIGATION STYLES #################################################### */
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* Burada ul ve li'yi selector'a yazmamamızın sebebi CSS yazarken her zaman minimal bir yaklaşım içerisinde olmalıyız. Bu sayede daha sonra bu kuralları ezmek daha kolay olacaktır. Fakat yine de istiyorsak o şekilde de yazabilirmişiz. Bu daha çok stilistik bir seçimmiş. */
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    /* ul ve li etiketleri girintiyi(indentation) sağlamak için tarayıcılarda varsayılan olarak margin ya da padding içerirler. Kullanıcımızın hangi tarayıcıyı kullandığını bilemeyeceğimiz için margin ve padding'i sıfırlamalıyız. */
+    margin: 0;
+    padding: 0;
+    /* Navbar'ımızı yatay olarak kullanabilmek için FlexBox'lardan faydalanmalıyız. */
+    display: flex;
+    /* flex-box: row; FlexBox'ın varsayılan akışını dikeyden yataya alır.*/
+    /* flex-box: wrap; ise FlexBox'ın içeriğinin küçük ekranlarda alta sarkmasını sağlar. */
+    flex-flow: row wrap;
+    /* FlexBox'ın içeriğini ana yöne göre ortaya hizalar. */
+    justify-content: center;
+    /* FlexBox'ın içeriğini çapraz yöne göre ortaya hizalar. */
+    align-items: center;
+    /* FlexBox nesneleri arasına ana yönde boşluk eklemeye yarar. Fakat çok yeni bir özellik olduğu için kullanılmamalıdır. */
+    gap: 2rem;
+}
+
+nav li:first-child {
+    /* FlexBox içerisindeki ilgili elemanın ana yönün tümünü kaplamasını sağlar. */
+    /* flex: x y z; şeklindeki üç farklı özellikten oluşur. x: flex-grow, y: flex-shrink, z: flex-basis.*/
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/* nav içerisindeki fa- içeren tüm class'ları seçer. */
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
+
+/* nav içerisindeki h1'lerin içerisindeki fa- içeren class'ları seçer. */
+nav h1 [class*="fa-"] {
+    font-size: 100%;
+    color: var(--aqua);
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    /* Burada bunu yapmamızın sebebi a etiketi bir inline element olduğu için sadece içerisindeki yazının üzerine mouse ile gelinirse tıklanabilir. Biz navbar'ımız içerisindeki linklerin kare biçiminde üzerine tıklanabilir bir alana sahip olmasını istiyoruz. */
+    display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+    color: var(--magenta);
+}
+
+.button {
+    background-color: var(--magenta);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: var(--hotmag);
+    color: var(--white);
+}
+/* ########################################################################## */
+
+/* ### INTRO STYLES ######################################################### */
+
+/* Burada section'ları class'lar yerine id'ler ile seçmemizin sebebi bu sectionların sitemiz içerisindeki navigasyonda kullanılacak olmasıdır. Yoksa normalde id kullanmak pek doğru değildir. */
+/* Burada section'ları görsel olarak ayırmak için intro section'ının altına boşluk veriyoruz. */
+#intro {
+    padding-bottom: 10rem;
+}
+
+/* Bu şekilde yalnızca belirttiğimiz bir bölüm içerisindeki etiketlere özel kurallar uygulayabiliyoruz. Burada intro bölümü içerisindeki tüm p etiketleri.*/
+#intro p {
+    font-size: 1rem;
+    /* line-height özelliğine herhangi bir ölçü belirtmek zorunda değiliz. Hatta belirtmesek daha iyi olur. Alttaki 1.5 ölçüsü 1.5 kat demek oluyor ve yazı büyüklüğümüz değiştikçe oranını koruyor. */
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+/* Burada adımın yazdığı span'e özel bir sınıf da tanımlayabilrdik fakat zaten name class'ı içerisinde sadece bir adet span olduğu için alttaki yapıyı kullanabiliriz.*/
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--aqua);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+/* ########################################################################## */
+
+/* ### CONTACT STYLES ####################################################### */
+
+#contact {
+    /* contact section'ı için sabit bir genişlik belirler.*/
+    width: 400px;
+    /* contact section'ı içerisindeki tüm yazıları ortalar. */
+    text-align: center;
+    /* margin: x y; tanımında x üst ve alta verilecek margin'i, y ise sağ ve sola verilecek margin'i tanımlar. Alttaki kuralda yapmak istediğimiz üst ve alta margin verme, sağ ve sola ise verilen width değerinden geriye kalan boşluğu yarısını width genişliğindeki içeriğimiz sağına ve soluna dağıt demektir. */
+    /* Bu şekilde içerik ortalama işlemi eski bir yöntemdir. İstenirse halen kullanılabilir fakat bu işlem artık FlexBox'lar yardımıyla yapılıyormuş. */
+    margin: 0 auto;
+    background-color: var(--plum);
+    /* Burada ise yine üstteki margindeki gibi üst ve alta 3rem padding ver, sağ ve sola ise padding verme demek istiyoruz. */
+    padding: 3rem 0;
+}
+
+/* Alttaki ifade contact section'ı içerisindeki tüm p elemanlar içerisindeki son elemanların üstüne 5rem margin verir.*/
+#contact p:last-child {
+    margin-top: 5rem;
+}
+/* ########################################################################## */
+
+/* ### FOOTER STYLES ######################################################## */
+
+footer {
+    text-align: center;
+    padding: 3rem;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer a {
+    font-size: 250%;
+}
+/* ########################################################################## */
+
+/* ### MEDIA QUERIES ######################################################## */
+
+/* Ekran boyutlarına özel bir CSS kuralı yazmak istediğimizde @media özelliğini kullanırız. media query'ler ise CSS dökümanının en altına yazılır çünkü üstteki tüm kuralların üzerine yazarlar. */
+@media (min-width: 850px) {
+    /* Burada nav'ımıza sabit bir uzunluk vermemizin sebebi özellikle büyük monitörlerde nav'ın ekranın tümüne yayılmasını engellemektir. Bu sayede daha düzgün bir görüntü elde ederiz. */
+    nav {
+        max-width: 1200px;
+        /* Üst ve alttaki margin'i sıfırlar. width'ten kalan boşluğu ise sağ ve sola eşit şekilde dağıtır. */
+        margin: 0, auto;
+    }
+
+    nav li:first-child {
+        /* 850px ve üzeri için nav içerisindeki ilk li elemanının FlexBox'da kapladığı alanı varsayılan hale getirir. Biz önceden adımızın yazdığı başlık için bu değeri 100% yapmıştık. */
+        flex-basis: auto;
+        text-align: left;
+        /* margin-right: auto; nav içerisindeki ilk li'yi sola doğru it ve aradaki margin'i otomatik doldur demektir. Bu da adımızın yazdığı başlığı sayfanın en soluna iterken geri kalan FlexBox içerisindeki li'leri sayfanın en sağına iter.*/
+        margin-right: auto;
+    }
+}
+/* ########################################################################## */
