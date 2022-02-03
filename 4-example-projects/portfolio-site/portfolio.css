@@ -57,6 +57,28 @@ a:hover {
     color: var(--hotmag);
     text-decoration: none;
 }
+
+img {
+    width: 100%;
+}
+
+.section-plum {
+    background-color: var(--plum);
+}
+
+.section-dkblue {
+    background-color: var(--dkblue);
+}
+
+.gradient {
+    background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+    height: 2px;
+}
+
+.bg-shadow {
+    background-color: var(--black);
+    border-radius: 10px;
+}
 /* ########################################################################## */
 
 /* ### NAVIGATION STYLES #################################################### */
@@ -126,6 +148,9 @@ nav [class*="fa-"]:hover {
     background-color: var(--magenta);
     padding: 0.5rem;
     border-radius: 5px;
+    color: var(--white);
+    font-family: var(--mono);
+    text-decoration: none;
 }
 
 .button:hover {
@@ -139,7 +164,10 @@ nav [class*="fa-"]:hover {
 /* Burada section'ları class'lar yerine id'ler ile seçmemizin sebebi bu sectionların sitemiz içerisindeki navigasyonda kullanılacak olmasıdır. Yoksa normalde id kullanmak pek doğru değildir. */
 /* Burada section'ları görsel olarak ayırmak için intro section'ının altına boşluk veriyoruz. */
 #intro {
-    padding-bottom: 10rem;
+    /* padding ve margin'in dört parametresi sırayla üst, sağ, alt, sol şeklindedir. TOP-RIGHT-BOTTOM-LEFT => TRBL => TROUBLE */
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Bu şekilde yalnızca belirttiğimiz bir bölüm içerisindeki etiketlere özel kurallar uygulayabiliyoruz. Burada intro bölümü içerisindeki tüm p etiketleri.*/
@@ -167,6 +195,56 @@ nav [class*="fa-"]:hover {
 }
 /* ########################################################################## */
 
+/* ### PROJECTS STYLES ###################################################### */
+
+#projects {
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projects p {
+    width: 700px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+    color: var(--aqua);
+}
+
+#projects h4 {
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+}
+
+#projects ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+#projects img {
+    margin: 2rem 0 4rem 0;
+    padding: 1rem;
+    border-left: 1px solid var(--aqua);
+    border-top: 1px solid var(--aqua);
+    border-radius: 25px;
+}
+/* ########################################################################## */
+
 /* ### CONTACT STYLES ####################################################### */
 
 #contact {
@@ -177,7 +255,6 @@ nav [class*="fa-"]:hover {
     /* margin: x y; tanımında x üst ve alta verilecek margin'i, y ise sağ ve sola verilecek margin'i tanımlar. Alttaki kuralda yapmak istediğimiz üst ve alta margin verme, sağ ve sola ise verilen width değerinden geriye kalan boşluğu yarısını width genişliğindeki içeriğimiz sağına ve soluna dağıt demektir. */
     /* Bu şekilde içerik ortalama işlemi eski bir yöntemdir. İstenirse halen kullanılabilir fakat bu işlem artık FlexBox'lar yardımıyla yapılıyormuş. */
     margin: 0 auto;
-    background-color: var(--plum);
     /* Burada ise yine üstteki margindeki gibi üst ve alta 3rem padding ver, sağ ve sola ise padding verme demek istiyoruz. */
     padding: 3rem 0;
 }
@@ -192,22 +269,19 @@ nav [class*="fa-"]:hover {
 
 footer {
     text-align: center;
-    padding: 3rem;
+    padding: 4rem 0;
 }
 
 footer ul {
     list-style-type: none;
-    margin: 0;
-    padding: 2rem;
+    padding: 0;
+    margin: 2rem 0;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-}
-
-footer a {
-    font-size: 250%;
+    gap: 3rem;
+    font-size: 3rem;
 }
 /* ########################################################################## */
 
@@ -219,7 +293,7 @@ footer a {
     nav {
         max-width: 1200px;
         /* Üst ve alttaki margin'i sıfırlar. width'ten kalan boşluğu ise sağ ve sola eşit şekilde dağıtır. */
-        margin: 0, auto;
+        margin: 0 auto;
     }
 
     nav li:first-child {
