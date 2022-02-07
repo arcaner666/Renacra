@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Projemize yeni yazı tipleri eklemek için bu şekilde linkleri kullanabiliriz. İlk iki link Google Fonts'a özeldir. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <!-- / -->
+
+    <!-- FontAwesome adlı siteden ücretsiz bazı icon'lar eklemek için alttaki script'i kullanırız. -->
+    <script src="https://kit.fontawesome.com/f4e18d6e6c.js" crossorigin="anonymous"></script>
+    <!-- / -->
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>About Arcan Caner Şenol</title>
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li>
+                <h1>
+                    <a href="index.html">
+                        <span class="fas fa-skull-crossbones"aria-hidden="true"></span>
+                        Arcan Caner Şenol
+                    </a>
+                </h1>
+            </li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/arcancanersenol/" target="_blank">
+                    <!-- Biz LinkedIn yazısının normalde görünmemesini, Sadece LinkedIn ikonunun görünmesini fakat ekran okuyucuların da bu linki anlayabilmesi için LinkedIn yazısının kalmasını istiyoruz. Buradaki aria-hidden="true" property'si ikonumuzun ekran okuyuculardan gizlenmesini sağlar. -->
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <!-- sr-only class'ı bir elementin sadece ekran okuyucularda görünmesini sağlar. -->
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/arcaner666" target="_blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </li>
+            <li><a href="#resume" class="button">Resume</a></li>
+        </ul>
+    </nav>
+    <!-- /Navigation Section -->
+
+    <div class="gradient"></div>
+
+    <!-- Projects Section -->
+    <div class="section-dkblue">
+        <section id="projects">
+            <h2>About Arcan Caner Şenol</h2>
+            <article>
+                <div class="text">
+                    <h3>Just the highlights</h3>
+                    <p class="blackbox">Description of the project. This should be fairly concise while also describing the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look <a href="#">like this</a> and <a href="#">like this</a>.
+                    </p>
+                    <h4>Technologies used include:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SVG</li>
+                    </ul>
+                </div>
+                <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png" alt="Screenshot of the Wall of Wonder." />
+            </article>
+        </section>
+    </div>
+    <!-- /Projects Section -->
+
+    <div class="gradient"></div>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2>Arcan Caner Şenol &middot; Junior Web Developer</h2>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/arcancanersenol/" target="_blank">
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>                
+                <a href="https://github.com/arcaner666" target="_blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:arcaner666@gmail.com" target="_blank">
+                    <span class="fas fa-envelope" aria-hidden="true"></span>
+                    <span class="sr-only">E-Mail</span>
+                </a>
+            </li>
+        </ul>
+        <p>
+            <!-- small etiketi genellikle telif hakları, yasal bilgiler gibi kısımlarda kullanılır. İçine yazılan yazıyı küçük yazar. -->
+            <small>&copy; 2022 Arcan Caner Şenol. All rights reserved.</small>
+        </p>
+    </footer>
+    <!-- /Footer Section -->
+</body>
+</html>
