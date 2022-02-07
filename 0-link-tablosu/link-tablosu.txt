@@ -33,7 +33,15 @@ https://www.fontpair.co/
 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 https://mastery.games/post/flexboxzombies2/
-https://flexboxfroggy.com/#tr
+https://flexboxfroggy.com/
+https://www.flexboxdefense.com/
 --------------------------------------------------------------------------------
+
+################################################################################
+
+### POSTGRESQL #################################################################
+
+PostgreSQL'in resmi dökümantasyonu.
+https://www.postgresql.org/docs/
 
 ################################################################################

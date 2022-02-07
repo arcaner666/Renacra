@@ -1,4 +1,0 @@
-https://www.postgresql.org/docs/
-
-Bu site, PostgreSQL'in resmi dökümantasyonudur. Buradan detaylı bilgiyi 
-edinebilirim.
