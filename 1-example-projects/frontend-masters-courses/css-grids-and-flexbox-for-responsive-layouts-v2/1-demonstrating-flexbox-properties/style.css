@@ -34,3 +34,7 @@ li {
   min-width: 100px;
   height: 100px;
 }
+
+.flex2 {
+  flex-basis: 5%;
+}
