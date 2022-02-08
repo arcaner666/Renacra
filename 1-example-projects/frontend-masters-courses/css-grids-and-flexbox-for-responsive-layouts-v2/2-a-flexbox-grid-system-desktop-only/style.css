@@ -1,14 +1,43 @@
 /* write CSS to correspond with the descriptions above. See notes for math tips */
+/* Bu projede 4 sütunlu bir FlexBox Grid sistemi yapacağız. Bu sistemin her bir satırı aslında bir flexbox olacak. Sütunlar ise satırların içerisinde yer alacak. Alttaki row class'ı bizim satırlarımızı yani flexbox container'ımızı oluşturuyor. Sütunlar arasındaki boşluğu space-between özelliğine göre dağıtıyor aralarındaki bu eşit mesafeyi ise 4% olarak belirliyoruz. */
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 4%;
+}
 
+/* Her bir sütunun ekrana doğru yerleşebilmesi için sütunlara flex-basis özelliği atanmış olmalıdır.*/ 
+/* flexbox'lar içerindeki elemanları konumlamak için asla width ve height kullanılmaz. flex-basis kullanılır. Çünkü flex-basis ekran boyutunun değişiminde ekrandaki oranını korurken width ve height sabit kalır ve ekranın dışına taşarlar. */
+/* Burada flex-basis değerini belirlerken belirli bir matematik hesabına uymamız gerekiyor. Üstte gap olarak 4% verdiğimiz için 4 sütun arasında toplamda 12% boşluk oluşacak. 4 sütunumuzun flex-wrap yüzünden alta taşmaması için 22 * 4 = 88 + 12 = 100 hesabından her bir sütuna 22% flex-basis verilmelidir. */
+figure {
+  flex-basis: 22%;
+}
 
+/* Eğer bir sütunun iki sütunu kaplamasını istiyorsak 22 * 2 + 4 = 48 hesabına göre 48% flex-basis verilmelidir. 44 yerine 48 olmasının sebebi iki sütunun arasındaki boşluğun da buraya dahil edilmesi gerekmesidir. */
+.span2 {
+  flex-basis: 48%;
+}
 
+.span3 {
+  flex-basis: 74%;
+}
 
+.span4 {
+  flex-basis: 100%;
+}
 
+.order-1 {
+  order: 1;
+}
 
+.order-2 {
+  order: 2;
+}
 
-
-
-
+.order-3 {
+  order: 3;
+}
 /* default styling, no changes needed here */
 
 /* set the layout to border box model */
