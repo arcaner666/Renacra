@@ -5,64 +5,16 @@
   gap: 4%;
 }
 
-.grid-1 {
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 1;
+.span2 {
+  grid-column: span 2;
 }
 
-.grid-2 {
-  grid-row: 1 / span 1;
-  grid-column: 2 / span 1;
+.span3 {
+  grid-column: span 3;
 }
 
-.grid-3 {
-  grid-row: 1 / span 1;
-  grid-column: 3 / span 1;
-}
-
-.grid-4 {
-  grid-row: 1 / span 1;
-  grid-column: 4 / span 1;
-}
-
-.grid-5 {
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 2;
-}
-
-.grid-6 {
-  grid-row: 2 / span 1;
-  grid-column: 3 / span 2;
-}
-
-.grid-7 {
-  grid-row: 3 / span 1;
-  grid-column: 1 / span 3;
-}
-
-.grid-8 {
-  grid-row: 3 / span 1;
-  grid-column: 4 / span 1;
-}
-
-.grid-9 {
-  grid-row: 4 / span 1;
-  grid-column: 1 / span 4;
-}
-
-.grid-10 {
-  grid-row: 5 / span 1;
-  grid-column: 1 / span 1;
-}
-
-.grid-11 {
-  grid-row: 5 / span 1;
-  grid-column: 2 / span 2;
-}
-
-.grid-12 {
-  grid-row: 5 / span 1;
-  grid-column: 4 / span 1;
+.span4 {
+  grid-column: span 4;
 }
 
 /* default styling, no changes needed here */
