@@ -1,0 +1,34 @@
+Continuous Integration => Continuous Delivery => Continuous Deployment 
+
+--- Continuous Delivery --------------------------------------------------------
+
+Code > Build > Unit Tests > Code Validation > Packaging > Artifact
+--------------------------------------------------------------------------------
+
+--- Continuous Integration Practices -------------------------------------------
+
+1) Build alma olayı 5dk'yı geçmemeli ve olabildiğince kısa sürmeli.
+
+2) Commitler olabildiğince küçük olmalı. Çok büyük değişiklikler parçalar halinde yapılmalı.
+
+3) Build her zaman çalışır halde bırakılmalı. Aksi takdirde devamlılık sağlanamaz. Gerekirse tüm geliştiriciler build'i çalışır hale getirmeli.
+
+4) Geliştiriciler geliştirdikleri özellikleri tamamen bitirene kadar ayrı branchlarda yapıp main'e topluca merge etmek yerine ekledikleri özellikleri küçük commit'ler halinde main'e direk eklemeliler. Yine branch oluşturabilir ve orada çalışabilirler fakat aynı gün içerisinde o branch'taki değişiklikler main'e merge edilmelidir.
+
+5) Testler düzgün yazılmalı ve sürekli kontrol edilmeli. Bazen çalışıp bazen çalışmayan testler kabul edilemez.
+
+6) Build işlemi bir durum, bir log ve bir ürün döndermelidir. Durum dediğimiz şey build işleminin başarılı veya başarısız olduğunu belirten yeşil/kırmızı veya true/false şeklinde bir değer olabilir. Log ise hangi testlerin yapıldığını hangilerinin başarılı veya başarısız olduğunun süreçte yapılan işlemlere dair kısa özetlerdir. Ürün ise süreç başarıyla tamamlanınca bir build numarasıyla birlikte bir sonraki aşamaya gönderilen commitlerdir.
+--------------------------------------------------------------------------------
+
+--- Continuous Delivery Practices ----------------------------------------------
+
+1) Continuous Integration sürecinden elde edilen ürün sadece bir kez üretilmelidir. Staging, Testing ve Production ortamları için tek bir kez build alınmalı ve oluşturulan bu tek ürün tüm bu ortamlarda kullanılmalıdır.
+
+2) Ürünler Continuous Delivery süreci boyunca hiçbir değişikliğe uğratılmamalıdır. Bunun kontrolü için gerekirse checksum kullanılmalıdır.
+
+3) Staging ortamı Production ortamına olabildiğince benzemelidir.
+
+4) Eğer önceki aşamalardan birinde bir problem olursa süreç durdurulmalıdır.
+
+5) 
+--------------------------------------------------------------------------------
