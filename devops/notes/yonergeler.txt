@@ -28,7 +28,24 @@ Code > Build > Unit Tests > Code Validation > Packaging > Artifact
 
 3) Staging ortamı Production ortamına olabildiğince benzemelidir.
 
-4) Eğer önceki aşamalardan birinde bir problem olursa süreç durdurulmalıdır.
+4) Eğer önceki aşamalardan birinde bir problem olursa süreç durdurulmalıdır. Tüm geliştiricilere chat veya benzeri bir yolla bildirilmelidir.
+
+5) Deployment'lar idempotent olmalı. Yani tekrar tekrar çalıştırıldığında hep aynı sonucu vermeli. Bunu Docker ve Puppet, Chef gibi Configuration Management Tool'ları kullanarak yapabiliriz.
+
+Tüm bu süreçlerde çeşitli metrikleri de öğrenmeliyiz. Örneğin;
+
+-- Bir değişikliği tüm bu süreçlerden geçirip Production ortamına aktarmak ne kadar sürüyor?
+--------------------------------------------------------------------------------
+
+--- QA Practices ---------------------------------------------------------------
+
+1) Unit Testing | Kodlar içerisinde yapılan en küçük birim testleridir.
+
+2) Code Hygiene / Best Practices / Linters / Formatters
+
+3) Integration Testing | Test 
+
+4) Test Driven Development / Behaivour DD / Acceptance Test DD
 
 5) 
 --------------------------------------------------------------------------------
