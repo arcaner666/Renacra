@@ -34,18 +34,39 @@ Code > Build > Unit Tests > Code Validation > Packaging > Artifact
 
 Tüm bu süreçlerde çeşitli metrikleri de öğrenmeliyiz. Örneğin;
 
+-- Bir değişikliği gerektiğinde tüm bu süreçleri izleyebiliyor muyuz?
+
 -- Bir değişikliği tüm bu süreçlerden geçirip Production ortamına aktarmak ne kadar sürüyor?
+--------------------------------------------------------------------------------
+
+--- Continuous Delivery Pipeline -----------------------------------------------
+
+1) Code
+2) Version Control
+3) CI system creates build when triggered by version control changes
+4) Artifact added to central repo
+5) Staging (Deployment to test server that must be a copy of the production server)
+6) Testing (Smoke Testing, Integration Testing, Acceptance Testing)
+7) Production (Deployment to production server)
 --------------------------------------------------------------------------------
 
 --- QA Practices ---------------------------------------------------------------
 
-1) Unit Testing | Kodlar içerisinde yapılan en küçük birim testleridir.
-
+1) Unit Testing / Kodlar içerisinde yapılan en küçük birim testleridir.
 2) Code Hygiene / Best Practices / Linters / Formatters
-
-3) Integration Testing | Test 
-
+3) Integration Testing
 4) Test Driven Development / Behaivour DD / Acceptance Test DD
+5) Infrastructure Testing
+6) Performance Testing / Load Test / Stress Test / Soak Test / Spike Test
+7) Security Testing (Cross-site Scripting Attack)
+--------------------------------------------------------------------------------
 
-5) 
+--- Continuous Delivery Toolchain ----------------------------------------------
+
+1) Version Control | Git / Github
+2) Continuous Integration Systems
+3) Build
+4) Test
+5) Aritfact Repository
+6) Deployment
 --------------------------------------------------------------------------------

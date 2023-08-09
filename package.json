@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "renacra",
+  "name": "knowledge-base",
   "version": "1.0.0",
   "description": "Web Geliştirme Notlarım",
   "main": "index.js",
