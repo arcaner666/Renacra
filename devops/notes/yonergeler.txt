@@ -28,7 +28,7 @@ Code > Build > Unit Tests > Code Validation > Packaging > Artifact
 
 3) Staging ortamı Production ortamına olabildiğince benzemelidir.
 
-4) Eğer önceki aşamalardan birinde bir problem olursa süreç durdurulmalıdır. Tüm geliştiricilere chat veya benzeri bir yolla bildirilmelidir.
+4) Eğer önceki aşamalardan birinde bir problem olursa süreç durdurulmalıdır.Tüm geliştiricilere chat veya benzeri bir yolla bildirilmelidir.
 
 5) Deployment'lar idempotent olmalı. Yani tekrar tekrar çalıştırıldığında hep aynı sonucu vermeli. Bunu Docker ve Puppet, Chef gibi Configuration Management Tool'ları kullanarak yapabiliriz.
 
@@ -63,10 +63,190 @@ Tüm bu süreçlerde çeşitli metrikleri de öğrenmeliyiz. Örneğin;
 
 --- Continuous Delivery Toolchain ----------------------------------------------
 
-1) Version Control | Git / Github
+1) Version Control
+Git
+Github
+Bitbucket
+
 2) Continuous Integration Systems
+Jenkins
+GoCD
+Bamboo
+TeamCity
+TravisCI
+CircleCI
+
 3) Build
+Make
+Rake
+Maven
+Gulp
+Packer
+
 4) Test
-5) Aritfact Repository
+
+4.1) Unit Test
+Her platformun kendi önerisini kullanmalısın.
+JUnit for Java (Unit Testing)
+xUnit for C# (Unit Testing)
+Golint, Gofmt for Go (Code Hygiene)
+RuboCop for Ruby (Code Hygiene)
+
+4.2) Integration Test
+Robot
+Protractor
+Cucumber
+Sauce Labs
+
+4.3) Other Test
+Kitchen CI (Infrastructure Testing)
+ApacheBench, JMeter (Performance Testing)
+Gauntlt, Mitten (Security Testing)
+Vagrant, Otto, Docker Compose (Local Testing)
+
+5) Artifact Repository
+Artifactory
+Nexus
+Docker Hub
+
 6) Deployment
+RunDeck
+UrbanCode
+ThoughtWorks
+Deployinator
+
+-- Hiçbir firmanın CI/CD pipeline'ı birbirine benzemez bu doğal bir durumdur.
+
+-- Tüm bu araç seçeneklerine rağmen CI/CD pipeline'ı gerektiği kadar araca sahip olmalıdır.
+--------------------------------------------------------------------------------
+
+--- Reliability ----------------------------------------------------------------
+
+1) Mean Time To Recovery (MTTR)
+Bir servisin kesintiden ya da hatadan kurtarılma, düzeltilme süresi.
+Yüksek performaslı firmalarda bu süre ortalama 1 saattir.
+
+2) Mean Time Between Failures (MTBF)
+Servis kesintileri arasındaki süredir.
+--------------------------------------------------------------------------------
+
+--- DevOps Theory --------------------------------------------------------------
+
+1) Design Patterns - Elements of Resusable Object-Oriented Software
+By Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides
+Addison-Wesley Professional (1994)
+
+2) Release It - Design and Deploy Production-Ready Software
+By Michael T. Nygard
+Pragmatic Bookshelf (2007)
+
+3) https://12factor.net
+
+4) https://martinfowler.com/bliki
+--------------------------------------------------------------------------------
+
+--- DevOps Practice ------------------------------------------------------------
+
+1) All systems fail.
+Netflix Chaos Monkey
+
+2) Cassandra
+Veri tabanını üç kez kopyalıyor.
+
+3) Application Performance Metrics
+--------------------------------------------------------------------------------
+
+--- DevOps Metrics And Monitoring ----------------------------------------------
+
+1) Build
+Sadece ihtiyacımız olan metrikleri görüntülemeliyiz.
+
+2) Measure
+Ölçümler ve kıyaslamalar yapmalıyız.
+
+3) Learn
+Gördüğümüz metrikler sonrasında kendi teknolojilerimiz ve ihtiyaçlarımıza göre eksiklerimizi belirlemeliyiz.
+
+4) Repeat
+Deneyimlerimize göre tüm bu süreci gözden geçirmeli ve geliştirmeliyiz.
+--------------------------------------------------------------------------------
+
+--- DevOps Measuring -----------------------------------------------------------
+
+1) Service Performance And Uptime
+
+2) Software Component Metrics 
+ 
+3) System Metrics
+
+4) App Metrics
+
+5) Performance
+
+6) Security
+--------------------------------------------------------------------------------
+
+--- Five Ws of Logging ---------------------------------------------------------
+
+1) What happened?
+
+2) When did it happen?
+ 
+3) Where did it happen?
+
+4) Who was involved?
+
+5) Where did that entity come from?
+
+-- Centralized Logging
+Microservice veya Serverless Mimari kullanılsa bile tüm loglama merkezi bir yerden yapılmalıdır.
+
+-- Kullanmayacağımız dataları asla loglamamalıyız.
+
+-- Logları işimize yarayacak süre boyunca tutmalıyız.
+
+-- Sadece acil cevap verilmesi gerekilen durumlarda alarmlar kur.
+
+-- Error, Warning, Info gibi loglama önem seviyeleri oluştur. Sadece hızlı aksiyon alınması gereken durumlarda Error seviyesinde loglama yap.
+
+-- Loglarımızın güvenliği ve logladığımız bilgilerin açıklık seviyesi Production ortamımızdaki güvenlik seviyesinden az veya fazla olmamalıdır.
+
+-- Logların formatları ve içerikleri sürekli değişmelidir.
+
+Kitap 1) Logging and Log Management
+By Anton Chuvakin, Kevin Schmidt, Chris Phillips
+Syngress (2012)
+--------------------------------------------------------------------------------
+
+--- SRE Toolchain --------------------------------------------------------------
+
+1) Nagios, Zabbix
+
+2) SaaS Service Monitoring
+Pingdom
+Datadog
+Netuitive
+Ruxit
+Librato
+New Relic
+AppDynamics
+
+3) Open Source Monitoring
+StatsD
+Ganglia
+Graphite
+Grafana
+InfluxDB
+OpenTSDB
+Dropwizard Metrics
+
+4) Logging Monitoring
+Elasticsearch
+Logstash
+Kibana
+
+5) Configuration Management & Monitoring
+RunDeck
+SaltStack
+Ansible
 --------------------------------------------------------------------------------
