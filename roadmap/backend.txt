@@ -1,0 +1,252 @@
+Bunlar LinkedIn'deki "Learning Path"ler. 
+
+https://www.linkedin.com/learning/paths/become-a-programmer-foundations
+https://www.linkedin.com/learning/paths/become-a-software-developer
+https://www.linkedin.com/learning/paths/software-development-fundamentals
+https://www.linkedin.com/learning/paths/getting-started-as-a-c-sharp-developer
+https://www.linkedin.com/learning/paths/career-essentials-in-software-development-by-microsoft-and-linkedin
+https://www.linkedin.com/learning/paths/become-a-restful-api-developer
+https://www.linkedin.com/learning/paths/getting-started-as-an-asp-dot-net-core-developer
+
+Bazı "Course"lar birden fazla yerde var bu sebeple bu "Learning Path"lerin 
+içindeki "Course"ları kendim sıraladım. Alttaki listeye göre sırayla ilerlenecek.
+
+### BECOME A PROGRAMMER FOUNDATIONS LEARNING PATH #############################
+
+1) Programming Foundations: Fundamentals
+Annyce Davis - 2h 10m
+https://www.linkedin.com/learning/programming-foundations-fundamentals-3
+
+2) Programming Foundations: Beyond the Fundamentals
+Sasha Vodnik - 2h 4m
+https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals
+
+3) Programming Foundations: Real-World Examples
+Barron Stone - 3h 8m
+https://www.linkedin.com/learning/programming-foundations-real-world-examples
+
+4) Programming Foundations: Object-Oriented Design
+Olivia Chiu Stone and Barron Stone - 2h 40m
+https://www.linkedin.com/learning/programming-foundations-object-oriented-design-3
+
+5) Programming Foundations: Algorithms
+Joe Marini - 1h 45m
+https://www.linkedin.com/learning/programming-foundations-algorithms
+
+6) Programming Foundations: Data Structures
+Kathryn Hodge - 2h 20m
+https://www.linkedin.com/learning/programming-foundations-data-structures-2
+
+7) Programming Foundations: Design Patterns
+Elisabeth Robson and Eric Freeman - 1h 44m
+https://www.linkedin.com/learning/programming-foundations-design-patterns-2
+
+8) Programming Foundations: Databases 
+Scott Simpson - 1h 25m
+https://www.linkedin.com/learning/programming-foundations-databases-2
+
+9) Programming Foundations: Memory, Pointers, and Garbage Collection
+Maaike van Putten - 1h 29m
+https://www.linkedin.com/learning/programming-foundations-memory-pointers-and-garbage-collection
+
+10) Programming Foundations: APIs and Web Services
+Kesha Williams - 1h 14m
+https://www.linkedin.com/learning/programming-foundations-apis-and-web-services
+
+11) Programming Foundations: Secure Coding
+Frank P Moley III - 1h 34m
+https://www.linkedin.com/learning/programming-foundations-secure-coding
+
+12) Programming Foundations: Test-Driven Development
+Neelam Dwivedi - 1h 41m
+https://www.linkedin.com/learning/programming-foundations-test-driven-development-3
+
+13) Programming Foundations: Software Testing/QA
+Meaghan Lewis - 53m
+https://www.linkedin.com/learning/programming-foundations-software-testing-qa
+
+###############################################################################
+
+### BECOME A SOFTWARE DEVELOPER LEARNING PATH #################################
+
+1) Succeeding in Web Development: Full Stack and Front End
+Ray Villalobos - 1h 3m
+https://www.linkedin.com/learning/succeeding-in-web-development-full-stack-and-front-end
+
+2) Learning C#
+Joe Marini - 3h 5m
+https://www.linkedin.com/learning/learning-c-sharp-8581491
+
+3) Learning SQL Programming
+Scott Simpson - 1h 46m
+https://www.linkedin.com/learning/learning-sql-programming-8382385
+
+4) Programming Foundations: Web Security (2019) 
+Kevin Skoglund - 2h 17m
+https://www.linkedin.com/learning/programming-foundations-web-security-2019
+
+###############################################################################
+
+### SOFTWARE DEVELOPMENT FUNDAMENTALS LEARNING PATH ###########################
+
+1) Computer Science Principles: Digital Information
+Doug Winnie - 1h 10m
+https://www.linkedin.com/learning/computer-science-principles-digital-information
+
+2) Computer Science Principles: The Internet
+Doug Winnie - 59m
+https://www.linkedin.com/learning/computer-science-principles-the-internet
+
+3) Computer Science Principles: Programming
+Doug Winnie - 1h 25m
+https://www.linkedin.com/learning/computer-science-principles-programming
+
+4) Software Development Life Cycle (SDLC)
+Shashi Shekhar - 1h 34m
+https://www.linkedin.com/learning/software-development-life-cycle-sdlc
+
+5) Learning Git and GitHub
+Ray Villalobos - 1h 52m
+https://www.linkedin.com/learning/learning-git-and-github-14213624
+
+6) Program Databases with Transact-SQL
+Adam Wilbert - 2h 41m
+https://www.linkedin.com/learning/program-databases-with-transact-sql
+
+7) Developer Career Paths and Certifications
+Ray Villalobos - 48m
+https://www.linkedin.com/learning/developer-career-paths-and-certifications-2
+
+###############################################################################
+
+### GETTING STARTED AS A C# DEVELOPER LEARNING PATH ###########################
+
+1) C# Essential Training 1: Types and Control Flow
+Matt Milner - 2h 38m
+https://www.linkedin.com/learning/c-sharp-essential-training-1-types-and-control-flow
+
+2) C# Essential Training 2: Generics, Collections, and LINQ
+Matt Milner - 2h 58m
+https://www.linkedin.com/learning/c-sharp-essential-training-2-generics-collections-and-linq
+
+3) .NET with C# Essentials: Enhance Application Productivity and Performance
+Joe Marini - 2h 19m
+https://www.linkedin.com/learning/dot-net-with-c-sharp-essentials-enhance-application-productivity-and-performance
+
+4) C# Algorithms
+Kathryn Hodge - 2h 55m
+https://www.linkedin.com/learning/c-sharp-algorithms
+
+5) C#: Delegates, Events, and Lambdas
+Joe Marini - 1h 8m
+https://www.linkedin.com/learning/c-sharp-delegates-events-and-lambdas-14503458
+
+6) C#: Interfaces and Generics
+Joe Marini - 1h 21m
+https://www.linkedin.com/learning/c-sharp-interfaces-and-generics-14335425
+
+7) C#: Design Patterns Part 1
+Richard Goforth - 2h 8m
+https://www.linkedin.com/learning/c-sharp-design-patterns-part-1-14140825
+
+8) C#: Design Patterns Part 2
+Richard Goforth - 2h 4m
+https://www.linkedin.com/learning/c-sharp-design-patterns-part-2-8579116
+
+9) Nail Your C# Interview
+Kathryn Hodge - 2h 47m
+https://www.linkedin.com/learning/nail-your-c-sharp-interview
+
+###############################################################################
+
+### BECOME A RESTFUL API DEVELOPER LEARNING PATH ##############################
+
+1) Learning REST APIs
+Morten Rand-Hendriksen - 1h 6m
+https://www.linkedin.com/learning/learning-rest-apis
+
+2) HTTP Essential Training
+Morten Rand-Hendriksen - 50m
+https://www.linkedin.com/learning/http-essential-training
+
+3) Designing RESTful APIs
+Keith Casey - 1h 20m
+https://www.linkedin.com/learning/designing-restful-apis
+
+4) API Testing and Validation (2017)
+Keith Casey - 1h 13m
+https://www.linkedin.com/learning/api-testing-and-validation-2017
+
+5) Web Security: OAuth and OpenID Connect
+Keith Casey - 1h 44m
+https://www.linkedin.com/learning/web-security-oauth-and-openid-connect-2
+
+###############################################################################
+
+### GETTING STARTED AS A ASP.NET CORE DEVELOPER LEARNING PATH #################
+
+1) Introducing ASP.NET Core
+Microsoft .NET and Leslie Richardson - 2h 11m
+https://www.linkedin.com/learning/introducing-asp-dot-net-core
+
+2) .NET with C# Essentials: Enhance Application Productivity and Performance
+Joe Marini - 2h 19m
+https://www.linkedin.com/learning/dot-net-with-c-sharp-essentials-enhance-application-productivity-and-performance
+
+3) ASP.NET Core: Razor Pages
+Ervis Trupja - 1h 46m
+https://www.linkedin.com/learning/asp-dot-net-core-razor-pages-14933051
+
+4) Building Angular and ASP.NET Core Applications
+Ervis Trupja - 2h 56m
+https://www.linkedin.com/learning/building-angular-and-asp-dot-net-core-applications
+
+5) Securing ASP.NET Core Apps: Advanced Techniques for Web Application Security
+Ervis Trupja - 1h 40m
+https://www.linkedin.com/learning/securing-asp-dot-net-core-apps-advanced-techniques-for-web-application-security
+
+6) ASP.NET Core: Token-Based Authentication
+Ervis Trupja - 1h 59m
+https://www.linkedin.com/learning/asp-dot-net-core-token-based-authentication
+
+7) ASP.NET Core in .NET 6: Dependency Injection
+David Grace - 47m
+https://www.linkedin.com/learning/asp-dot-net-core-in-dot-net-6-dependency-injection
+
+8) ASP.NET Core: Building a GraphQL API
+Ervis Trupja - 1h 38m
+https://www.linkedin.com/learning/asp-dot-net-core-building-a-graphql-api
+
+9) Building Web APIs with ASP.NET Core in .NET
+Christian Wenz - 2h 14m
+https://www.linkedin.com/learning/building-web-apis-with-asp-dot-net-core-in-dot-net
+
+###############################################################################
+
+### GIT COURSES ###############################################################
+
+1) Git Essential Training
+Barbara Forbes - 1h 23m
+https://www.linkedin.com/learning/git-essential-training-19417064
+
+2) Git: Branches, Merges, and Remotes
+Kevin Skoglund - 3h 3m
+https://www.linkedin.com/learning/git-branches-merges-and-remotes
+
+3) GitHub Essential Training: 1 The Basics
+Jerome Hardaway - 1h 2m
+https://www.linkedin.com/learning/github-essential-training-1-the-basics
+
+4) Git Intermediate Techniques
+Kevin Skoglund - 1h 43m
+https://www.linkedin.com/learning/git-intermediate-techniques-16077011
+
+5) 8 Git Commands You Should Know
+Ronnie Sheer - 56m
+https://www.linkedin.com/learning/8-git-commands-you-should-know-16027523
+
+6) Git for Teams
+Kevin Bowersox - 2h 37m
+https://www.linkedin.com/learning/git-for-teams
+
+###############################################################################
