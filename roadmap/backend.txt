@@ -1,68 +1,44 @@
-Bunlar LinkedIn'deki "Learning Path"ler.
-
-https://www.linkedin.com/learning/paths/become-a-programmer-foundations
-https://www.linkedin.com/learning/paths/become-a-software-developer
-https://www.linkedin.com/learning/paths/software-development-fundamentals
-https://www.linkedin.com/learning/paths/getting-started-as-a-c-sharp-developer
-https://www.linkedin.com/learning/paths/career-essentials-in-software-development-by-microsoft-and-linkedin
-https://www.linkedin.com/learning/paths/become-a-restful-api-developer
-https://www.linkedin.com/learning/paths/getting-started-as-an-asp-dot-net-core-developer
-
-Bazı "Course"lar birden fazla yerde var bu sebeple bu "Learning Path"lerin 
-içindeki "Course"ları kendim sıraladım. Alttaki listeye göre sırayla ilerlenecek.
+Alttaki listeye göre sırayla ilerlenecek.
 
 ### BECOME A PROGRAMMER FOUNDATIONS LEARNING PATH #############################
 
 1) Programming Foundations: Fundamentals
-Annyce Davis - 2h 10m
 https://www.linkedin.com/learning/programming-foundations-fundamentals-3
 
 2) Programming Foundations: Beyond the Fundamentals
-Sasha Vodnik - 2h 4m
 https://www.linkedin.com/learning/programming-foundations-beyond-the-fundamentals
 
 3) Programming Foundations: Real-World Examples
-Barron Stone - 3h 8m
 https://www.linkedin.com/learning/programming-foundations-real-world-examples
 
 4) Programming Foundations: Object-Oriented Design
-Olivia Chiu Stone and Barron Stone - 2h 40m
 https://www.linkedin.com/learning/programming-foundations-object-oriented-design-3
 
 5) Programming Foundations: Algorithms
-Joe Marini - 1h 45m
 https://www.linkedin.com/learning/programming-foundations-algorithms
 
 6) Programming Foundations: Data Structures
-Kathryn Hodge - 2h 20m
 https://www.linkedin.com/learning/programming-foundations-data-structures-2
 
 7) Programming Foundations: Design Patterns
-Elisabeth Robson and Eric Freeman - 1h 44m
 https://www.linkedin.com/learning/programming-foundations-design-patterns-2
 
 8) Programming Foundations: Databases 
-Scott Simpson - 1h 25m
 https://www.linkedin.com/learning/programming-foundations-databases-2
 
 9) Programming Foundations: Memory, Pointers, and Garbage Collection
-Maaike van Putten - 1h 29m
 https://www.linkedin.com/learning/programming-foundations-memory-pointers-and-garbage-collection
 
 10) Programming Foundations: APIs and Web Services
-Kesha Williams - 1h 14m
 https://www.linkedin.com/learning/programming-foundations-apis-and-web-services
 
 11) Programming Foundations: Secure Coding
-Frank P Moley III - 1h 34m
 https://www.linkedin.com/learning/programming-foundations-secure-coding
 
 12) Programming Foundations: Test-Driven Development
-Neelam Dwivedi - 1h 41m
 https://www.linkedin.com/learning/programming-foundations-test-driven-development-3
 
 13) Programming Foundations: Software Testing/QA
-Meaghan Lewis - 53m
 https://www.linkedin.com/learning/programming-foundations-software-testing-qa
 
 ###############################################################################
@@ -70,19 +46,15 @@ https://www.linkedin.com/learning/programming-foundations-software-testing-qa
 ### BECOME A SOFTWARE DEVELOPER LEARNING PATH #################################
 
 1) Succeeding in Web Development: Full Stack and Front End
-Ray Villalobos - 1h 3m
 https://www.linkedin.com/learning/succeeding-in-web-development-full-stack-and-front-end
 
 2) Learning C#
-Joe Marini - 3h 5m
 https://www.linkedin.com/learning/learning-c-sharp-8581491
 
 3) Learning SQL Programming
-Scott Simpson - 1h 46m
 https://www.linkedin.com/learning/learning-sql-programming-8382385
 
 4) Programming Foundations: Web Security (2019) 
-Kevin Skoglund - 2h 17m
 https://www.linkedin.com/learning/programming-foundations-web-security-2019
 
 ###############################################################################
@@ -90,163 +62,605 @@ https://www.linkedin.com/learning/programming-foundations-web-security-2019
 ### SOFTWARE DEVELOPMENT FUNDAMENTALS LEARNING PATH ###########################
 
 1) Computer Science Principles: Digital Information
-Doug Winnie - 1h 10m
 https://www.linkedin.com/learning/computer-science-principles-digital-information
 
 2) Computer Science Principles: The Internet
-Doug Winnie - 59m
 https://www.linkedin.com/learning/computer-science-principles-the-internet
 
 3) Computer Science Principles: Programming
-Doug Winnie - 1h 25m
 https://www.linkedin.com/learning/computer-science-principles-programming
 
 4) Software Development Life Cycle (SDLC)
-Shashi Shekhar - 1h 34m
 https://www.linkedin.com/learning/software-development-life-cycle-sdlc
 
 5) Learning Git and GitHub
-Ray Villalobos - 1h 52m
 https://www.linkedin.com/learning/learning-git-and-github-14213624
 
-6) Program Databases with Transact-SQL
-Adam Wilbert - 2h 41m
-https://www.linkedin.com/learning/program-databases-with-transact-sql
-
-7) Developer Career Paths and Certifications
-Ray Villalobos - 48m
+6) Developer Career Paths and Certifications
 https://www.linkedin.com/learning/developer-career-paths-and-certifications-2
 
 ###############################################################################
 
 ### GETTING STARTED AS A C# DEVELOPER LEARNING PATH ###########################
 
+--- Zorunlu -------------------------------------------------------------------
+
 1) C# Essential Training 1: Types and Control Flow
-Matt Milner - 2h 38m
 https://www.linkedin.com/learning/c-sharp-essential-training-1-types-and-control-flow
 
 2) C# Essential Training 2: Generics, Collections, and LINQ
-Matt Milner - 2h 58m
 https://www.linkedin.com/learning/c-sharp-essential-training-2-generics-collections-and-linq
 
-3) .NET with C# Essentials: Enhance Application Productivity and Performance
-Joe Marini - 2h 19m
-https://www.linkedin.com/learning/dot-net-with-c-sharp-essentials-enhance-application-productivity-and-performance
-
-4) C# Algorithms
-Kathryn Hodge - 2h 55m
+3) C# Algorithms
 https://www.linkedin.com/learning/c-sharp-algorithms
 
-5) C#: Delegates, Events, and Lambdas
-Joe Marini - 1h 8m
-https://www.linkedin.com/learning/c-sharp-delegates-events-and-lambdas-14503458
+4) C#: String Essential Training
+https://www.linkedin.com/learning/c-sharp-string-essential-training
+
+5) C#: Collections
+https://www.linkedin.com/learning/c-sharp-collections
 
 6) C#: Interfaces and Generics
-Joe Marini - 1h 21m
 https://www.linkedin.com/learning/c-sharp-interfaces-and-generics-14335425
 
-7) C#: Design Patterns Part 1
-Richard Goforth - 2h 8m
+7) Object-Oriented Programming with C#
+https://www.linkedin.com/learning/object-oriented-programming-with-c-sharp-17331514
+
+8) C# Object-Oriented Programming Tips and Tricks
+https://www.linkedin.com/learning/c-sharp-object-oriented-programming-tips-and-tricks
+
+9) C#: Delegates, Events, and Lambdas
+https://www.linkedin.com/learning/c-sharp-delegates-events-and-lambdas-14503458
+
+10) Debugging in C#
+https://www.linkedin.com/learning/debugging-in-c-sharp
+
+11) C# File System Tips and Tricks
+https://www.linkedin.com/learning/c-sharp-file-system-tips-and-tricks
+
+12) Threading in C#
+https://www.linkedin.com/learning/threading-in-c-sharp
+
+13) Asynchronous Programming in C#
+https://www.linkedin.com/learning/asynchronous-programming-in-c-sharp
+
+14) Async Programming in C#
+https://www.linkedin.com/learning/async-programming-in-c-sharp
+
+15) C#: Design Patterns Part 1
 https://www.linkedin.com/learning/c-sharp-design-patterns-part-1-14140825
 
-8) C#: Design Patterns Part 2
-Richard Goforth - 2h 4m
+16) C#: Design Patterns Part 2
 https://www.linkedin.com/learning/c-sharp-design-patterns-part-2-8579116
 
-9) Nail Your C# Interview
-Kathryn Hodge - 2h 47m
+17) C# Unit Testing with xUnit
+https://www.linkedin.com/learning/c-sharp-unit-testing-with-xunit
+
+18) C# Test-Driven Development
+https://www.linkedin.com/learning/c-sharp-test-driven-development-14275015
+
+19) Learning Regular Expressions
+https://www.linkedin.com/learning/learning-regular-expressions-15586553
+
+20) C# Best Practices for Developers
+https://www.linkedin.com/learning/c-sharp-best-practices-for-developers
+
+-------------------------------------------------------------------------------
+
+--- Zaman Bulunca -------------------------------------------------------------
+
+21) C# Code Challenges
+https://www.linkedin.com/learning/c-sharp-code-challenges
+
+22) C#: Advanced Practices
+https://www.linkedin.com/learning/c-sharp-advanced-practices
+
+23) Advanced Threading in C#
+https://www.linkedin.com/learning/advanced-threading-in-c-sharp
+
+24) Write Performative Programs with C# by Microsoft Press
+https://www.linkedin.com/learning/write-performative-programs-with-c-sharp-by-microsoft-press
+
+25) Advanced C#: Functional Programming Patterns
+https://www.linkedin.com/learning/advanced-c-sharp-functional-programming-patterns
+
+26) C# Framework Design
+https://www.linkedin.com/learning/c-sharp-framework-design-17295804
+
+27) Advanced C#: Thread-Safe Data with Concurrent Collections
+https://www.linkedin.com/learning/advanced-c-sharp-thread-safe-data-with-concurrent-collections
+
+28) Advanced C#: Language Features
+https://www.linkedin.com/learning/advanced-c-sharp-language-features
+
+29) Web Components and Modularization: Practical Approaches
+https://www.linkedin.com/learning/web-components-and-modularization-practical-approaches
+
+30) Nail Your C# Interview
 https://www.linkedin.com/learning/nail-your-c-sharp-interview
 
+-------------------------------------------------------------------------------
+###############################################################################
+
+### GETTING STARTED AS A ASP.NET CORE DEVELOPER LEARNING PATH #################
+
+--- Zorunlu -------------------------------------------------------------------
+
+1) Demystifying the .NET Platform: Structure, Features, and Potential
+https://www.linkedin.com/learning/demystifying-the-dot-net-platform-structure-features-and-potential
+
+2) Introducing .NET Core
+https://www.linkedin.com/learning/introducing-dot-net-core
+
+3) Introducing ASP.NET Core
+https://www.linkedin.com/learning/introducing-asp-dot-net-core
+
+4) .NET 6: First Look
+https://www.linkedin.com/learning/dot-net-6-first-look
+
+5) .NET Fundamentals: Concepts, APIs, and Libraries in the .NET Framework
+https://www.linkedin.com/learning/dot-net-fundamentals-concepts-apis-and-libraries-in-the-dot-net-framework
+
+6) .NET Essentials: Working with LINQ
+https://www.linkedin.com/learning/dot-net-essentials-working-with-linq
+
+7) .NET Essentials: LINQ for XML
+https://www.linkedin.com/learning/dot-net-essentials-linq-for-xml
+
+8) .NET Essentials: LINQ for Databases
+https://www.linkedin.com/learning/dot-net-essentials-linq-for-databases
+
+9) .NET with C# Essentials: Enhance Application Productivity and Performance
+https://www.linkedin.com/learning/dot-net-with-c-sharp-essentials-enhance-application-productivity-and-performance
+
+10) ASP.NET Core: Middleware
+https://www.linkedin.com/learning/asp-dot-net-core-middleware
+
+11) ASP.NET Core: Token-Based Authentication
+https://www.linkedin.com/learning/asp-dot-net-core-token-based-authentication
+
+12) ASP.NET Core in .NET 6: Dependency Injection
+https://www.linkedin.com/learning/asp-dot-net-core-in-dot-net-6-dependency-injection
+
+13) ASP.NET Core Identity: Authentication Management
+https://www.linkedin.com/learning/asp-dot-net-core-identity-authentication-management
+
+14) ASP.NET Core Identity: Authorization Management
+https://www.linkedin.com/learning/asp-dot-net-core-identity-authorization-management
+
+15) ASP.NET Core: Health Checks and Logging
+https://www.linkedin.com/learning/asp-dot-net-core-health-checks-and-logging
+
+16) ASP.NET Core: Exception Handling
+https://www.linkedin.com/learning/asp-dot-net-core-exception-handling
+
+17) ASP.NET Core: Logging with log4net
+https://www.linkedin.com/learning/asp-dot-net-core-logging-with-log4net
+
+18) ASP.NET Core: Communication Management
+https://www.linkedin.com/learning/asp-dot-net-core-communication-management
+
+19) Advanced ASP.NET Core: Unit Testing
+https://www.linkedin.com/learning/advanced-asp-dot-net-core-unit-testing
+
+20) ASP.NET Core: Payment Gateways
+https://www.linkedin.com/learning/asp-dot-net-core-payment-gateways
+
+21) Learning NuGet
+https://www.linkedin.com/learning/learning-nuget
+
+22) Building Web APIs with ASP.NET Core in .NET
+https://www.linkedin.com/learning/building-web-apis-with-asp-dot-net-core-in-dot-net
+
+23) Securing ASP.NET Core Apps: Advanced Techniques for Web Application Security
+https://www.linkedin.com/learning/securing-asp-dot-net-core-apps-advanced-techniques-for-web-application-security
+
+24) Building and Securing RESTful APIs in ASP.NET Core
+https://www.linkedin.com/learning/building-and-securing-restful-apis-in-asp-dot-net-core-2018
+
+25) Managing App Secrets in .NET Core
+https://www.linkedin.com/learning/managing-app-secrets-in-dot-net-core
+
+26) Advanced Web APIs with ASP.NET Core in .NET 6
+https://www.linkedin.com/learning/advanced-web-apis-with-asp-dot-net-core-in-dot-net-6
+
+27) ASP.NET Core Advanced Security Data Protection
+https://www.linkedin.com/learning/asp-dot-net-core-advanced-security-data-protection
+
+28) Deploying ASP.NET Core Applications
+https://www.linkedin.com/learning/deploying-asp-dot-net-core-applications-2018
+
+29) Using Docker and .NET Core
+https://www.linkedin.com/learning/using-docker-and-dot-net-core
+
+30) Advanced .NET: Commands, C# Enhancements, Web Apps, and Libraries
+https://www.linkedin.com/learning/advanced-dot-net-commands-c-sharp-enhancements-web-apps-and-libraries
+
+31) .NET 7 First Look
+https://www.linkedin.com/learning/dot-net-7-first-look
+
+--- Zaman Bulunca --------------------------------------------------------------
+
+32) C# Cross-Platform Development
+https://www.linkedin.com/learning/c-sharp-cross-platform-development
+
+33) Building Angular and ASP.NET Core Applications
+https://www.linkedin.com/learning/building-angular-and-asp-dot-net-core-applications
+
+-------------------------------------------------------------------------------
+
+--- Opsiyonel -----------------------------------------------------------------
+
+34) Learning SignalR with ASP.NET Core
+https://www.linkedin.com/learning/learning-signalr-with-asp-dot-net-core
+
+35) Learning ASP.NET Core MVC
+https://www.linkedin.com/learning/learning-asp-dot-net-core-mvc
+
+36) ASP.NET Core: Razor Pages
+https://www.linkedin.com/learning/asp-dot-net-core-razor-pages-14933051
+
+37) ASP.NET Core: Building a GraphQL API
+https://www.linkedin.com/learning/asp-dot-net-core-building-a-graphql-api
+
+-------------------------------------------------------------------------------
 ###############################################################################
 
 ### BECOME A RESTFUL API DEVELOPER LEARNING PATH ##############################
 
 1) Learning REST APIs
-Morten Rand-Hendriksen - 1h 6m
 https://www.linkedin.com/learning/learning-rest-apis
 
 2) HTTP Essential Training
-Morten Rand-Hendriksen - 50m
 https://www.linkedin.com/learning/http-essential-training
 
-3) Designing RESTful APIs
-Keith Casey - 1h 20m
+3) Introduction to Web APIs
+https://www.linkedin.com/learning/introduction-to-web-apis-22019269
+
+4) Designing RESTful APIs
 https://www.linkedin.com/learning/designing-restful-apis
 
-4) API Testing and Validation (2017)
-Keith Casey - 1h 13m
-https://www.linkedin.com/learning/api-testing-and-validation-2017
+5) API Testing and Validation
+https://www.linkedin.com/learning/api-testing-and-validation-22610641
 
-5) Web Security: OAuth and OpenID Connect
-Keith Casey - 1h 44m
+6) Postman Essential Training
+https://www.linkedin.com/learning/postman-essential-training-21969591
+
+7) Creating API Documentation
+https://www.linkedin.com/learning/creating-api-documentation
+
+8) Web Security: OAuth and OpenID Connect
 https://www.linkedin.com/learning/web-security-oauth-and-openid-connect-2
 
-###############################################################################
-
-### GETTING STARTED AS A ASP.NET CORE DEVELOPER LEARNING PATH #################
-
-1) Introducing ASP.NET Core
-Microsoft .NET and Leslie Richardson - 2h 11m
-https://www.linkedin.com/learning/introducing-asp-dot-net-core
-
-2) .NET with C# Essentials: Enhance Application Productivity and Performance
-Joe Marini - 2h 19m
-https://www.linkedin.com/learning/dot-net-with-c-sharp-essentials-enhance-application-productivity-and-performance
-
-3) ASP.NET Core: Razor Pages
-Ervis Trupja - 1h 46m
-https://www.linkedin.com/learning/asp-dot-net-core-razor-pages-14933051
-
-4) Building Angular and ASP.NET Core Applications
-Ervis Trupja - 2h 56m
-https://www.linkedin.com/learning/building-angular-and-asp-dot-net-core-applications
-
-5) Securing ASP.NET Core Apps: Advanced Techniques for Web Application Security
-Ervis Trupja - 1h 40m
-https://www.linkedin.com/learning/securing-asp-dot-net-core-apps-advanced-techniques-for-web-application-security
-
-6) ASP.NET Core: Token-Based Authentication
-Ervis Trupja - 1h 59m
-https://www.linkedin.com/learning/asp-dot-net-core-token-based-authentication
-
-7) ASP.NET Core in .NET 6: Dependency Injection
-David Grace - 47m
-https://www.linkedin.com/learning/asp-dot-net-core-in-dot-net-6-dependency-injection
-
-8) ASP.NET Core: Building a GraphQL API
-Ervis Trupja - 1h 38m
-https://www.linkedin.com/learning/asp-dot-net-core-building-a-graphql-api
-
-9) Building Web APIs with ASP.NET Core in .NET
-Christian Wenz - 2h 14m
-https://www.linkedin.com/learning/building-web-apis-with-asp-dot-net-core-in-dot-net
+9) Building APIs with Swagger and the OpenAPI Specification
+https://www.linkedin.com/learning/building-apis-with-swagger-and-the-openapi-specification
 
 ###############################################################################
 
 ### GIT COURSES ###############################################################
 
 1) Git Essential Training
-Barbara Forbes - 1h 23m
 https://www.linkedin.com/learning/git-essential-training-19417064
 
 2) Git: Branches, Merges, and Remotes
-Kevin Skoglund - 3h 3m
 https://www.linkedin.com/learning/git-branches-merges-and-remotes
 
 3) GitHub Essential Training: 1 The Basics
-Jerome Hardaway - 1h 2m
 https://www.linkedin.com/learning/github-essential-training-1-the-basics
 
 4) Git Intermediate Techniques
-Kevin Skoglund - 1h 43m
 https://www.linkedin.com/learning/git-intermediate-techniques-16077011
 
 5) 8 Git Commands You Should Know
-Ronnie Sheer - 56m
 https://www.linkedin.com/learning/8-git-commands-you-should-know-16027523
 
 6) Git for Teams
-Kevin Bowersox - 2h 37m
 https://www.linkedin.com/learning/git-for-teams
+
+7) Using Git with Visual Studio Code
+https://www.linkedin.com/learning/using-git-with-visual-studio-code
+
+8) Visual Studio: Source Control with Git and GitHub
+https://www.linkedin.com/learning/visual-studio-source-control-with-git-and-github
+
+###############################################################################
+
+### POWERSHELL ################################################################
+
+1) Learning PowerShell
+https://www.linkedin.com/learning/learning-powershell
+
+2) PowerShell 7 Essential Training
+https://www.linkedin.com/learning/powershell-7-essential-training
+
+###############################################################################
+
+### DATABASE FOUNDATIONS ######################################################
+
+1) Database Foundations: Intro to Databases
+https://www.linkedin.com/learning/database-foundations-intro-to-databases
+
+2) Database Foundations: Data Structures
+https://www.linkedin.com/learning/database-foundations-data-structures
+
+3) Database Foundations: Database Management
+https://www.linkedin.com/learning/database-foundations-database-management
+
+4) Database Foundations: Application Development
+https://www.linkedin.com/learning/database-foundations-application-development
+
+5) Database Foundations: Administration
+https://www.linkedin.com/learning/database-foundations-administration-8375189
+
+6) Relational Databases Essential Training
+https://www.linkedin.com/learning/relational-databases-essential-training
+
+###############################################################################
+
+### SQL #######################################################################
+
+1) Quick Start Guide to SQL
+https://www.linkedin.com/learning/quick-start-guide-to-sql
+
+2) SQL Queries Made Easy
+https://www.linkedin.com/learning/sql-queries-made-easy
+
+3) Top Five Things to Know in SQL
+https://www.linkedin.com/learning/top-five-things-to-know-in-sql
+
+4) SQL Essential Training
+https://www.linkedin.com/learning/sql-essential-training-20685933
+
+5) Hands-On Introduction: SQL
+https://www.linkedin.com/learning/hands-on-introduction-sql
+
+6) Advanced SQL: Logical Query Processing, Part 1
+https://www.linkedin.com/learning/advanced-sql-logical-query-processing-part-1
+
+7) Advanced SQL: Logical Query Processing, Part 2
+https://www.linkedin.com/learning/advanced-sql-logical-query-processing-part-2
+
+8) Advanced SQL – Window Functions
+https://www.linkedin.com/learning/advanced-sql-window-functions
+
+9) Advanced SQL for Query Tuning and Performance Optimization
+https://www.linkedin.com/learning/advanced-sql-for-query-tuning-and-performance-optimization
+
+10) Advanced SQL for Application Development
+https://www.linkedin.com/learning/advanced-sql-for-application-development
+
+11) Advanced SQL for Data Scientists
+https://www.linkedin.com/learning/advanced-sql-for-data-scientists-13972889
+
+###############################################################################
+
+### POSTGRESQL ################################################################
+
+1) Introduction to PostgreSQL
+https://www.linkedin.com/learning/introduction-to-postgresql
+
+2) PostgreSQL Essential Training
+https://www.linkedin.com/learning/postgresql-essential-training-22611610
+
+3) Advanced PostgreSQL
+https://www.linkedin.com/learning/advanced-postgresql
+
+4) PostgreSQL: Advanced Queries
+https://www.linkedin.com/learning/postgresql-advanced-queries
+
+5) PostgreSQL: Client Applications
+https://www.linkedin.com/learning/postgresql-client-applications
+
+###############################################################################
+
+### SQL SERVER ################################################################
+
+1) Learning Microsoft SQL Server 2022
+https://www.linkedin.com/learning/learning-microsoft-sql-server-2022
+
+2) Microsoft SQL Server 2022 Essential Training
+https://www.linkedin.com/learning/microsoft-sql-server-2022-essential-training
+
+3) Learning Transact-SQL
+https://www.linkedin.com/learning/learning-transact-sql
+
+4) Querying Microsoft SQL Server 2022
+https://www.linkedin.com/learning/querying-microsoft-sql-server-2022
+
+5) Program Databases with Transact-SQL
+https://www.linkedin.com/learning/program-databases-with-transact-sql
+
+6) Azure Data Studio Essential Training
+https://www.linkedin.com/learning/azure-data-studio-essential-training-15050110
+
+7) SQL Server Data Tools for Visual Studio
+https://www.linkedin.com/learning/sql-server-data-tools-for-visual-studio
+
+8) PowerShell for SQL Server Administration
+https://www.linkedin.com/learning/powershell-for-sql-server-administration
+
+9) Automating SQL Server with dbatools
+https://www.linkedin.com/learning/automating-sql-server-with-dbatools
+
+10) SQL Server Database Triggers
+https://www.linkedin.com/learning/sql-server-database-triggers
+
+11) SQL Server: Security, Encryption, and Masking
+https://www.linkedin.com/learning/sql-server-security-encryption-and-masking
+
+12) SQL Server: Security for Developers
+https://www.linkedin.com/learning/sql-server-security-for-developers
+
+13) SQL Server Performance for Developers
+https://www.linkedin.com/learning/sql-server-performance-for-developers
+
+14) Learning SQL Server Development on Linux
+https://www.linkedin.com/learning/learning-sql-server-development-on-linux
+
+15) Scaling Your SQL Server Application
+https://www.linkedin.com/learning/scaling-your-sql-server-application
+
+16) SQL Server Analysis Services
+https://www.linkedin.com/learning/sql-server-analysis-services
+
+17) SQL Server: Reporting Services
+https://www.linkedin.com/learning/sql-server-reporting-services
+
+18) SQL Server Integration Services
+https://www.linkedin.com/learning/sql-server-integration-services-2
+
+###############################################################################
+
+### BECOME A NOSQL DEVELOPER ##################################################
+
+1) NoSQL Decoded: Flexible Databases for Developers, Executives, and Non-Techies
+https://www.linkedin.com/learning/nosql-decoded-flexible-databases-for-developers-executives-and-non-techies
+
+2) NoSQL Essential Training
+https://www.linkedin.com/learning/nosql-essential-training
+
+3) NoSQL Data Modeling Essential Training
+https://www.linkedin.com/learning/nosql-data-modeling-essential-training
+
+4) Learning MongoDB
+https://www.linkedin.com/learning/learning-mongodb-17360744
+
+5) Introduction to Neo4j
+https://www.linkedin.com/learning/introduction-to-neo4j
+
+6) Graph Databases: Neo4j for Complex Data Relationships
+https://www.linkedin.com/learning/graph-databases-neo4j-for-complex-data-relationships
+
+7) Redis Essential Training
+https://www.linkedin.com/learning/redis-essential-training-15012713
+
+8) Introduction to Couchbase
+https://www.linkedin.com/learning/introduction-to-couchbase
+
+9) Elasticsearch Essential Training
+https://www.linkedin.com/learning/elasticsearch-essential-training-18773441
+
+10) Cloud NoSQL for SQL Professionals
+https://www.linkedin.com/learning/cloud-nosql-for-sql-professionals
+
+###############################################################################
+
+### CHOOSING RIGHT DATABASE ###################################################
+
+1) SQL vs. NoSQL: Which Database Type Is Right for You?
+https://www.linkedin.com/learning/sql-vs-nosql-which-database-type-is-right-for-you
+
+2) Choosing a Database: PostgreSQL, MySQL, Mongo, and Cloud
+https://www.linkedin.com/learning/choosing-a-database-postgresql-mysql-mongo-and-cloud
+
+###############################################################################
+
+### MONGODB ###################################################################
+
+1) Introduction to MongoDB
+https://www.linkedin.com/learning/introduction-to-mongodb-22120765
+
+2) Using MongoDB with C#
+https://www.linkedin.com/learning/using-mongodb-with-c-sharp
+
+3) MongoDB Essential Training
+https://www.linkedin.com/learning/mongodb-essential-training
+
+4) Advanced MongoDB: Efficient and Secure Data Management
+https://www.linkedin.com/learning/advanced-mongodb-efficient-and-secure-data-management
+
+5) Data Modeling in MongoDB
+https://www.linkedin.com/learning/data-modeling-in-mongodb
+
+6) MongoDB Cloud Essential Training
+https://www.linkedin.com/learning/mongodb-cloud-essential-training
+
+7) MongoDB Code Challenges
+https://www.linkedin.com/learning/mongodb-code-challenges
+
+7) Advanced MongoDB Code Challenges
+https://www.linkedin.com/learning/advanced-mongodb-code-challenges-16743240
+
+###############################################################################
+
+### REDIS #####################################################################
+
+1) RedisGraph Essentials for Effective Data Management
+https://www.linkedin.com/learning/redisgraph-essentials-for-effective-data-management
+
+2) Advanced Redis
+https://www.linkedin.com/learning/advanced-redis
+
+###############################################################################
+
+### ORM #######################################################################
+
+1) Introducing Entity Framework
+https://www.linkedin.com/learning/introducing-entity-framework-18739071
+
+2) Using Entity Framework Core with Legacy Databases
+https://www.linkedin.com/learning/using-entity-framework-core-with-legacy-databases
+
+3) Learning Entity Framework Core
+https://www.linkedin.com/learning/learning-entity-framework-core
+
+4) Practical Application Architecture with Entity Framework Core
+https://www.linkedin.com/learning/practical-application-architecture-with-entity-framework-core
+
+###############################################################################
+
+### Web Security Knowledge ####################################################
+
+5) Learn
+https
+
+6) Learn
+https
+
+7) Learn
+https
+
+8) Learn
+https
+
+9) Learn
+https
+
+10) Learn
+https
+
+###############################################################################
+
+### D ######################################################
+
+1) Learn
+https
+
+2) Learn
+https
+
+3) Learn
+https
+
+4) Learn
+https
+
+5) Learn
+https
+
+6) Learn
+https
+
+7) Learn
+https
+
+8) Learn
+https
+
+9) Learn
+https
+
+10) Learn
+https
 
 ###############################################################################
