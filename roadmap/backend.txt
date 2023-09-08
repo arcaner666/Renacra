@@ -2,7 +2,7 @@ Alttaki listeye göre sırayla ilerlenecek.
 
 ### BECOME A PROGRAMMER FOUNDATIONS LEARNING PATH #############################
 
-1) Programming Foundations: Fundamentals
+1) Programming Foundations: Fundamentals (COMPLETED)
 https://www.linkedin.com/learning/programming-foundations-fundamentals-3
 
 2) Programming Foundations: Beyond the Fundamentals
