@@ -1,0 +1,11 @@
+{
+    "editor.fontSize": 16,
+    "window.zoomLevel": -1,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.formatting.provider": "none",
+}
