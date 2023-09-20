@@ -1,0 +1,15 @@
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\bin\Debug\net5.0\HelloWorld.exe
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\bin\Debug\net5.0\HelloWorld.deps.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.dev.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\bin\Debug\net5.0\HelloWorld.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\bin\Debug\net5.0\HelloWorld.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfoInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfo.cs
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.CoreCompileInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\HelloWorld.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\refint\HelloWorld.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\HelloWorld.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\HelloWorld.genruntimeconfig.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Finished\Overview\HelloWorld\obj\Debug\net5.0\ref\HelloWorld.dll
