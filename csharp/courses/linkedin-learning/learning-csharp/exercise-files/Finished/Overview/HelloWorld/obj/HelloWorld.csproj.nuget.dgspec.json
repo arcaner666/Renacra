@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj": {}
+    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj": {
+    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj",
+        "projectPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\arcan\\.nuget\\packages\\",
-        "outputPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\obj\\",
+        "outputPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
