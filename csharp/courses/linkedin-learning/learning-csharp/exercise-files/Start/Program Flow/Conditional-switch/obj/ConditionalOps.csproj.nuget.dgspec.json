@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj": {}
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj": {}
   },
   "projects": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj": {
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj",
+        "projectUniqueName": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj",
         "projectName": "ConditionalOps",
-        "projectPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj",
+        "projectPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\ConditionalOps.csproj",
         "packagesPath": "C:\\Users\\arcan\\.nuget\\packages\\",
-        "outputPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\obj\\",
+        "outputPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Program Flow\\Conditional-switch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

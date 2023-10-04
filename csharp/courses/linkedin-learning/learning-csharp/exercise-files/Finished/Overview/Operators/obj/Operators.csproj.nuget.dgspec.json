@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj": {}
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj": {}
   },
   "projects": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj": {
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj",
+        "projectUniqueName": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj",
         "projectName": "Operators",
-        "projectPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj",
+        "projectPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\Operators.csproj",
         "packagesPath": "C:\\Users\\arcan\\.nuget\\packages\\",
-        "outputPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\obj\\",
+        "outputPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Overview\\Operators\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj": {}
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj": {}
   },
   "projects": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj": {
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj",
+        "projectUniqueName": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj",
         "projectName": "Comments",
-        "projectPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj",
+        "projectPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\Comments.csproj",
         "packagesPath": "C:\\Users\\arcan\\.nuget\\packages\\",
-        "outputPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\obj\\",
+        "outputPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Start\\Overview\\Comments\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj": {}
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj": {}
   },
   "projects": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj": {
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj",
+        "projectUniqueName": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj",
         "projectName": "BreakContinue",
-        "projectPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj",
+        "projectPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\BreakContinue.csproj",
         "packagesPath": "C:\\Users\\arcan\\.nuget\\packages\\",
-        "outputPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\obj\\",
+        "outputPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\BreakContinue\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

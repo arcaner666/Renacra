@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj": {}
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj": {}
   },
   "projects": {
-    "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj": {
+    "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj",
+        "projectUniqueName": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj",
         "projectName": "WhileLoops",
-        "projectPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj",
+        "projectPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\WhileLoops.csproj",
         "packagesPath": "C:\\Users\\arcan\\.nuget\\packages\\",
-        "outputPath": "e:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\obj\\",
+        "outputPath": "E:\\knowledge-base\\csharp\\courses\\linkedin-learning\\learning-csharp\\exercise-files\\Finished\\Program Flow\\WhileLoops\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
