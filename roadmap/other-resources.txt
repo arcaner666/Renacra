@@ -1,3 +1,6 @@
 C# Expressions
 https://www.youtube.com/playlist?list=PLRwVmtr-pp06SlwcsqhreZ2byuozdnPlg
 
+Data Encryption/Decryption
+https://code-maze.com/data-protection-aspnet-core/
+
