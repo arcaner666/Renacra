@@ -1,0 +1,15 @@
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\bin\Debug\net5.0\VarsAndData.exe
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\bin\Debug\net5.0\VarsAndData.deps.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\bin\Debug\net5.0\VarsAndData.runtimeconfig.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\bin\Debug\net5.0\VarsAndData.runtimeconfig.dev.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\bin\Debug\net5.0\VarsAndData.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\bin\Debug\net5.0\VarsAndData.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\VarsAndData.GeneratedMSBuildEditorConfig.editorconfig
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\VarsAndData.AssemblyInfoInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\VarsAndData.AssemblyInfo.cs
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\VarsAndData.csproj.CoreCompileInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\VarsAndData.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\refint\VarsAndData.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\VarsAndData.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\VarsAndData.genruntimeconfig.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\VarsAndData\obj\Debug\net5.0\ref\VarsAndData.dll

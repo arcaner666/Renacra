@@ -1,3 +1,5 @@
 dotnet new console
 İçinde bulunulan klasörde yeni bir Console projesi oluşturur.
 
+dotnet run
+İçinde bulunulan klasördeki projeyi çalıştırır.

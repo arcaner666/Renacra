@@ -1,0 +1,15 @@
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\bin\Debug\net5.0\Operators.exe
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\bin\Debug\net5.0\Operators.deps.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\bin\Debug\net5.0\Operators.runtimeconfig.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\bin\Debug\net5.0\Operators.runtimeconfig.dev.json
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\bin\Debug\net5.0\Operators.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\bin\Debug\net5.0\Operators.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\Operators.GeneratedMSBuildEditorConfig.editorconfig
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\Operators.AssemblyInfoInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\Operators.AssemblyInfo.cs
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\Operators.csproj.CoreCompileInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\Operators.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\refint\Operators.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\Operators.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\Operators.genruntimeconfig.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\learning-csharp\exercise-files\Start\Overview\Operators\obj\Debug\net5.0\ref\Operators.dll
