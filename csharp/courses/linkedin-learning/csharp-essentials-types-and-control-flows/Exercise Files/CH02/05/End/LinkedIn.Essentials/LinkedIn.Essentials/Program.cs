@@ -35,7 +35,7 @@ static void Classes()
 }
 
 //static void ChangeName(ref IPerson person)
-static void ChangeName( IPerson person)
+static void ChangeName(IPerson person)
 {
     person.LastName = "Unknown";
     Console.WriteLine($"Person in method is {person.FirstName} {person.LastName}");
