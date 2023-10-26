@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LinkedIn.Essentials;
 
-Classes();
+//Classes();
 Structs();
-Records();
+//Records();
 
 
 static void Classes()

@@ -1,0 +1,14 @@
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\bin\Debug\net6.0\LinkedIn.Essentials.exe
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\bin\Debug\net6.0\LinkedIn.Essentials.deps.json
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\bin\Debug\net6.0\LinkedIn.Essentials.runtimeconfig.json
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\bin\Debug\net6.0\LinkedIn.Essentials.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\bin\Debug\net6.0\LinkedIn.Essentials.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\LinkedIn.Essentials.GeneratedMSBuildEditorConfig.editorconfig
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\LinkedIn.Essentials.AssemblyInfoInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\LinkedIn.Essentials.AssemblyInfo.cs
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\LinkedIn.Essentials.csproj.CoreCompileInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\LinkedIn.Essentials.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\refint\LinkedIn.Essentials.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\LinkedIn.Essentials.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\LinkedIn.Essentials.genruntimeconfig.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\02\End\LinkedIn.Essentials\LinkedIn.Essentials\obj\Debug\net6.0\ref\LinkedIn.Essentials.dll

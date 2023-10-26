@@ -1,0 +1,14 @@
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\bin\Debug\net7.0\Notes.exe
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\bin\Debug\net7.0\Notes.deps.json
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\bin\Debug\net7.0\Notes.runtimeconfig.json
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\bin\Debug\net7.0\Notes.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\bin\Debug\net7.0\Notes.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\Notes.GeneratedMSBuildEditorConfig.editorconfig
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\Notes.AssemblyInfoInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\Notes.AssemblyInfo.cs
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\Notes.csproj.CoreCompileInputs.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\Notes.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\refint\Notes.dll
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\Notes.pdb
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\Notes.genruntimeconfig.cache
+E:\knowledge-base\csharp\courses\linkedin-learning\csharp-essentials-types-and-control-flows\Exercise Files\CH02\05\End\LinkedIn.Essentials\Notes\obj\Debug\net7.0\ref\Notes.dll
