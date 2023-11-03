@@ -4,3 +4,6 @@ https://www.youtube.com/playlist?list=PLRwVmtr-pp06SlwcsqhreZ2byuozdnPlg
 Data Encryption/Decryption
 https://code-maze.com/data-protection-aspnet-core/
 
+AOP ve Türleri
+https://denizirgin.com/aspect-oriented-programming-kavram%C4%B1-2a3a31ab020f
+
