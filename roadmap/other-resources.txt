@@ -1,3 +1,12 @@
+### GENEL KAYNAKLAR ############################################################
+
+Web Development ile ilgili hemen herşeyi içeren kapsamlı bir site.
+https://developer.mozilla.org/en-US/
+
+################################################################################
+
+### C# #########################################################################
+
 C# Expressions
 https://www.youtube.com/playlist?list=PLRwVmtr-pp06SlwcsqhreZ2byuozdnPlg
 
@@ -7,3 +16,48 @@ https://code-maze.com/data-protection-aspnet-core/
 AOP ve Türleri
 https://denizirgin.com/aspect-oriented-programming-kavram%C4%B1-2a3a31ab020f
 
+################################################################################
+
+### CSS ########################################################################
+
+--- Genel ----------------------------------------------------------------------
+
+CSS ile ilgili hemen herşeyi barındıran kapsamlı bir site.
+https://css-tricks.com/
+--------------------------------------------------------------------------------
+
+--- Renk Paletleri -------------------------------------------------------------
+
+Hangi renklerin beraber güzel görüneceğini seçmemizi sağlayan bir site.
+https://color.adobe.com/
+--------------------------------------------------------------------------------
+
+--- Yazı Tipleri ---------------------------------------------------------------
+
+Google'ın sunduğu ücretli ve ücretsiz yazı tipleri.
+https://fonts.google.com/
+
+Hangi yazı tiplerinin beraber güzel duracağını seçmemize yardım eden bir site.
+https://www.fontpair.co/
+--------------------------------------------------------------------------------
+
+--- FlexBox --------------------------------------------------------------------
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://mastery.games/post/flexboxzombies2/
+https://flexboxfroggy.com/
+https://www.flexboxdefense.com/
+--------------------------------------------------------------------------------
+
+--- Grid -----------------------------------------------------------------------
+
+https://cssgridgarden.com/
+--------------------------------------------------------------------------------
+################################################################################
+
+### POSTGRESQL #################################################################
+
+PostgreSQL'in resmi dökümantasyonu.
+https://www.postgresql.org/docs/
+
+################################################################################
