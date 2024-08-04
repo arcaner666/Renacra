@@ -1,0 +1,13 @@
+--------------------------------------------------------------------------------
+Bundan sonra method veya fonksiyon yazarken pure function olarak yazmalıyım ve methodlarım olabildiğince az yan etkiye sahip olmalı bunun temel sebepleri;
+
+-- Bu metotların sonuçlarının daha tahmin edilebilir olması
+
+-- Üzerinde çalıştığı bağlam, ortam üzerinde değişiklik yaratmaması
+
+-- Zamanla davranışının değişmemesi
+
+-- Diğer metotlarla daha büyük ve karmaşık ifadeler oluştururken sorun yaratmaması
+
+-- Concurrent programming için çok önemli olması
+--------------------------------------------------------------------------------
