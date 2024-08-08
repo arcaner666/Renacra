@@ -1,4 +1,10 @@
 --------------------------------------------------------------------------------
+Matematiksel ifadeler oluştururken veya hesaplarken +,*.-,/ gibi operatörler yerine sum(a, b), divide(a, b, c) gibi fonksiyonlar kullanmanın üç avantajı vardır;
+
+-- Karışıklık oluşmaz. Bir fonksiyonun adından sonra hemen parametreleri gelir.
+
+-- İçiçe ifadeler hesaplanırken fonksiyon parantezleri hangi parametrelerin hangi fonksiyona ait olduğunun rahatça görünmesini sağlar.
+--------------------------------------------------------------------------------
 Bundan sonra method veya fonksiyon yazarken pure function olarak yazmalıyım ve methodlarım olabildiğince az yan etkiye sahip olmalı bunun temel sebepleri;
 
 -- Bu metotların sonuçlarının daha tahmin edilebilir olması
