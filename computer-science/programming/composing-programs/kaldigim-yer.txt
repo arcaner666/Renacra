@@ -1,1 +1,1 @@
-1.6 Higher-Order Functions
+1.6.3   Defining Functions III: Nested Definitions
