@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "computer-science", "computer-science", "{32C73645-D1AB-4300-9411-B7CE9128C313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "programming", "programming", "{2CA97E9E-1FE7-42B3-AE31-18457824A3CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "composing-programs", "composing-programs", "{429300D9-F5AE-4F70-BCB3-CD5E86D92107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{CDB16ED3-40D6-46D8-ACED-E1A522FE8FB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csharp", "csharp", "{5CBED58D-E336-46CE-88E8-DCF3D570B560}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "functions_as_returned_values", "computer-science\programming\composing-programs\examples\csharp\functions_as_returned_values\functions_as_returned_values.csproj", "{31AFC63A-CE6B-473B-9CC3-1A58185D82AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31AFC63A-CE6B-473B-9CC3-1A58185D82AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AFC63A-CE6B-473B-9CC3-1A58185D82AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AFC63A-CE6B-473B-9CC3-1A58185D82AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AFC63A-CE6B-473B-9CC3-1A58185D82AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CA97E9E-1FE7-42B3-AE31-18457824A3CB} = {32C73645-D1AB-4300-9411-B7CE9128C313}
+		{429300D9-F5AE-4F70-BCB3-CD5E86D92107} = {2CA97E9E-1FE7-42B3-AE31-18457824A3CB}
+		{CDB16ED3-40D6-46D8-ACED-E1A522FE8FB5} = {429300D9-F5AE-4F70-BCB3-CD5E86D92107}
+		{5CBED58D-E336-46CE-88E8-DCF3D570B560} = {CDB16ED3-40D6-46D8-ACED-E1A522FE8FB5}
+		{31AFC63A-CE6B-473B-9CC3-1A58185D82AD} = {5CBED58D-E336-46CE-88E8-DCF3D570B560}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4FFCE62-F9BA-4EB5-87C9-170B7973AD1D}
+	EndGlobalSection
+EndGlobal

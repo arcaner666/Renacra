@@ -1,1 +1,1 @@
-1.6.3   Defining Functions III: Nested Definitions
+1.6.5   Example: Newton's Method

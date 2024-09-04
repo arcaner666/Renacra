@@ -26,4 +26,4 @@ def sqrt_update(x, a):
 
 result = improve(golden_update, square_close_to_successor)
 
-print(result)
+print(sqrt_update(16, 16))
